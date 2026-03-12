@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "alwaysStrict": true,
+        "declaration": true,
+        "emitBOM": false,
+        "esModuleInterop": true,
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "newLine": "lf",
+        "strict": true,
+        "target": "ESNext"
+    }
+}

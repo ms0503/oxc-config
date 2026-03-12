@@ -1,0 +1,33 @@
+export declare const config: {
+    arrowParens: "avoid";
+    bracketSameLine: false;
+    bracketSpacing: true;
+    embeddedLanguageFormatting: "auto";
+    endOfLine: "lf";
+    htmlWhitespaceSensitivity: "strict";
+    ignorePatterns: string[];
+    insertFinalNewline: true;
+    jsxSingleQuote: false;
+    objectWrap: "collapse";
+    overrides: never[];
+    printWidth: number;
+    proseWrap: "never";
+    quoteProps: "as-needed";
+    semi: true;
+    singleAttributePerLine: true;
+    singleQuote: true;
+    sortImports: null;
+    sortPackageJson: false;
+    sortTailwindcss: {
+        attributes: never[];
+        config: null;
+        functions: never[];
+        preserveDuplicates: false;
+        preserveWhitespace: false;
+        stylesheet: null;
+    };
+    tabWidth: number;
+    trailingComma: "none";
+    useTabs: false;
+    vueIndentScriptAndStyle: false;
+};
