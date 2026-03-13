@@ -1073,8 +1073,8 @@ export declare const core: {
     }[];
     plugins: ("eslint" | "import" | "node" | "oxc" | "promise" | "typescript" | "unicorn" | "vitest")[];
 };
-export declare const react: {
-    extends: ({
+export declare const jsx: {
+    extends: {
         extends: ({
             rules: {
                 'jsx-a11y/alt-text': (string | {
@@ -1218,7 +1218,161 @@ export declare const react: {
                 'react-perf/jsx-no-new-object-as-prop': "error";
             };
         })[];
-    } | {
+    }[];
+    plugins: ("jsx-a11y" | "react" | "react-perf")[];
+};
+export declare const hono: {
+    extends: {
+        extends: {
+            extends: ({
+                rules: {
+                    'jsx-a11y/alt-text': (string | {
+                        area: never[];
+                        img: string[];
+                        'input[type="image"]': never[];
+                        object: never[];
+                    })[];
+                    'jsx-a11y/anchor-ambiguous-text': (string | {
+                        words: string[];
+                    })[];
+                    'jsx-a11y/anchor-has-content': "error";
+                    'jsx-a11y/anchor-is-valid': (string | {
+                        validHrefs: never[];
+                    })[];
+                    'jsx-a11y/aria-activedescendant-has-tabindex': "error";
+                    'jsx-a11y/aria-props': "error";
+                    'jsx-a11y/aria-proptypes': "error";
+                    'jsx-a11y/aria-role': (string | {
+                        allowedInvalidRules: never[];
+                        ignoreNonDOM: boolean;
+                    })[];
+                    'jsx-a11y/aria-unsupported-elements': "error";
+                    'jsx-a11y/autocomplete-valid': (string | {
+                        inputComponents: string[];
+                    })[];
+                    'jsx-a11y/click-events-have-key-events': "error";
+                    'jsx-a11y/heading-has-content': (string | {
+                        components: never[];
+                    })[];
+                    'jsx-a11y/html-has-lang': "error";
+                    'jsx-a11y/iframe-has-title': "error";
+                    'jsx-a11y/img-redundant-alt': (string | {
+                        components: string[];
+                        words: string[];
+                    })[];
+                    'jsx-a11y/label-has-associated-control': (string | {
+                        assert: string;
+                        controlComponents: never[];
+                        depth: number;
+                        labelAttributes: string[];
+                        labelComponents: string[];
+                    })[];
+                    'jsx-a11y/lang': "error";
+                    'jsx-a11y/media-has-caption': (string | {
+                        audio: string[];
+                        track: string[];
+                        video: string[];
+                    })[];
+                    'jsx-a11y/mouse-events-have-key-events': (string | {
+                        hoverInHandlers: string[];
+                        hoverOutHandlers: string[];
+                    })[];
+                    'jsx-a11y/no-access-key': "error";
+                    'jsx-a11y/no-aria-hidden-on-focusable': "error";
+                    'jsx-a11y/no-autofocus': (string | {
+                        ignoreNonDOM: boolean;
+                    })[];
+                    'jsx-a11y/no-distracting-elements': (string | {
+                        elements: string[];
+                    })[];
+                    'jsx-a11y/no-noninteractive-tabindex': (string | {
+                        allowExpressionValues: boolean;
+                        roles: string[];
+                        tags: never[];
+                    })[];
+                    'jsx-a11y/no-redundant-roles': "error";
+                    'jsx-a11y/no-static-element-interactions': "error";
+                    'jsx-a11y/prefer-tag-over-role': "error";
+                    'jsx-a11y/role-has-required-aria-props': "error";
+                    'jsx-a11y/role-supports-aria-props': "error";
+                    'jsx-a11y/scope': "error";
+                    'jsx-a11y/tabindex-no-positive': "error";
+                };
+            } | {
+                rules: {
+                    'react/jsx-boolean-value': (string | {
+                        always: never[];
+                        assumeUndefinedIsFalse: boolean;
+                    })[];
+                    'react/jsx-curly-brace-presence': (string | {
+                        children: string;
+                        propElementValues: string;
+                        props: string;
+                    })[];
+                    'react/jsx-filename-extension': (string | {
+                        allow: string;
+                        extensions: string[];
+                        ignoreFilesWithoutCode: boolean;
+                    })[];
+                    'react/jsx-fragments': string[];
+                    'react/jsx-handler-names': (string | {
+                        checkInlineFunctions: boolean;
+                        checkLocalVariables: boolean;
+                        eventHandlerPrefixes: string;
+                        eventHandlerPropPrefixes: string;
+                        eventHandlerPropRegex: string;
+                        eventHandlerRegex: string;
+                        ignoreComponentNames: never[];
+                    })[];
+                    'react/jsx-key': (string | {
+                        checkFragmentShorthand: boolean;
+                        checkKeyMustBeforeSpread: boolean;
+                        warnOnDuplicates: boolean;
+                    })[];
+                    'react/jsx-max-depth': (string | {
+                        max: number;
+                    })[];
+                    'react/jsx-no-comment-textnodes': "error";
+                    'react/jsx-no-constructed-context-values': "error";
+                    'react/jsx-no-duplicate-props': "error";
+                    'react/jsx-no-script-url': (string | {
+                        components: {};
+                        includeFromSettings: boolean;
+                    })[];
+                    'react/jsx-no-target-blank': (string | {
+                        allowReferrer: boolean;
+                        enforceDynamicLinks: string;
+                        forms: boolean;
+                        links: boolean;
+                        warnOnSpreadAttributes: boolean;
+                    })[];
+                    'react/jsx-no-undef': "error";
+                    'react/jsx-no-useless-fragment': (string | {
+                        allowExpressions: boolean;
+                    })[];
+                    'react/jsx-pascal-case': (string | {
+                        allowAllCaps: boolean;
+                        allowLeadingUnderscore: boolean;
+                        allowNamespace: boolean;
+                        ignore: never[];
+                    })[];
+                    'react/jsx-props-no-spread-multi': "error";
+                    'react/jsx-props-no-spreading': "off";
+                };
+            } | {
+                rules: {
+                    'react-perf/jsx-no-jsx-as-prop': "error";
+                    'react-perf/jsx-no-new-array-as-prop': "error";
+                    'react-perf/jsx-no-new-function-as-prop': "error";
+                    'react-perf/jsx-no-new-object-as-prop': "error";
+                };
+            })[];
+        }[];
+        plugins: ("jsx-a11y" | "react" | "react-perf")[];
+    }[];
+};
+export declare const react: {
+    extends: ({
         extends: {}[];
         overrides: {
             files: string[];
@@ -2300,8 +2454,154 @@ export declare const react: {
             })[];
         }[];
         plugins: ("eslint" | "import" | "node" | "oxc" | "promise" | "typescript" | "unicorn" | "vitest")[];
+    } | {
+        extends: {
+            extends: ({
+                rules: {
+                    'jsx-a11y/alt-text': (string | {
+                        area: never[];
+                        img: string[];
+                        'input[type="image"]': never[];
+                        object: never[];
+                    })[];
+                    'jsx-a11y/anchor-ambiguous-text': (string | {
+                        words: string[];
+                    })[];
+                    'jsx-a11y/anchor-has-content': "error";
+                    'jsx-a11y/anchor-is-valid': (string | {
+                        validHrefs: never[];
+                    })[];
+                    'jsx-a11y/aria-activedescendant-has-tabindex': "error";
+                    'jsx-a11y/aria-props': "error";
+                    'jsx-a11y/aria-proptypes': "error";
+                    'jsx-a11y/aria-role': (string | {
+                        allowedInvalidRules: never[];
+                        ignoreNonDOM: boolean;
+                    })[];
+                    'jsx-a11y/aria-unsupported-elements': "error";
+                    'jsx-a11y/autocomplete-valid': (string | {
+                        inputComponents: string[];
+                    })[];
+                    'jsx-a11y/click-events-have-key-events': "error";
+                    'jsx-a11y/heading-has-content': (string | {
+                        components: never[];
+                    })[];
+                    'jsx-a11y/html-has-lang': "error";
+                    'jsx-a11y/iframe-has-title': "error";
+                    'jsx-a11y/img-redundant-alt': (string | {
+                        components: string[];
+                        words: string[];
+                    })[];
+                    'jsx-a11y/label-has-associated-control': (string | {
+                        assert: string;
+                        controlComponents: never[];
+                        depth: number;
+                        labelAttributes: string[];
+                        labelComponents: string[];
+                    })[];
+                    'jsx-a11y/lang': "error";
+                    'jsx-a11y/media-has-caption': (string | {
+                        audio: string[];
+                        track: string[];
+                        video: string[];
+                    })[];
+                    'jsx-a11y/mouse-events-have-key-events': (string | {
+                        hoverInHandlers: string[];
+                        hoverOutHandlers: string[];
+                    })[];
+                    'jsx-a11y/no-access-key': "error";
+                    'jsx-a11y/no-aria-hidden-on-focusable': "error";
+                    'jsx-a11y/no-autofocus': (string | {
+                        ignoreNonDOM: boolean;
+                    })[];
+                    'jsx-a11y/no-distracting-elements': (string | {
+                        elements: string[];
+                    })[];
+                    'jsx-a11y/no-noninteractive-tabindex': (string | {
+                        allowExpressionValues: boolean;
+                        roles: string[];
+                        tags: never[];
+                    })[];
+                    'jsx-a11y/no-redundant-roles': "error";
+                    'jsx-a11y/no-static-element-interactions': "error";
+                    'jsx-a11y/prefer-tag-over-role': "error";
+                    'jsx-a11y/role-has-required-aria-props': "error";
+                    'jsx-a11y/role-supports-aria-props': "error";
+                    'jsx-a11y/scope': "error";
+                    'jsx-a11y/tabindex-no-positive': "error";
+                };
+            } | {
+                rules: {
+                    'react/jsx-boolean-value': (string | {
+                        always: never[];
+                        assumeUndefinedIsFalse: boolean;
+                    })[];
+                    'react/jsx-curly-brace-presence': (string | {
+                        children: string;
+                        propElementValues: string;
+                        props: string;
+                    })[];
+                    'react/jsx-filename-extension': (string | {
+                        allow: string;
+                        extensions: string[];
+                        ignoreFilesWithoutCode: boolean;
+                    })[];
+                    'react/jsx-fragments': string[];
+                    'react/jsx-handler-names': (string | {
+                        checkInlineFunctions: boolean;
+                        checkLocalVariables: boolean;
+                        eventHandlerPrefixes: string;
+                        eventHandlerPropPrefixes: string;
+                        eventHandlerPropRegex: string;
+                        eventHandlerRegex: string;
+                        ignoreComponentNames: never[];
+                    })[];
+                    'react/jsx-key': (string | {
+                        checkFragmentShorthand: boolean;
+                        checkKeyMustBeforeSpread: boolean;
+                        warnOnDuplicates: boolean;
+                    })[];
+                    'react/jsx-max-depth': (string | {
+                        max: number;
+                    })[];
+                    'react/jsx-no-comment-textnodes': "error";
+                    'react/jsx-no-constructed-context-values': "error";
+                    'react/jsx-no-duplicate-props': "error";
+                    'react/jsx-no-script-url': (string | {
+                        components: {};
+                        includeFromSettings: boolean;
+                    })[];
+                    'react/jsx-no-target-blank': (string | {
+                        allowReferrer: boolean;
+                        enforceDynamicLinks: string;
+                        forms: boolean;
+                        links: boolean;
+                        warnOnSpreadAttributes: boolean;
+                    })[];
+                    'react/jsx-no-undef': "error";
+                    'react/jsx-no-useless-fragment': (string | {
+                        allowExpressions: boolean;
+                    })[];
+                    'react/jsx-pascal-case': (string | {
+                        allowAllCaps: boolean;
+                        allowLeadingUnderscore: boolean;
+                        allowNamespace: boolean;
+                        ignore: never[];
+                    })[];
+                    'react/jsx-props-no-spread-multi': "error";
+                    'react/jsx-props-no-spreading': "off";
+                };
+            } | {
+                rules: {
+                    'react-perf/jsx-no-jsx-as-prop': "error";
+                    'react-perf/jsx-no-new-array-as-prop': "error";
+                    'react-perf/jsx-no-new-function-as-prop': "error";
+                    'react-perf/jsx-no-new-object-as-prop': "error";
+                };
+            })[];
+        }[];
+        plugins: ("jsx-a11y" | "react" | "react-perf")[];
     })[];
-    plugins: ("jsx-a11y" | "react" | "react-perf")[];
 };
 export declare const vue: {
     extends: ({
@@ -3434,150 +3734,6 @@ export declare const nextjs: {
         }[];
     } | {
         extends: ({
-            extends: ({
-                rules: {
-                    'jsx-a11y/alt-text': (string | {
-                        area: never[];
-                        img: string[];
-                        'input[type="image"]': never[];
-                        object: never[];
-                    })[];
-                    'jsx-a11y/anchor-ambiguous-text': (string | {
-                        words: string[];
-                    })[];
-                    'jsx-a11y/anchor-has-content': "error";
-                    'jsx-a11y/anchor-is-valid': (string | {
-                        validHrefs: never[];
-                    })[];
-                    'jsx-a11y/aria-activedescendant-has-tabindex': "error";
-                    'jsx-a11y/aria-props': "error";
-                    'jsx-a11y/aria-proptypes': "error";
-                    'jsx-a11y/aria-role': (string | {
-                        allowedInvalidRules: never[];
-                        ignoreNonDOM: boolean;
-                    })[];
-                    'jsx-a11y/aria-unsupported-elements': "error";
-                    'jsx-a11y/autocomplete-valid': (string | {
-                        inputComponents: string[];
-                    })[];
-                    'jsx-a11y/click-events-have-key-events': "error";
-                    'jsx-a11y/heading-has-content': (string | {
-                        components: never[];
-                    })[];
-                    'jsx-a11y/html-has-lang': "error";
-                    'jsx-a11y/iframe-has-title': "error";
-                    'jsx-a11y/img-redundant-alt': (string | {
-                        components: string[];
-                        words: string[];
-                    })[];
-                    'jsx-a11y/label-has-associated-control': (string | {
-                        assert: string;
-                        controlComponents: never[];
-                        depth: number;
-                        labelAttributes: string[];
-                        labelComponents: string[];
-                    })[];
-                    'jsx-a11y/lang': "error";
-                    'jsx-a11y/media-has-caption': (string | {
-                        audio: string[];
-                        track: string[];
-                        video: string[];
-                    })[];
-                    'jsx-a11y/mouse-events-have-key-events': (string | {
-                        hoverInHandlers: string[];
-                        hoverOutHandlers: string[];
-                    })[];
-                    'jsx-a11y/no-access-key': "error";
-                    'jsx-a11y/no-aria-hidden-on-focusable': "error";
-                    'jsx-a11y/no-autofocus': (string | {
-                        ignoreNonDOM: boolean;
-                    })[];
-                    'jsx-a11y/no-distracting-elements': (string | {
-                        elements: string[];
-                    })[];
-                    'jsx-a11y/no-noninteractive-tabindex': (string | {
-                        allowExpressionValues: boolean;
-                        roles: string[];
-                        tags: never[];
-                    })[];
-                    'jsx-a11y/no-redundant-roles': "error";
-                    'jsx-a11y/no-static-element-interactions': "error";
-                    'jsx-a11y/prefer-tag-over-role': "error";
-                    'jsx-a11y/role-has-required-aria-props': "error";
-                    'jsx-a11y/role-supports-aria-props': "error";
-                    'jsx-a11y/scope': "error";
-                    'jsx-a11y/tabindex-no-positive': "error";
-                };
-            } | {
-                rules: {
-                    'react/jsx-boolean-value': (string | {
-                        always: never[];
-                        assumeUndefinedIsFalse: boolean;
-                    })[];
-                    'react/jsx-curly-brace-presence': (string | {
-                        children: string;
-                        propElementValues: string;
-                        props: string;
-                    })[];
-                    'react/jsx-filename-extension': (string | {
-                        allow: string;
-                        extensions: string[];
-                        ignoreFilesWithoutCode: boolean;
-                    })[];
-                    'react/jsx-fragments': string[];
-                    'react/jsx-handler-names': (string | {
-                        checkInlineFunctions: boolean;
-                        checkLocalVariables: boolean;
-                        eventHandlerPrefixes: string;
-                        eventHandlerPropPrefixes: string;
-                        eventHandlerPropRegex: string;
-                        eventHandlerRegex: string;
-                        ignoreComponentNames: never[];
-                    })[];
-                    'react/jsx-key': (string | {
-                        checkFragmentShorthand: boolean;
-                        checkKeyMustBeforeSpread: boolean;
-                        warnOnDuplicates: boolean;
-                    })[];
-                    'react/jsx-max-depth': (string | {
-                        max: number;
-                    })[];
-                    'react/jsx-no-comment-textnodes': "error";
-                    'react/jsx-no-constructed-context-values': "error";
-                    'react/jsx-no-duplicate-props': "error";
-                    'react/jsx-no-script-url': (string | {
-                        components: {};
-                        includeFromSettings: boolean;
-                    })[];
-                    'react/jsx-no-target-blank': (string | {
-                        allowReferrer: boolean;
-                        enforceDynamicLinks: string;
-                        forms: boolean;
-                        links: boolean;
-                        warnOnSpreadAttributes: boolean;
-                    })[];
-                    'react/jsx-no-undef': "error";
-                    'react/jsx-no-useless-fragment': (string | {
-                        allowExpressions: boolean;
-                    })[];
-                    'react/jsx-pascal-case': (string | {
-                        allowAllCaps: boolean;
-                        allowLeadingUnderscore: boolean;
-                        allowNamespace: boolean;
-                        ignore: never[];
-                    })[];
-                    'react/jsx-props-no-spread-multi': "error";
-                    'react/jsx-props-no-spreading': "off";
-                };
-            } | {
-                rules: {
-                    'react-perf/jsx-no-jsx-as-prop': "error";
-                    'react-perf/jsx-no-new-array-as-prop': "error";
-                    'react-perf/jsx-no-new-function-as-prop': "error";
-                    'react-perf/jsx-no-new-object-as-prop': "error";
-                };
-            })[];
-        } | {
             extends: {}[];
             overrides: {
                 files: string[];
@@ -4659,8 +4815,154 @@ export declare const nextjs: {
                 })[];
             }[];
             plugins: ("eslint" | "import" | "node" | "oxc" | "promise" | "typescript" | "unicorn" | "vitest")[];
+        } | {
+            extends: {
+                extends: ({
+                    rules: {
+                        'jsx-a11y/alt-text': (string | {
+                            area: never[];
+                            img: string[];
+                            'input[type="image"]': never[];
+                            object: never[];
+                        })[];
+                        'jsx-a11y/anchor-ambiguous-text': (string | {
+                            words: string[];
+                        })[];
+                        'jsx-a11y/anchor-has-content': "error";
+                        'jsx-a11y/anchor-is-valid': (string | {
+                            validHrefs: never[];
+                        })[];
+                        'jsx-a11y/aria-activedescendant-has-tabindex': "error";
+                        'jsx-a11y/aria-props': "error";
+                        'jsx-a11y/aria-proptypes': "error";
+                        'jsx-a11y/aria-role': (string | {
+                            allowedInvalidRules: never[];
+                            ignoreNonDOM: boolean;
+                        })[];
+                        'jsx-a11y/aria-unsupported-elements': "error";
+                        'jsx-a11y/autocomplete-valid': (string | {
+                            inputComponents: string[];
+                        })[];
+                        'jsx-a11y/click-events-have-key-events': "error";
+                        'jsx-a11y/heading-has-content': (string | {
+                            components: never[];
+                        })[];
+                        'jsx-a11y/html-has-lang': "error";
+                        'jsx-a11y/iframe-has-title': "error";
+                        'jsx-a11y/img-redundant-alt': (string | {
+                            components: string[];
+                            words: string[];
+                        })[];
+                        'jsx-a11y/label-has-associated-control': (string | {
+                            assert: string;
+                            controlComponents: never[];
+                            depth: number;
+                            labelAttributes: string[];
+                            labelComponents: string[];
+                        })[];
+                        'jsx-a11y/lang': "error";
+                        'jsx-a11y/media-has-caption': (string | {
+                            audio: string[];
+                            track: string[];
+                            video: string[];
+                        })[];
+                        'jsx-a11y/mouse-events-have-key-events': (string | {
+                            hoverInHandlers: string[];
+                            hoverOutHandlers: string[];
+                        })[];
+                        'jsx-a11y/no-access-key': "error";
+                        'jsx-a11y/no-aria-hidden-on-focusable': "error";
+                        'jsx-a11y/no-autofocus': (string | {
+                            ignoreNonDOM: boolean;
+                        })[];
+                        'jsx-a11y/no-distracting-elements': (string | {
+                            elements: string[];
+                        })[];
+                        'jsx-a11y/no-noninteractive-tabindex': (string | {
+                            allowExpressionValues: boolean;
+                            roles: string[];
+                            tags: never[];
+                        })[];
+                        'jsx-a11y/no-redundant-roles': "error";
+                        'jsx-a11y/no-static-element-interactions': "error";
+                        'jsx-a11y/prefer-tag-over-role': "error";
+                        'jsx-a11y/role-has-required-aria-props': "error";
+                        'jsx-a11y/role-supports-aria-props': "error";
+                        'jsx-a11y/scope': "error";
+                        'jsx-a11y/tabindex-no-positive': "error";
+                    };
+                } | {
+                    rules: {
+                        'react/jsx-boolean-value': (string | {
+                            always: never[];
+                            assumeUndefinedIsFalse: boolean;
+                        })[];
+                        'react/jsx-curly-brace-presence': (string | {
+                            children: string;
+                            propElementValues: string;
+                            props: string;
+                        })[];
+                        'react/jsx-filename-extension': (string | {
+                            allow: string;
+                            extensions: string[];
+                            ignoreFilesWithoutCode: boolean;
+                        })[];
+                        'react/jsx-fragments': string[];
+                        'react/jsx-handler-names': (string | {
+                            checkInlineFunctions: boolean;
+                            checkLocalVariables: boolean;
+                            eventHandlerPrefixes: string;
+                            eventHandlerPropPrefixes: string;
+                            eventHandlerPropRegex: string;
+                            eventHandlerRegex: string;
+                            ignoreComponentNames: never[];
+                        })[];
+                        'react/jsx-key': (string | {
+                            checkFragmentShorthand: boolean;
+                            checkKeyMustBeforeSpread: boolean;
+                            warnOnDuplicates: boolean;
+                        })[];
+                        'react/jsx-max-depth': (string | {
+                            max: number;
+                        })[];
+                        'react/jsx-no-comment-textnodes': "error";
+                        'react/jsx-no-constructed-context-values': "error";
+                        'react/jsx-no-duplicate-props': "error";
+                        'react/jsx-no-script-url': (string | {
+                            components: {};
+                            includeFromSettings: boolean;
+                        })[];
+                        'react/jsx-no-target-blank': (string | {
+                            allowReferrer: boolean;
+                            enforceDynamicLinks: string;
+                            forms: boolean;
+                            links: boolean;
+                            warnOnSpreadAttributes: boolean;
+                        })[];
+                        'react/jsx-no-undef': "error";
+                        'react/jsx-no-useless-fragment': (string | {
+                            allowExpressions: boolean;
+                        })[];
+                        'react/jsx-pascal-case': (string | {
+                            allowAllCaps: boolean;
+                            allowLeadingUnderscore: boolean;
+                            allowNamespace: boolean;
+                            ignore: never[];
+                        })[];
+                        'react/jsx-props-no-spread-multi': "error";
+                        'react/jsx-props-no-spreading': "off";
+                    };
+                } | {
+                    rules: {
+                        'react-perf/jsx-no-jsx-as-prop': "error";
+                        'react-perf/jsx-no-new-array-as-prop': "error";
+                        'react-perf/jsx-no-new-function-as-prop': "error";
+                        'react-perf/jsx-no-new-object-as-prop': "error";
+                    };
+                })[];
+            }[];
+            plugins: ("jsx-a11y" | "react" | "react-perf")[];
         })[];
-        plugins: ("jsx-a11y" | "react" | "react-perf")[];
     })[];
     plugins: "nextjs"[];
 };

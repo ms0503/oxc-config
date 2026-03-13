@@ -11,11 +11,11 @@
         "node": ">=22.18.0"
     },
     "exports": {
-        "fmt": {
+        "./fmt": {
             "import": "./dist/fmt/index.js",
             "types": "./dist/fmt/index.d.ts"
         },
-        "lint": {
+        "./lint": {
             "import": "./dist/lint/index.js",
             "types": "./dist/lint/index.d.ts"
         }
@@ -33,5 +33,5 @@
         "lint:fix": "oxlint --fix --type-aware"
     },
     "type": "module",
-    "version": "0.1.0"
+    "version": "0.2.0"
 }
