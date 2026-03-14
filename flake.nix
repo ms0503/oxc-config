@@ -35,8 +35,10 @@
             packages =
               config.pre-commit.settings.enabledPackages
               ++ (with pkgs; [
+                (pnpm.override {
+                  nodejs = nodejs_latest;
+                })
                 nodejs-slim_latest
-                yarn-berry
               ]);
             shellHook = ''
               ${config.pre-commit.shellHook}

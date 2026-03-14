@@ -16,7 +16,7 @@
               excludes = [
                 ".idea"
                 "flake.lock"
-                "yarn.lock"
+                "pnpm-lock.yaml"
               ];
             };
             markdownlint = {
@@ -32,8 +32,18 @@
               enable = true;
               package = config.treefmt.build.wrapper;
             };
-            yamlfmt.enable = true;
-            yamllint.enable = true;
+            yamlfmt = {
+              enable = true;
+              excludes = [
+                "pnpm-lock.yaml"
+              ];
+            };
+            yamllint = {
+              enable = true;
+              excludes = [
+                "pnpm-lock.yaml"
+              ];
+            };
           };
           src = ../.;
         };

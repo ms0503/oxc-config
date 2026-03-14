@@ -1,11 +1,11 @@
 {
     "dependencies": {
-        "oxfmt": "^0.39",
+        "oxfmt": "^0.40",
         "oxlint": "^1",
         "oxlint-tsgolint": "^0.16"
     },
     "devDependencies": {
-        "@typescript/native-preview": "^7.0.0-dev.20260308.1"
+        "@typescript/native-preview": "7.0.0-dev.20260314.1"
     },
     "engines": {
         "node": ">=22.18.0"
@@ -21,9 +21,9 @@
         }
     },
     "name": "@ms0503/oxc-config",
-    "packageManager": "yarn@4.13.0",
+    "packageManager": "pnpm@10.30.3",
     "peerDependencies": {
-        "oxfmt": "^0.39"
+        "oxfmt": "^0.40"
     },
     "scripts": {
         "build": "tsgo --build",
@@ -33,5 +33,5 @@
         "lint:fix": "oxlint --fix --type-aware"
     },
     "type": "module",
-    "version": "0.2.4"
+    "version": "0.2.5"
 }

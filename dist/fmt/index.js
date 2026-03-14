@@ -1,36 +1,44 @@
-import { defineConfig } from 'oxfmt';
+import { defineConfig } from "oxfmt";
 export const config = defineConfig({
-    arrowParens: 'avoid',
+    arrowParens: "avoid",
     bracketSameLine: false,
     bracketSpacing: true,
-    embeddedLanguageFormatting: 'auto',
-    endOfLine: 'lf',
-    htmlWhitespaceSensitivity: 'strict',
-    ignorePatterns: ['.yarn/**', 'dist/**'],
+    embeddedLanguageFormatting: "auto",
+    endOfLine: "lf",
+    htmlWhitespaceSensitivity: "strict",
+    ignorePatterns: [".yarn/**", "dist/**"],
     insertFinalNewline: true,
     jsxSingleQuote: false,
-    objectWrap: 'collapse',
+    objectWrap: "collapse",
     overrides: [],
     // 80 column rule
     // oxlint-disable-next-line no-magic-numbers
     printWidth: 80,
-    proseWrap: 'never',
-    quoteProps: 'as-needed',
+    proseWrap: "never",
+    quoteProps: "as-needed",
     semi: true,
     singleAttributePerLine: true,
     singleQuote: true,
-    sortImports: null,
+    sortImports: {
+        customGroups: [],
+        groups: ["unknown", "type"],
+        ignoreCase: false,
+        internalPattern: [],
+        newlinesBetween: true,
+        order: "asc",
+        partitionByComment: false,
+        partitionByNewline: false,
+        sortSideEffects: false,
+    },
     sortPackageJson: false,
     sortTailwindcss: {
         attributes: [],
-        config: null,
         functions: [],
         preserveDuplicates: false,
         preserveWhitespace: false,
-        stylesheet: null
     },
     tabWidth: 4,
-    trailingComma: 'none',
+    trailingComma: "none",
     useTabs: false,
-    vueIndentScriptAndStyle: false
+    vueIndentScriptAndStyle: false,
 });
