@@ -9,11 +9,7 @@ export declare const reactJSXRules: {
             propElementValues: string;
             props: string;
         })[];
-        "react/jsx-filename-extension": (string | {
-            allow: string;
-            extensions: string[];
-            ignoreFilesWithoutCode: boolean;
-        })[];
+        "react/jsx-filename-extension": "off";
         "react/jsx-fragments": string[];
         "react/jsx-handler-names": (string | {
             checkInlineFunctions: boolean;

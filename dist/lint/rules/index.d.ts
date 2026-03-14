@@ -1156,11 +1156,7 @@ export declare const jsxRules: {
                 propElementValues: string;
                 props: string;
             })[];
-            "react/jsx-filename-extension": (string | {
-                allow: string;
-                extensions: string[];
-                ignoreFilesWithoutCode: boolean;
-            })[];
+            "react/jsx-filename-extension": "off";
             "react/jsx-fragments": string[];
             "react/jsx-handler-names": (string | {
                 checkInlineFunctions: boolean;
@@ -1247,9 +1243,16 @@ export declare const reactRules: {
     overrides: {
         files: string[];
         rules: {
-            'import/no-default-export': "off";
+            "import/no-default-export": "off";
         };
     }[];
+    rules: {
+        "react/jsx-filename-extension": (string | {
+            allow: string;
+            extensions: string[];
+            ignoreFilesWithoutCode: boolean;
+        })[];
+    };
 };
 export declare const vueRules: {
     extends: {

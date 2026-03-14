@@ -1160,11 +1160,7 @@ export declare const jsx: {
                     propElementValues: string;
                     props: string;
                 })[];
-                "react/jsx-filename-extension": (string | {
-                    allow: string;
-                    extensions: string[];
-                    ignoreFilesWithoutCode: boolean;
-                })[];
+                "react/jsx-filename-extension": "off";
                 "react/jsx-fragments": string[];
                 "react/jsx-handler-names": (string | {
                     checkInlineFunctions: boolean;
@@ -1309,11 +1305,7 @@ export declare const hono: {
                         propElementValues: string;
                         props: string;
                     })[];
-                    "react/jsx-filename-extension": (string | {
-                        allow: string;
-                        extensions: string[];
-                        ignoreFilesWithoutCode: boolean;
-                    })[];
+                    "react/jsx-filename-extension": "off";
                     "react/jsx-fragments": string[];
                     "react/jsx-handler-names": (string | {
                         checkInlineFunctions: boolean;
@@ -1377,9 +1369,16 @@ export declare const react: {
         overrides: {
             files: string[];
             rules: {
-                'import/no-default-export': "off";
+                "import/no-default-export": "off";
             };
         }[];
+        rules: {
+            "react/jsx-filename-extension": (string | {
+                allow: string;
+                extensions: string[];
+                ignoreFilesWithoutCode: boolean;
+            })[];
+        };
     } | {
         extends: {
             extends: ({
@@ -2541,11 +2540,7 @@ export declare const react: {
                         propElementValues: string;
                         props: string;
                     })[];
-                    "react/jsx-filename-extension": (string | {
-                        allow: string;
-                        extensions: string[];
-                        ignoreFilesWithoutCode: boolean;
-                    })[];
+                    "react/jsx-filename-extension": "off";
                     "react/jsx-fragments": string[];
                     "react/jsx-handler-names": (string | {
                         checkInlineFunctions: boolean;
@@ -3738,9 +3733,16 @@ export declare const nextjs: {
             overrides: {
                 files: string[];
                 rules: {
-                    'import/no-default-export': "off";
+                    "import/no-default-export": "off";
                 };
             }[];
+            rules: {
+                "react/jsx-filename-extension": (string | {
+                    allow: string;
+                    extensions: string[];
+                    ignoreFilesWithoutCode: boolean;
+                })[];
+            };
         } | {
             extends: {
                 extends: ({
@@ -4902,11 +4904,7 @@ export declare const nextjs: {
                             propElementValues: string;
                             props: string;
                         })[];
-                        "react/jsx-filename-extension": (string | {
-                            allow: string;
-                            extensions: string[];
-                            ignoreFilesWithoutCode: boolean;
-                        })[];
+                        "react/jsx-filename-extension": "off";
                         "react/jsx-fragments": string[];
                         "react/jsx-handler-names": (string | {
                             checkInlineFunctions: boolean;

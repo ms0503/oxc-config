@@ -11,14 +11,7 @@ export const reactJSXRules = defineConfig({
             "error",
             { children: "never", propElementValues: "always", props: "never" },
         ],
-        "react/jsx-filename-extension": [
-            "error",
-            {
-                allow: "as-needed",
-                extensions: ["jsx", "tsx"],
-                ignoreFilesWithoutCode: true,
-            },
-        ],
+        "react/jsx-filename-extension": "off",
         "react/jsx-fragments": ["error", "syntax"],
         "react/jsx-handler-names": [
             "error",
