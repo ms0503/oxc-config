@@ -16,7 +16,7 @@ export const reactJSXRules = defineConfig({
             {
                 allow: "as-needed",
                 extensions: ["jsx", "tsx"],
-                ignoreFilesWithoutCode: false,
+                ignoreFilesWithoutCode: true,
             },
         ],
         "react/jsx-fragments": ["error", "syntax"],
