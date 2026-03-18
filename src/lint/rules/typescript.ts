@@ -61,10 +61,10 @@ export const typescriptRules = defineConfig({
             {
                 allowConciseArrowFunctionExpressionsStartingWithVoid: false,
                 allowDirectConstAssertionInArrowFunctions: true,
-                allowExpressions: false,
-                allowFunctionsWithoutTypeParameters: false,
+                allowExpressions: true,
+                allowFunctionsWithoutTypeParameters: true,
                 allowHigherOrderFunctions: true,
-                allowIIFEs: false,
+                allowIIFEs: true,
                 allowTypedFunctionExpressions: true,
                 allowedNames: []
             }

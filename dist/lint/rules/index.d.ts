@@ -1,22 +1,22 @@
 export declare const coreRules: {
     readonly extends: [{
         readonly rules: {
-            readonly "eslint/accessor-pairs": ["error", {
+            readonly 'eslint/accessor-pairs': ["error", {
                 readonly enforceForClassMembers: true;
                 readonly enforceForTSTypes: true;
                 readonly getWithoutSet: false;
                 readonly setWithoutGet: true;
             }];
-            readonly "eslint/array-callback-return": ["error", {
+            readonly 'eslint/array-callback-return': ["error", {
                 readonly allowImplicit: true;
                 readonly allowVoid: false;
                 readonly checkForEach: false;
             }];
-            readonly "eslint/arrow-body-style": ["error", "as-needed", {
+            readonly 'eslint/arrow-body-style': ["error", "as-needed", {
                 readonly requireReturnForObjectLiteral: false;
             }];
-            readonly "eslint/block-scoped-var": "error";
-            readonly "eslint/capitalized-comments": ["error", "always", {
+            readonly 'eslint/block-scoped-var': "error";
+            readonly 'eslint/capitalized-comments': ["error", "always", {
                 readonly block: {
                     readonly ignoreConsecutiveComments: true;
                     readonly ignoreInlineComments: true;
@@ -28,40 +28,40 @@ export declare const coreRules: {
                     readonly ignorePattern: "";
                 };
             }];
-            readonly "eslint/class-methods-use-this": ["error", {
+            readonly 'eslint/class-methods-use-this': ["error", {
                 readonly enforceForClassFields: true;
                 readonly exceptMethods: readonly [];
                 readonly ignoreClassesWithImplements: null;
                 readonly ignoreOverrideMethods: false;
             }];
-            readonly "eslint/complexity": "off";
-            readonly "eslint/constructor-super": "error";
-            readonly "eslint/curly": ["error", "all"];
-            readonly "eslint/default-case": ["error", {
+            readonly 'eslint/complexity': "off";
+            readonly 'eslint/constructor-super': "error";
+            readonly 'eslint/curly': ["error", "all"];
+            readonly 'eslint/default-case': ["error", {
                 readonly commentPattern: "^checked\\sall\\spatterns";
             }];
-            readonly "eslint/default-case-last": "error";
-            readonly "eslint/default-param-last": "error";
-            readonly "eslint/eqeqeq": ["error", "smart"];
-            readonly "eslint/for-direction": "error";
-            readonly "eslint/func-names": ["error", "as-needed", {
+            readonly 'eslint/default-case-last': "error";
+            readonly 'eslint/default-param-last': "error";
+            readonly 'eslint/eqeqeq': ["error", "smart"];
+            readonly 'eslint/for-direction': "error";
+            readonly 'eslint/func-names': ["error", "as-needed", {
                 readonly generators: null;
             }];
-            readonly "eslint/func-style": ["error", "declaration", {
+            readonly 'eslint/func-style': ["error", "declaration", {
                 readonly allowArrowFunctions: true;
                 readonly allowTypeAnnotation: true;
                 readonly overrides: {
                     readonly namedExports: null;
                 };
             }];
-            readonly "eslint/getter-return": ["error", {
+            readonly 'eslint/getter-return': ["error", {
                 readonly allowImplicit: true;
             }];
-            readonly "eslint/grouped-accessor-pairs": ["error", "getBeforeSet", {
+            readonly 'eslint/grouped-accessor-pairs': ["error", "getBeforeSet", {
                 readonly enforceForTSTypes: true;
             }];
-            readonly "eslint/guard-for-in": "error";
-            readonly "eslint/id-length": ["error", {
+            readonly 'eslint/guard-for-in': "error";
+            readonly 'eslint/id-length': ["error", {
                 readonly checkGeneric: true;
                 readonly exceptionPatterns: readonly [];
                 readonly exceptions: readonly [];
@@ -69,18 +69,18 @@ export declare const coreRules: {
                 readonly min: 1;
                 readonly properties: "always";
             }];
-            readonly "eslint/init-declarations": ["error", "always"];
-            readonly "eslint/max-classes-per-file": ["error", {
+            readonly 'eslint/init-declarations': ["error", "always"];
+            readonly 'eslint/max-classes-per-file': ["error", {
                 readonly ignoreExpressions: false;
                 readonly max: 1;
             }];
-            readonly "eslint/max-depth": "off";
-            readonly "eslint/max-lines": "off";
-            readonly "eslint/max-lines-per-function": "off";
-            readonly "eslint/max-nested-callbacks": "off";
-            readonly "eslint/max-params": "off";
-            readonly "eslint/max-statements": "off";
-            readonly "eslint/new-cap": ["error", {
+            readonly 'eslint/max-depth': "off";
+            readonly 'eslint/max-lines': "off";
+            readonly 'eslint/max-lines-per-function': "off";
+            readonly 'eslint/max-nested-callbacks': "off";
+            readonly 'eslint/max-params': "off";
+            readonly 'eslint/max-statements': "off";
+            readonly 'eslint/new-cap': ["error", {
                 readonly capIsNew: true;
                 readonly capIsNewExceptionPattern: "";
                 readonly capIsNewExceptions: readonly [];
@@ -89,96 +89,96 @@ export declare const coreRules: {
                 readonly newIsCapExceptions: readonly ["BigInt", "Boolean", "Number", "String", "Symbol"];
                 readonly properties: true;
             }];
-            readonly "eslint/no-alert": "error";
-            readonly "eslint/no-array-constructor": "error";
-            readonly "eslint/no-async-promise-executor": "error";
-            readonly "eslint/no-await-in-loop": "error";
-            readonly "eslint/no-bitwise": ["error", {
+            readonly 'eslint/no-alert': "error";
+            readonly 'eslint/no-array-constructor': "error";
+            readonly 'eslint/no-async-promise-executor': "error";
+            readonly 'eslint/no-await-in-loop': "error";
+            readonly 'eslint/no-bitwise': ["error", {
                 readonly allow: readonly [];
                 readonly int32Hint: false;
             }];
-            readonly "eslint/no-caller": "error";
-            readonly "eslint/no-case-declarations": "error";
-            readonly "eslint/no-class-assign": "error";
-            readonly "eslint/no-compare-neg-zero": "error";
-            readonly "eslint/no-cond-assign": ["error", "always"];
-            readonly "eslint/no-console": "off";
-            readonly "eslint/no-const-assign": "error";
-            readonly "eslint/no-constant-binary-expression": "error";
-            readonly "eslint/no-constant-condition": ["error", {
+            readonly 'eslint/no-caller': "error";
+            readonly 'eslint/no-case-declarations': "error";
+            readonly 'eslint/no-class-assign': "error";
+            readonly 'eslint/no-compare-neg-zero': "error";
+            readonly 'eslint/no-cond-assign': ["error", "always"];
+            readonly 'eslint/no-console': "off";
+            readonly 'eslint/no-const-assign': "error";
+            readonly 'eslint/no-constant-binary-expression': "error";
+            readonly 'eslint/no-constant-condition': ["error", {
                 readonly checkLoops: "allExceptWhileTrue";
             }];
-            readonly "eslint/no-constructor-return": "error";
-            readonly "eslint/no-continue": "error";
-            readonly "eslint/no-control-regex": "error";
-            readonly "eslint/no-debugger": "error";
-            readonly "eslint/no-delete-var": "error";
-            readonly "eslint/no-div-regex": "error";
-            readonly "eslint/no-dupe-class-members": "error";
-            readonly "eslint/no-dupe-else-if": "error";
-            readonly "eslint/no-dupe-keys": "error";
-            readonly "eslint/no-duplicate-case": "error";
-            readonly "eslint/no-duplicate-imports": ["error", {
+            readonly 'eslint/no-constructor-return': "error";
+            readonly 'eslint/no-continue': "error";
+            readonly 'eslint/no-control-regex': "error";
+            readonly 'eslint/no-debugger': "error";
+            readonly 'eslint/no-delete-var': "error";
+            readonly 'eslint/no-div-regex': "error";
+            readonly 'eslint/no-dupe-class-members': "error";
+            readonly 'eslint/no-dupe-else-if': "error";
+            readonly 'eslint/no-dupe-keys': "error";
+            readonly 'eslint/no-duplicate-case': "error";
+            readonly 'eslint/no-duplicate-imports': ["error", {
                 readonly allowSeparateTypeImports: true;
                 readonly includeExports: false;
             }];
-            readonly "eslint/no-else-return": ["error", {
+            readonly 'eslint/no-else-return': ["error", {
                 readonly allowElseIf: false;
             }];
-            readonly "eslint/no-empty": ["error", {
+            readonly 'eslint/no-empty': ["error", {
                 readonly allowEmptyCatch: false;
             }];
-            readonly "eslint/no-empty-character-class": "error";
-            readonly "eslint/no-empty-function": "error";
-            readonly "eslint/no-empty-pattern": "error";
-            readonly "eslint/no-empty-static-block": "error";
-            readonly "eslint/no-eq-null": "error";
-            readonly "eslint/no-eval": ["error", {
+            readonly 'eslint/no-empty-character-class': "error";
+            readonly 'eslint/no-empty-function': "error";
+            readonly 'eslint/no-empty-pattern': "error";
+            readonly 'eslint/no-empty-static-block': "error";
+            readonly 'eslint/no-eq-null': "error";
+            readonly 'eslint/no-eval': ["error", {
                 readonly allowIndirect: false;
             }];
-            readonly "eslint/no-ex-assign": "error";
-            readonly "eslint/no-extend-native": ["error", {
+            readonly 'eslint/no-ex-assign': "error";
+            readonly 'eslint/no-extend-native': ["error", {
                 readonly exceptions: readonly [];
             }];
-            readonly "eslint/no-extra-bind": "error";
-            readonly "eslint/no-extra-boolean-cast": "error";
-            readonly "eslint/no-extra-label": "error";
-            readonly "eslint/no-fallthrough": ["error", {
+            readonly 'eslint/no-extra-bind': "error";
+            readonly 'eslint/no-extra-boolean-cast': "error";
+            readonly 'eslint/no-extra-label': "error";
+            readonly 'eslint/no-fallthrough': ["error", {
                 readonly allowEmptyCase: false;
                 readonly commentPattern: null;
                 readonly reportUnusedFallthroughComment: false;
             }];
-            readonly "eslint/no-func-assign": "error";
-            readonly "eslint/no-global-assign": ["error", {
+            readonly 'eslint/no-func-assign': "error";
+            readonly 'eslint/no-global-assign': ["error", {
                 readonly exceptions: readonly [];
             }];
-            readonly "eslint/no-implicit-coercion": ["error", {
+            readonly 'eslint/no-implicit-coercion': ["error", {
                 readonly allow: readonly ["!!"];
                 readonly boolean: false;
                 readonly disallowTemplateShorthand: true;
                 readonly number: true;
                 readonly string: true;
             }];
-            readonly "eslint/no-import-assign": "error";
-            readonly "eslint/no-inline-comments": ["error", {
+            readonly 'eslint/no-import-assign': "error";
+            readonly 'eslint/no-inline-comments': ["error", {
                 readonly ignorePattern: null;
             }];
-            readonly "eslint/no-inner-declarations": "off";
-            readonly "eslint/no-invalid-regexp": ["error", {
+            readonly 'eslint/no-inner-declarations': "off";
+            readonly 'eslint/no-invalid-regexp': ["error", {
                 readonly allowConstructorFlags: readonly [];
             }];
-            readonly "eslint/no-irregular-whitespace": "error";
-            readonly "eslint/no-iterator": "error";
-            readonly "eslint/no-label-var": "error";
-            readonly "eslint/no-labels": ["error", {
+            readonly 'eslint/no-irregular-whitespace': "error";
+            readonly 'eslint/no-iterator': "error";
+            readonly 'eslint/no-label-var': "error";
+            readonly 'eslint/no-labels': ["error", {
                 readonly allowLoop: false;
                 readonly allowSwitch: false;
             }];
-            readonly "eslint/no-lone-blocks": "error";
-            readonly "eslint/no-lonely-if": "error";
-            readonly "eslint/no-loop-func": "error";
-            readonly "eslint/no-loss-of-precision": "error";
-            readonly "eslint/no-magic-numbers": ["error", {
+            readonly 'eslint/no-lone-blocks': "error";
+            readonly 'eslint/no-lonely-if': "error";
+            readonly 'eslint/no-loop-func': "error";
+            readonly 'eslint/no-loss-of-precision': "error";
+            readonly 'eslint/no-magic-numbers': ["error", {
                 readonly detectObjects: true;
                 readonly enforceConst: true;
                 readonly ignore: readonly [0, ...number[]];
@@ -190,89 +190,89 @@ export declare const coreRules: {
                 readonly ignoreReadonlyClassProperties: false;
                 readonly ignoreTypeIndexes: true;
             }];
-            readonly "eslint/no-misleading-character-class": ["error", {
+            readonly 'eslint/no-misleading-character-class': ["error", {
                 readonly allowEscape: false;
             }];
-            readonly "eslint/no-multi-assign": ["error", {
+            readonly 'eslint/no-multi-assign': ["error", {
                 readonly ignoreNonDeclaration: false;
             }];
-            readonly "eslint/no-multi-str": "error";
-            readonly "eslint/no-negated-condition": "error";
-            readonly "eslint/no-nested-ternary": "error";
-            readonly "eslint/no-new": "error";
-            readonly "eslint/no-new-func": "error";
-            readonly "eslint/no-new-native-nonconstructor": "error";
-            readonly "eslint/no-new-wrappers": "error";
-            readonly "eslint/no-nonoctal-decimal-escape": "error";
-            readonly "eslint/no-obj-calls": "error";
-            readonly "eslint/no-object-constructor": "error";
-            readonly "eslint/no-param-reassign": ["error", {
+            readonly 'eslint/no-multi-str': "error";
+            readonly 'eslint/no-negated-condition': "error";
+            readonly 'eslint/no-nested-ternary': "error";
+            readonly 'eslint/no-new': "error";
+            readonly 'eslint/no-new-func': "error";
+            readonly 'eslint/no-new-native-nonconstructor': "error";
+            readonly 'eslint/no-new-wrappers': "error";
+            readonly 'eslint/no-nonoctal-decimal-escape': "error";
+            readonly 'eslint/no-obj-calls': "error";
+            readonly 'eslint/no-object-constructor': "error";
+            readonly 'eslint/no-param-reassign': ["error", {
                 readonly ignorePropertyModificationsFor: readonly [];
                 readonly ignorePropertyModificationsForRegex: readonly [];
                 readonly props: true;
             }];
-            readonly "eslint/no-plusplus": "off";
-            readonly "eslint/no-promise-executor-return": ["error", {
+            readonly 'eslint/no-plusplus': "off";
+            readonly 'eslint/no-promise-executor-return': ["error", {
                 readonly allowVoid: false;
             }];
-            readonly "eslint/no-proto": "error";
-            readonly "eslint/no-prototype-builtins": "error";
-            readonly "eslint/no-redeclare": ["error", {
+            readonly 'eslint/no-proto': "error";
+            readonly 'eslint/no-prototype-builtins': "error";
+            readonly 'eslint/no-redeclare': ["error", {
                 readonly builtinGlobals: true;
             }];
-            readonly "eslint/no-regex-spaces": "error";
-            readonly "eslint/no-restricted-globals": ["error", {
+            readonly 'eslint/no-regex-spaces': "error";
+            readonly 'eslint/no-restricted-globals': ["error", {
                 readonly restrictedGlobals: {};
             }];
-            readonly "eslint/no-restricted-imports": ["error", {
+            readonly 'eslint/no-restricted-imports': ["error", {
                 readonly paths: readonly [];
                 readonly patterns: readonly [];
             }];
-            readonly "eslint/no-return-assign": ["error", "always"];
-            readonly "eslint/no-script-url": "error";
-            readonly "eslint/no-self-assign": ["error", {
+            readonly 'eslint/no-return-assign': ["error", "always"];
+            readonly 'eslint/no-script-url': "error";
+            readonly 'eslint/no-self-assign': ["error", {
                 readonly props: true;
             }];
-            readonly "eslint/no-self-compare": "error";
-            readonly "eslint/no-sequences": ["error", {
+            readonly 'eslint/no-self-compare': "error";
+            readonly 'eslint/no-sequences': ["error", {
                 readonly allowInParentheses: false;
             }];
-            readonly "eslint/no-setter-return": "error";
-            readonly "eslint/no-shadow": "off";
-            readonly "eslint/no-shadow-restricted-names": ["error", {
+            readonly 'eslint/no-setter-return': "error";
+            readonly 'eslint/no-shadow': "off";
+            readonly 'eslint/no-shadow-restricted-names': ["error", {
                 readonly reportGlobalThis: true;
             }];
-            readonly "eslint/no-sparse-arrays": "error";
-            readonly "eslint/no-template-curly-in-string": "error";
-            readonly "eslint/no-ternary": "off";
-            readonly "eslint/no-this-before-super": "error";
-            readonly "eslint/no-unassigned-vars": "error";
-            readonly "eslint/no-undef": ["error", {
+            readonly 'eslint/no-sparse-arrays': "error";
+            readonly 'eslint/no-template-curly-in-string': "error";
+            readonly 'eslint/no-ternary': "off";
+            readonly 'eslint/no-this-before-super': "error";
+            readonly 'eslint/no-unassigned-vars': "error";
+            readonly 'eslint/no-undef': ["error", {
                 readonly typeof: true;
             }];
-            readonly "eslint/no-undefined": "error";
-            readonly "eslint/no-unexpected-multiline": "error";
-            readonly "eslint/no-unmodified-loop-condition": "error";
-            readonly "eslint/no-unneeded-ternary": ["error", {
+            readonly 'eslint/no-undefined': "error";
+            readonly 'eslint/no-unexpected-multiline': "error";
+            readonly 'eslint/no-unmodified-loop-condition': "error";
+            readonly 'eslint/no-unneeded-ternary': ["error", {
                 readonly defaultAssignment: false;
             }];
-            readonly "eslint/no-unreachable": "error";
-            readonly "eslint/no-unsafe-finally": "error";
-            readonly "eslint/no-unsafe-negation": ["error", {
+            readonly 'eslint/no-unreachable': "error";
+            readonly 'eslint/no-unsafe-finally': "error";
+            readonly 'eslint/no-unsafe-negation': ["error", {
                 readonly enforceForOrderingRelations: false;
             }];
-            readonly "eslint/no-unsafe-optional-chaining": ["error", {
+            readonly 'eslint/no-unsafe-optional-chaining': ["error", {
                 readonly disallowArithmeticOperators: true;
             }];
-            readonly "eslint/no-unused-expressions": ["error", {
+            readonly 'eslint/no-unused-expressions': ["error", {
                 readonly allowShortCircuit: false;
                 readonly allowTaggedTemplates: false;
                 readonly allowTernary: false;
                 readonly enforceForJSX: true;
             }];
-            readonly "eslint/no-unused-labels": "error";
-            readonly "eslint/no-unused-private-class-members": "error";
-            readonly "eslint/no-unused-vars": ["error", {
+            readonly 'eslint/no-unused-labels': "error";
+            readonly 'eslint/no-unused-private-class-members': "error";
+            readonly 'eslint/no-unused-vars': ["error", {
                 readonly args: "all";
                 readonly argsIgnorePattern: "^_";
                 readonly caughtErrors: "all";
@@ -290,7 +290,7 @@ export declare const coreRules: {
                 readonly vars: "all";
                 readonly varsIgnorePattern: "^_";
             }];
-            readonly "eslint/no-use-before-define": ["error", {
+            readonly 'eslint/no-use-before-define': ["error", {
                 readonly allowNamedExports: false;
                 readonly classes: true;
                 readonly enums: true;
@@ -299,35 +299,35 @@ export declare const coreRules: {
                 readonly typedefs: false;
                 readonly variables: true;
             }];
-            readonly "eslint/no-useless-backreference": "error";
-            readonly "eslint/no-useless-call": "error";
-            readonly "eslint/no-useless-catch": "error";
-            readonly "eslint/no-useless-computed-key": ["error", {
+            readonly 'eslint/no-useless-backreference': "error";
+            readonly 'eslint/no-useless-call': "error";
+            readonly 'eslint/no-useless-catch': "error";
+            readonly 'eslint/no-useless-computed-key': ["error", {
                 readonly enforceForClassMembers: true;
             }];
-            readonly "eslint/no-useless-concat": "error";
-            readonly "eslint/no-useless-constructor": "error";
-            readonly "eslint/no-useless-escape": ["error", {
+            readonly 'eslint/no-useless-concat': "error";
+            readonly 'eslint/no-useless-constructor': "error";
+            readonly 'eslint/no-useless-escape': ["error", {
                 readonly allowRegexCharacters: readonly [];
             }];
-            readonly "eslint/no-useless-rename": ["error", {
+            readonly 'eslint/no-useless-rename': ["error", {
                 readonly ignoreDestructuring: false;
                 readonly ignoreExport: false;
                 readonly ignoreImport: false;
             }];
-            readonly "eslint/no-useless-return": "error";
-            readonly "eslint/no-var": "error";
-            readonly "eslint/no-void": ["error", {
+            readonly 'eslint/no-useless-return': "error";
+            readonly 'eslint/no-var': "error";
+            readonly 'eslint/no-void': ["error", {
                 readonly allowAsStatement: false;
             }];
-            readonly "eslint/no-warning-comments": "off";
-            readonly "eslint/no-with": "error";
-            readonly "eslint/operator-assignment": ["error", "always"];
-            readonly "eslint/prefer-const": ["error", {
+            readonly 'eslint/no-warning-comments': "off";
+            readonly 'eslint/no-with': "error";
+            readonly 'eslint/operator-assignment': ["error", "always"];
+            readonly 'eslint/prefer-const': ["error", {
                 readonly destructuring: "all";
                 readonly ignoreReadBeforeAssign: false;
             }];
-            readonly "eslint/prefer-destructuring": ["error", {
+            readonly 'eslint/prefer-destructuring': ["error", {
                 readonly AssignmentExpression: {
                     readonly array: false;
                     readonly object: false;
@@ -338,43 +338,43 @@ export declare const coreRules: {
                 };
                 readonly enforceForRenamedProperties: true;
             }];
-            readonly "eslint/prefer-exponentiation-operator": "error";
-            readonly "eslint/prefer-numeric-literals": "error";
-            readonly "eslint/prefer-object-has-own": "error";
-            readonly "eslint/prefer-object-spread": "error";
-            readonly "eslint/prefer-promise-reject-errors": ["error", {
+            readonly 'eslint/prefer-exponentiation-operator': "error";
+            readonly 'eslint/prefer-numeric-literals': "error";
+            readonly 'eslint/prefer-object-has-own': "error";
+            readonly 'eslint/prefer-object-spread': "error";
+            readonly 'eslint/prefer-promise-reject-errors': ["error", {
                 readonly allowEmptyReject: false;
             }];
-            readonly "eslint/prefer-rest-params": "error";
-            readonly "eslint/prefer-spread": "error";
-            readonly "eslint/prefer-template": "error";
-            readonly "eslint/preserve-caught-error": ["error", {
+            readonly 'eslint/prefer-rest-params': "error";
+            readonly 'eslint/prefer-spread': "error";
+            readonly 'eslint/prefer-template': "error";
+            readonly 'eslint/preserve-caught-error': ["error", {
                 readonly requireCatchParameter: false;
             }];
-            readonly "eslint/radix": "error";
-            readonly "eslint/require-await": "off";
-            readonly "eslint/require-yield": "error";
-            readonly "eslint/sort-imports": "off";
-            readonly "eslint/sort-keys": ["error", "asc", {
+            readonly 'eslint/radix': "error";
+            readonly 'eslint/require-await': "off";
+            readonly 'eslint/require-yield': "error";
+            readonly 'eslint/sort-imports': "off";
+            readonly 'eslint/sort-keys': ["error", "asc", {
                 readonly allowLineSeparatedGroups: false;
                 readonly caseSensitive: true;
                 readonly minKeys: 1;
                 readonly natural: false;
             }];
-            readonly "eslint/sort-vars": ["error", {
+            readonly 'eslint/sort-vars': ["error", {
                 readonly ignoreCase: false;
             }];
-            readonly "eslint/symbol-description": "error";
-            readonly "eslint/unicode-bom": ["error", "never"];
-            readonly "eslint/use-isnan": ["error", {
+            readonly 'eslint/symbol-description': "error";
+            readonly 'eslint/unicode-bom': ["error", "never"];
+            readonly 'eslint/use-isnan': ["error", {
                 readonly enforceForIndexOf: true;
                 readonly enforceForSwitchCase: true;
             }];
-            readonly "eslint/valid-typeof": ["error", {
+            readonly 'eslint/valid-typeof': ["error", {
                 readonly requireStringLiterals: true;
             }];
-            readonly "eslint/vars-on-top": "error";
-            readonly "eslint/yoda": ["error", "never", {
+            readonly 'eslint/vars-on-top': "error";
+            readonly 'eslint/yoda': ["error", "never", {
                 readonly exceptRange: true;
                 readonly onlyEquality: false;
             }];
@@ -938,58 +938,58 @@ export declare const coreRules: {
         };
     }, {
         readonly rules: {
-            readonly 'typescript/adjacent-overload-signatures': "error";
-            readonly 'typescript/array-type': ["error", {
+            readonly "typescript/adjacent-overload-signatures": "error";
+            readonly "typescript/array-type": ["error", {
                 readonly default: "generic";
                 readonly readonly: "generic";
             }];
-            readonly 'typescript/await-thenable': "error";
-            readonly 'typescript/ban-ts-comment': ["error", {
+            readonly "typescript/await-thenable": "error";
+            readonly "typescript/ban-ts-comment": ["error", {
                 readonly minimumDescriptionLength: 1;
-                readonly 'ts-check': false;
-                readonly 'ts-expect-error': "allow-with-description";
-                readonly 'ts-ignore': true;
-                readonly 'ts-nocheck': "allow-with-description";
+                readonly "ts-check": false;
+                readonly "ts-expect-error": "allow-with-description";
+                readonly "ts-ignore": true;
+                readonly "ts-nocheck": "allow-with-description";
             }];
-            readonly 'typescript/ban-tslint-comment': "error";
-            readonly 'typescript/class-literal-property-style': ["error", "fields"];
-            readonly 'typescript/consistent-generic-constructors': ["error", {
+            readonly "typescript/ban-tslint-comment": "error";
+            readonly "typescript/class-literal-property-style": ["error", "fields"];
+            readonly "typescript/consistent-generic-constructors": ["error", {
                 readonly option: "constructor";
             }];
-            readonly 'typescript/consistent-indexed-object-style': ["error", "record"];
-            readonly 'typescript/consistent-return': ["error", {
+            readonly "typescript/consistent-indexed-object-style": ["error", "record"];
+            readonly "typescript/consistent-return": ["error", {
                 readonly treatUndefinedAsUnspecified: false;
             }];
-            readonly 'typescript/consistent-type-assertions': ["error", {
+            readonly "typescript/consistent-type-assertions": ["error", {
                 readonly assertionStyle: "never";
             }];
-            readonly 'typescript/consistent-type-definitions': ["error", "interface"];
-            readonly 'typescript/consistent-type-exports': ["error", {
+            readonly "typescript/consistent-type-definitions": ["error", "interface"];
+            readonly "typescript/consistent-type-exports": ["error", {
                 readonly fixMixedExportsWithInlineTypeSpecifier: false;
             }];
-            readonly 'typescript/consistent-type-imports': ["error", {
+            readonly "typescript/consistent-type-imports": ["error", {
                 readonly disallowTypeAnnotations: true;
                 readonly fixStyle: "separate-type-imports";
                 readonly prefer: "type-imports";
             }];
-            readonly 'typescript/dot-notation': ["error", {
+            readonly "typescript/dot-notation": ["error", {
                 readonly allowIndexSignaturePropertyAccess: false;
                 readonly allowKeywords: true;
                 readonly allowPattern: "";
                 readonly allowPrivateClassPropertyAccess: false;
                 readonly allowProtectedClassPropertyAccess: false;
             }];
-            readonly 'typescript/explicit-function-return-type': ["error", {
+            readonly "typescript/explicit-function-return-type": ["error", {
                 readonly allowConciseArrowFunctionExpressionsStartingWithVoid: false;
                 readonly allowDirectConstAssertionInArrowFunctions: true;
-                readonly allowExpressions: false;
-                readonly allowFunctionsWithoutTypeParameters: false;
+                readonly allowExpressions: true;
+                readonly allowFunctionsWithoutTypeParameters: true;
                 readonly allowHigherOrderFunctions: true;
-                readonly allowIIFEs: false;
+                readonly allowIIFEs: true;
                 readonly allowTypedFunctionExpressions: true;
                 readonly allowedNames: readonly [];
             }];
-            readonly 'typescript/explicit-module-boundary-types': ["error", {
+            readonly "typescript/explicit-module-boundary-types": ["error", {
                 readonly allowArgumentsExplicitlyTypedAsAny: false;
                 readonly allowDirectConstAssertionInArrowFunctions: true;
                 readonly allowHigherOrderFunctions: true;
@@ -997,68 +997,68 @@ export declare const coreRules: {
                 readonly allowTypedFunctionExpressions: true;
                 readonly allowedNames: readonly [];
             }];
-            readonly 'typescript/no-array-delete': "error";
-            readonly 'typescript/no-base-to-string': ["error", {
+            readonly "typescript/no-array-delete": "error";
+            readonly "typescript/no-base-to-string": ["error", {
                 readonly checkUnknown: false;
                 readonly ignoredTypeNames: readonly ["Error", "RegExp", "URL", "URLSearchParams"];
             }];
-            readonly 'typescript/no-confusing-non-null-assertion': "error";
-            readonly 'typescript/no-confusing-void-expression': ["error", {
+            readonly "typescript/no-confusing-non-null-assertion": "error";
+            readonly "typescript/no-confusing-void-expression": ["error", {
                 readonly ignoreArrowShorthand: false;
                 readonly ignoreVoidOperator: false;
                 readonly ignoreVoidReturningFunctions: false;
             }];
-            readonly 'typescript/no-deprecated': ["error", {
+            readonly "typescript/no-deprecated": ["error", {
                 readonly allow: readonly [];
             }];
-            readonly 'typescript/no-duplicate-enum-values': "error";
-            readonly 'typescript/no-duplicate-type-constituents': ["error", {
+            readonly "typescript/no-duplicate-enum-values": "error";
+            readonly "typescript/no-duplicate-type-constituents": ["error", {
                 readonly ignoreIntersections: false;
                 readonly ignoreUnions: false;
             }];
-            readonly 'typescript/no-dynamic-delete': "error";
-            readonly 'typescript/no-empty-interface': ["error", {
+            readonly "typescript/no-dynamic-delete": "error";
+            readonly "typescript/no-empty-interface": ["error", {
                 readonly allowSingleExtends: true;
             }];
-            readonly 'typescript/no-empty-object-type': ["error", {
+            readonly "typescript/no-empty-object-type": ["error", {
                 readonly allowInterfaces: "with-single-extends";
                 readonly allowObjectTypes: "never";
                 readonly allowWithName: "Props$";
             }];
-            readonly 'typescript/no-explicit-any': ["error", {
+            readonly "typescript/no-explicit-any": ["error", {
                 readonly fixToUnknown: true;
                 readonly ignoreRestArgs: false;
             }];
-            readonly 'typescript/no-extra-non-null-assertion': "error";
-            readonly 'typescript/no-extraneous-class': ["error", {
+            readonly "typescript/no-extra-non-null-assertion": "error";
+            readonly "typescript/no-extraneous-class": ["error", {
                 readonly allowConstructorOnly: false;
                 readonly allowEmpty: false;
                 readonly allowStaticOnly: false;
                 readonly allowWithDecorator: false;
             }];
-            readonly 'typescript/no-floating-promises': ["error", {
+            readonly "typescript/no-floating-promises": ["error", {
                 readonly allowForKnownSafeCalls: readonly [];
                 readonly allowForKnownSafePromises: readonly [];
                 readonly checkThenables: true;
                 readonly ignoreIIFE: false;
                 readonly ignoreVoid: false;
             }];
-            readonly 'typescript/no-for-in-array': "error";
-            readonly 'typescript/no-implied-eval': "error";
-            readonly 'typescript/no-import-type-side-effects': "error";
-            readonly 'typescript/no-inferrable-types': ["error", {
+            readonly "typescript/no-for-in-array": "error";
+            readonly "typescript/no-implied-eval": "error";
+            readonly "typescript/no-import-type-side-effects": "error";
+            readonly "typescript/no-inferrable-types": ["error", {
                 readonly ignoreParameters: false;
                 readonly ignoreProperties: false;
             }];
-            readonly 'typescript/no-invalid-void-type': ["error", {
+            readonly "typescript/no-invalid-void-type": ["error", {
                 readonly allowAsThisParameter: false;
                 readonly allowInGenericTypeArguments: true;
             }];
-            readonly 'typescript/no-meaningless-void-operator': ["error", {
+            readonly "typescript/no-meaningless-void-operator": ["error", {
                 readonly checkNever: true;
             }];
-            readonly 'typescript/no-misused-new': "error";
-            readonly 'typescript/no-misused-promises': ["error", {
+            readonly "typescript/no-misused-new": "error";
+            readonly "typescript/no-misused-promises": ["error", {
                 readonly checksConditionals: true;
                 readonly checksSpreads: true;
                 readonly checksVoidReturn: {
@@ -1070,66 +1070,66 @@ export declare const coreRules: {
                     readonly variables: true;
                 };
             }];
-            readonly 'typescript/no-misused-spread': ["error", {
+            readonly "typescript/no-misused-spread": ["error", {
                 readonly allow: readonly [];
             }];
-            readonly 'typescript/no-mixed-enums': "error";
-            readonly 'typescript/no-namespace': ["error", {
+            readonly "typescript/no-mixed-enums": "error";
+            readonly "typescript/no-namespace": ["error", {
                 readonly allowDeclarations: false;
                 readonly allowDefinitionFiles: false;
             }];
-            readonly 'typescript/no-non-null-asserted-nullish-coalescing': "error";
-            readonly 'typescript/no-non-null-asserted-optional-chain': "error";
-            readonly 'typescript/no-non-null-assertion': "off";
-            readonly 'typescript/no-redundant-type-constituents': "error";
-            readonly 'typescript/no-require-imports': ["error", {
+            readonly "typescript/no-non-null-asserted-nullish-coalescing": "error";
+            readonly "typescript/no-non-null-asserted-optional-chain": "error";
+            readonly "typescript/no-non-null-assertion": "off";
+            readonly "typescript/no-redundant-type-constituents": "error";
+            readonly "typescript/no-require-imports": ["error", {
                 readonly allow: readonly [];
                 readonly allowAsImport: false;
             }];
-            readonly 'typescript/no-restricted-types': ["error", {
+            readonly "typescript/no-restricted-types": ["error", {
                 readonly types: {};
             }];
-            readonly 'typescript/no-this-alias': ["error", {
+            readonly "typescript/no-this-alias": ["error", {
                 readonly allowDestructuring: false;
                 readonly allowedNames: readonly [];
             }];
-            readonly 'typescript/no-unnecessary-boolean-literal-compare': ["error", {
+            readonly "typescript/no-unnecessary-boolean-literal-compare": ["error", {
                 readonly allowComparingNullableBooleansToFalse: true;
                 readonly allowComparingNullableBooleansToTrue: true;
             }];
-            readonly 'typescript/no-unnecessary-condition': ["error", {
+            readonly "typescript/no-unnecessary-condition": ["error", {
                 readonly allowConstantLoopConditions: "only-allowed-literals";
                 readonly checkTypePredicates: true;
             }];
-            readonly 'typescript/no-unnecessary-parameter-property-assignment': "error";
-            readonly 'typescript/no-unnecessary-qualifier': "error";
-            readonly 'typescript/no-unnecessary-template-expression': "error";
-            readonly 'typescript/no-unnecessary-type-arguments': "error";
-            readonly 'typescript/no-unnecessary-type-assertion': ["error", {
+            readonly "typescript/no-unnecessary-parameter-property-assignment": "error";
+            readonly "typescript/no-unnecessary-qualifier": "error";
+            readonly "typescript/no-unnecessary-template-expression": "error";
+            readonly "typescript/no-unnecessary-type-arguments": "error";
+            readonly "typescript/no-unnecessary-type-assertion": ["error", {
                 readonly checkLiteralConstAssertions: true;
                 readonly typesToIgnore: readonly [];
             }];
-            readonly 'typescript/no-unnecessary-type-constraint': "error";
-            readonly 'typescript/no-unnecessary-type-convertion': "error";
-            readonly 'typescript/no-unnecessary-type-parameters': "error";
-            readonly 'typescript/no-unsafe-argument': "error";
-            readonly 'typescript/no-unsafe-assignment': "error";
-            readonly 'typescript/no-unsafe-call': "error";
-            readonly 'typescript/no-unsafe-declaration-merging': "error";
-            readonly 'typescript/no-unsafe-enum-comparison': "error";
-            readonly 'typescript/no-unsafe-function-type': "error";
-            readonly 'typescript/no-unsafe-member-access': ["error", {
+            readonly "typescript/no-unnecessary-type-constraint": "error";
+            readonly "typescript/no-unnecessary-type-convertion": "error";
+            readonly "typescript/no-unnecessary-type-parameters": "error";
+            readonly "typescript/no-unsafe-argument": "error";
+            readonly "typescript/no-unsafe-assignment": "error";
+            readonly "typescript/no-unsafe-call": "error";
+            readonly "typescript/no-unsafe-declaration-merging": "error";
+            readonly "typescript/no-unsafe-enum-comparison": "error";
+            readonly "typescript/no-unsafe-function-type": "error";
+            readonly "typescript/no-unsafe-member-access": ["error", {
                 readonly allowOptionalChaining: false;
             }];
-            readonly 'typescript/no-unsafe-return': "error";
-            readonly 'typescript/no-unsafe-type-assertion': "error";
-            readonly 'typescript/no-unsafe-unary-minus': "error";
-            readonly 'typescript/no-useless-default-assignment': "error";
-            readonly 'typescript/no-useless-empty-export': "error";
-            readonly 'typescript/no-var-requires': "error";
-            readonly 'typescript/no-wrapper-object-types': "error";
-            readonly 'typescript/non-nullable-type-assertion-style': "error";
-            readonly 'typescript/only-throw-error': ["error", {
+            readonly "typescript/no-unsafe-return": "error";
+            readonly "typescript/no-unsafe-type-assertion": "error";
+            readonly "typescript/no-unsafe-unary-minus": "error";
+            readonly "typescript/no-useless-default-assignment": "error";
+            readonly "typescript/no-useless-empty-export": "error";
+            readonly "typescript/no-var-requires": "error";
+            readonly "typescript/no-wrapper-object-types": "error";
+            readonly "typescript/non-nullable-type-assertion-style": "error";
+            readonly "typescript/only-throw-error": ["error", {
                 readonly allow: readonly [{
                     readonly from: "lib";
                     readonly name: "Response";
@@ -1138,20 +1138,20 @@ export declare const coreRules: {
                 readonly allowThrowingAny: true;
                 readonly allowThrowingUnknown: true;
             }];
-            readonly 'typescript/parameter-properties': ["error", {
+            readonly "typescript/parameter-properties": ["error", {
                 readonly allow: readonly [];
                 readonly prefer: "class-property";
             }];
-            readonly 'typescript/prefer-as-const': "error";
-            readonly 'typescript/prefer-enum-initializers': "error";
-            readonly 'typescript/prefer-find': "error";
-            readonly 'typescript/prefer-for-of': "error";
-            readonly 'typescript/prefer-function-type': "error";
-            readonly 'typescript/prefer-includes': "error";
-            readonly 'typescript/prefer-literal-enum-member': ["error", {
+            readonly "typescript/prefer-as-const": "error";
+            readonly "typescript/prefer-enum-initializers": "error";
+            readonly "typescript/prefer-find": "error";
+            readonly "typescript/prefer-for-of": "error";
+            readonly "typescript/prefer-function-type": "error";
+            readonly "typescript/prefer-includes": "error";
+            readonly "typescript/prefer-literal-enum-member": ["error", {
                 readonly allowBitwiseExpressions: true;
             }];
-            readonly 'typescript/prefer-nullish-coalescing': ["error", {
+            readonly "typescript/prefer-nullish-coalescing": ["error", {
                 readonly ignoreBooleanCoercion: false;
                 readonly ignoreConditionalTests: false;
                 readonly ignoreIfStatements: false;
@@ -1164,7 +1164,7 @@ export declare const coreRules: {
                 };
                 readonly ignoreTernaryTests: false;
             }];
-            readonly 'typescript/prefer-optional-chain': ["error", {
+            readonly "typescript/prefer-optional-chain": ["error", {
                 readonly allowPotentiallyUnsafeFixesThatModifyTheReturnTypeIKnowWhatImDoing: true;
                 readonly checkAny: true;
                 readonly checkBigInt: true;
@@ -1174,23 +1174,23 @@ export declare const coreRules: {
                 readonly checkUnknown: true;
                 readonly requireNullish: true;
             }];
-            readonly 'typescript/prefer-promise-reject-errors': ["error", {
+            readonly "typescript/prefer-promise-reject-errors": ["error", {
                 readonly allowEmptyReject: false;
                 readonly allowThrowingAny: false;
                 readonly allowThrowingUnknown: false;
             }];
-            readonly 'typescript/prefer-readonly': ["error", {
+            readonly "typescript/prefer-readonly": ["error", {
                 readonly onlyInlineLambdas: false;
             }];
-            readonly 'typescript/prefer-readonly-parameter-types': "off";
-            readonly 'typescript/prefer-reduce-type-parameter': "error";
-            readonly 'typescript/prefer-regexp-exec': "error";
-            readonly 'typescript/prefer-return-this-type': "error";
-            readonly 'typescript/prefer-string-starts-ends-with': ["error", {
+            readonly "typescript/prefer-readonly-parameter-types": "off";
+            readonly "typescript/prefer-reduce-type-parameter": "error";
+            readonly "typescript/prefer-regexp-exec": "error";
+            readonly "typescript/prefer-return-this-type": "error";
+            readonly "typescript/prefer-string-starts-ends-with": ["error", {
                 readonly allowSingleElementEquality: "never";
             }];
-            readonly 'typescript/prefer-ts-expect-error': "error";
-            readonly 'typescript/promise-function-async': ["error", {
+            readonly "typescript/prefer-ts-expect-error": "error";
+            readonly "typescript/promise-function-async": ["error", {
                 readonly allowAny: false;
                 readonly allowedPromiseNames: readonly [];
                 readonly checkArrowFunctions: true;
@@ -1198,10 +1198,10 @@ export declare const coreRules: {
                 readonly checkFunctionExpressions: true;
                 readonly checkMethodDeclarations: true;
             }];
-            readonly 'typescript/related-getter-setter-pairs': "error";
-            readonly 'typescript/require-array-sort-compare': "off";
-            readonly 'typescript/require-await': "error";
-            readonly 'typescript/restrict-plus-operands': ["error", {
+            readonly "typescript/related-getter-setter-pairs": "error";
+            readonly "typescript/require-array-sort-compare": "off";
+            readonly "typescript/require-await": "error";
+            readonly "typescript/restrict-plus-operands": ["error", {
                 readonly allowAny: false;
                 readonly allowBoolean: false;
                 readonly allowNullish: false;
@@ -1209,7 +1209,7 @@ export declare const coreRules: {
                 readonly allowRegExp: false;
                 readonly skipCompoundAssignments: false;
             }];
-            readonly 'typescript/restrict-template-expressions': ["error", {
+            readonly "typescript/restrict-template-expressions": ["error", {
                 readonly allow: readonly [{
                     readonly from: "lib";
                     readonly name: readonly ["Error", "URL", "URLSearchParams"];
@@ -1222,30 +1222,30 @@ export declare const coreRules: {
                 readonly allowNumber: true;
                 readonly allowRegExp: true;
             }];
-            readonly 'typescript/return-await': ["error", "never"];
-            readonly 'typescript/strict-boolean-expressions': "off";
-            readonly 'typescript/strict-void-return': ["error", {
+            readonly "typescript/return-await": ["error", "never"];
+            readonly "typescript/strict-boolean-expressions": "off";
+            readonly "typescript/strict-void-return": ["error", {
                 readonly allowReturnAny: false;
             }];
-            readonly 'typescript/switch-exhaustiveness-check': ["error", {
+            readonly "typescript/switch-exhaustiveness-check": ["error", {
                 readonly allowDefaultCaseForExhaustiveSwitch: true;
                 readonly considerDefaultExhaustiveForUnions: true;
                 readonly defaultCaseCommentPattern: "^$";
                 readonly requireDefaultForNonUnion: true;
             }];
-            readonly 'typescript/triple-slash-reference': ["error", {
+            readonly "typescript/triple-slash-reference": ["error", {
                 readonly lib: "never";
                 readonly path: "never";
                 readonly types: "prefer-import";
             }];
-            readonly 'typescript/unbound-method': ["error", {
+            readonly "typescript/unbound-method": ["error", {
                 readonly ignoreStatic: false;
             }];
-            readonly 'typescript/unified-signatures': ["error", {
+            readonly "typescript/unified-signatures": ["error", {
                 readonly ignoreDifferentlyNamedParameters: false;
                 readonly ignoreOverloadsWithDifferentJSDoc: false;
             }];
-            readonly 'typescript/use-unknown-in-catch-callback-variable': "error";
+            readonly "typescript/use-unknown-in-catch-callback-variable": "error";
         };
     }, {
         readonly rules: {
