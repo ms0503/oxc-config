@@ -44,7 +44,7 @@ export const unicornRules = defineConfig({
         'unicorn/no-instanceof-builtins': [
             'error',
             {
-                exclude: [],
+                exclude: ['Promise'],
                 include: [],
                 strategy: 'strict',
                 useErrorIsError: false

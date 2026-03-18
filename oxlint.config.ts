@@ -4,5 +4,6 @@ import { defineConfig } from 'oxlint';
 export default defineConfig({
     extends: [core],
     ignorePatterns: ['.yarn/**/*', 'dist/**/*'],
-    rules: { 'import/extensions': 'off' }
+    rules: { 'import/extensions': 'off' },
+    settings: { typeAware: true, typeCheck: true }
 });
