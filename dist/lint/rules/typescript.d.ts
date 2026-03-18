@@ -244,12 +244,7 @@ export declare const typescriptRules: {
         readonly "typescript/prefer-readonly": ["error", {
             readonly onlyInlineLambdas: false;
         }];
-        readonly "typescript/prefer-readonly-parameter-types": ["error", {
-            readonly allow: readonly [];
-            readonly checkParameterProperties: true;
-            readonly ignoreInferredTypes: true;
-            readonly treatMethodsAsReadonly: true;
-        }];
+        readonly "typescript/prefer-readonly-parameter-types": "off";
         readonly "typescript/prefer-reduce-type-parameter": "error";
         readonly "typescript/prefer-regexp-exec": "error";
         readonly "typescript/prefer-return-this-type": "error";

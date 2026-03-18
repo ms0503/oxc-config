@@ -294,15 +294,7 @@ export const typescriptRules = defineConfig({
             }
         ],
         'typescript/prefer-readonly': ['error', { onlyInlineLambdas: false }],
-        'typescript/prefer-readonly-parameter-types': [
-            'error',
-            {
-                allow: [],
-                checkParameterProperties: true,
-                ignoreInferredTypes: true,
-                treatMethodsAsReadonly: true
-            }
-        ],
+        'typescript/prefer-readonly-parameter-types': 'off',
         'typescript/prefer-reduce-type-parameter': 'error',
         'typescript/prefer-regexp-exec': 'error',
         'typescript/prefer-return-this-type': 'error',

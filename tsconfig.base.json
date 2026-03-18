@@ -1,14 +1,30 @@
 {
     "compilerOptions": {
         "allowJs": false,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
         "alwaysStrict": true,
         "declaration": true,
         "emitBOM": false,
+        "erasableSyntaxOnly": true,
         "esModuleInterop": true,
         "module": "NodeNext",
         "moduleResolution": "NodeNext",
         "newLine": "lf",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
         "strict": true,
-        "target": "ESNext"
+        "strictBindCallApply": true,
+        "strictBuiltinIteratorReturn": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "target": "ESNext",
+        "verbatimModuleSyntax": true
     }
 }
