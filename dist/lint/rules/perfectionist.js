@@ -1,130 +1,130 @@
-import { defineConfig } from "oxlint";
+import { defineConfig } from 'oxlint';
 const baseConfig = {
-    fallbackSort: { type: "unsorted" },
+    fallbackSort: { type: 'unsorted' },
     ignoreCase: false,
-    locales: "en-US",
-    order: "asc",
-    specialCharacters: "keep",
-    type: "alphabetical",
+    locales: 'en-US',
+    order: 'asc',
+    specialCharacters: 'keep',
+    type: 'alphabetical'
 };
 export const perfectionistRules = defineConfig({
     rules: {
-        "perfectionist/sort-array-includes": [
-            "error",
+        'perfectionist/sort-array-includes': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
-                groups: ["literal"],
+                groups: ['literal'],
                 newlinesBetween: 0,
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
+                useConfigurationIf: {}
+            }
         ],
-        "perfectionist/sort-classes": [
-            "error",
+        'perfectionist/sort-classes': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
                 groups: [
-                    "index-signature",
+                    'index-signature',
                     { newlinesBetween: 1 },
                     [
-                        "static-readonly-accessor-property",
-                        "static-readonly-property",
+                        'static-readonly-accessor-property',
+                        'static-readonly-property'
                     ],
                     [
-                        "protected-static-readonly-accessor-property",
-                        "protected-static-readonly-property",
+                        'protected-static-readonly-accessor-property',
+                        'protected-static-readonly-property'
                     ],
                     [
-                        "private-static-readonly-accessor-property",
-                        "private-static-readonly-property",
+                        'private-static-readonly-accessor-property',
+                        'private-static-readonly-property'
                     ],
                     { newlinesBetween: 1 },
-                    ["static-accessor-property", "static-property"],
+                    ['static-accessor-property', 'static-property'],
                     [
-                        "protected-static-accessor-property",
-                        "protected-static-property",
+                        'protected-static-accessor-property',
+                        'protected-static-property'
                     ],
                     [
-                        "private-static-accessor-property",
-                        "private-static-property",
+                        'private-static-accessor-property',
+                        'private-static-property'
                     ],
                     { newlinesBetween: 1 },
                     {
-                        group: ["static-get-method", "static-set-method"],
-                        newlinesInside: 1,
+                        group: ['static-get-method', 'static-set-method'],
+                        newlinesInside: 1
                     },
                     {
                         group: [
-                            "protected-static-get-method",
-                            "protected-static-set-method",
+                            'protected-static-get-method',
+                            'protected-static-set-method'
                         ],
-                        newlinesInside: 1,
+                        newlinesInside: 1
                     },
                     {
                         group: [
-                            "private-static-get-method",
-                            "private-static-set-method",
+                            'private-static-get-method',
+                            'private-static-set-method'
                         ],
-                        newlinesInside: 1,
+                        newlinesInside: 1
                     },
                     { newlinesBetween: 1 },
-                    "static-block",
+                    'static-block',
                     { newlinesBetween: 1 },
-                    ["accessor-property", "property"],
-                    ["protected-accessor-property", "protected-property"],
-                    ["private-accessor-property", "private-property"],
+                    ['accessor-property', 'property'],
+                    ['protected-accessor-property', 'protected-property'],
+                    ['private-accessor-property', 'private-property'],
                     { newlinesBetween: 1 },
-                    { group: ["get-method", "set-method"], newlinesInside: 1 },
+                    { group: ['get-method', 'set-method'], newlinesInside: 1 },
                     {
-                        group: ["protected-get-method", "protected-set-method"],
-                        newlinesInside: 1,
+                        group: ['protected-get-method', 'protected-set-method'],
+                        newlinesInside: 1
                     },
                     {
-                        group: ["private-get-method", "private-set-method"],
-                        newlinesInside: 1,
+                        group: ['private-get-method', 'private-set-method'],
+                        newlinesInside: 1
                     },
                     { newlinesBetween: 1 },
-                    { group: "constructor", newlinesInside: 1 },
+                    { group: 'constructor', newlinesInside: 1 },
                     { newlinesBetween: 1 },
                     {
-                        group: ["static-function-property", "static-method"],
-                        newlinesInside: 1,
+                        group: ['static-function-property', 'static-method'],
+                        newlinesInside: 1
                     },
                     {
                         group: [
-                            "protected-static-function-property",
-                            "protected-static-method",
+                            'protected-static-function-property',
+                            'protected-static-method'
                         ],
-                        newlinesInside: 1,
+                        newlinesInside: 1
                     },
                     {
                         group: [
-                            "private-static-function-property",
-                            "private-static-method",
+                            'private-static-function-property',
+                            'private-static-method'
                         ],
-                        newlinesInside: 1,
+                        newlinesInside: 1
                     },
                     {
-                        group: ["function-property", "method"],
-                        newlinesInside: 1,
+                        group: ['function-property', 'method'],
+                        newlinesInside: 1
                     },
                     {
                         group: [
-                            "protected-function-property",
-                            "protected-method",
+                            'protected-function-property',
+                            'protected-method'
                         ],
-                        newlinesInside: 1,
+                        newlinesInside: 1
                     },
                     {
-                        group: ["private-function-property", "private-method"],
-                        newlinesInside: 1,
+                        group: ['private-function-property', 'private-method'],
+                        newlinesInside: 1
                     },
                     { newlinesBetween: 1 },
-                    { group: "unknown", newlinesInside: 1 },
+                    { group: 'unknown', newlinesInside: 1 }
                 ],
                 ignoreCallbackDependenciesPatterns: [],
                 newlinesBetween: 0,
@@ -132,11 +132,11 @@ export const perfectionistRules = defineConfig({
                 partitionByComment: false,
                 partitionByNewLine: false,
                 useConfigurationIf: {},
-                useExperimentalDependencyDetection: true,
-            },
+                useExperimentalDependencyDetection: true
+            }
         ],
-        "perfectionist/sort-decorators": [
-            "error",
+        'perfectionist/sort-decorators': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -149,11 +149,11 @@ export const perfectionistRules = defineConfig({
                 sortOnClasses: true,
                 sortOnMethods: true,
                 sortOnParameters: true,
-                sortOnProperties: true,
-            },
+                sortOnProperties: true
+            }
         ],
-        "perfectionist/sort-enums": [
-            "error",
+        'perfectionist/sort-enums': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -162,13 +162,13 @@ export const perfectionistRules = defineConfig({
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                sortByValue: "never",
+                sortByValue: 'never',
                 useConfigurationIf: {},
-                useExperimentalDependencyDetection: true,
-            },
+                useExperimentalDependencyDetection: true
+            }
         ],
-        "perfectionist/sort-export-attributes": [
-            "error",
+        'perfectionist/sort-export-attributes': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -177,11 +177,23 @@ export const perfectionistRules = defineConfig({
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
+                useConfigurationIf: {}
+            }
         ],
-        "perfectionist/sort-exports": [
-            "error",
+        'perfectionist/sort-exports': [
+            'error',
+            {
+                ...baseConfig,
+                customGroups: [],
+                groups: [],
+                newlinesBetween: 0,
+                newlinesInside: 0,
+                partitionByComment: false,
+                partitionByNewLine: false
+            }
+        ],
+        'perfectionist/sort-heritage-clauses': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -190,10 +202,11 @@ export const perfectionistRules = defineConfig({
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-            },
+                useConfigurationIf: {}
+            }
         ],
-        "perfectionist/sort-heritage-clauses": [
-            "error",
+        'perfectionist/sort-import-attributes': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -202,48 +215,35 @@ export const perfectionistRules = defineConfig({
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
-        ],
-        "perfectionist/sort-import-attributes": [
-            "error",
-            {
-                ...baseConfig,
-                customGroups: [],
-                groups: [],
-                newlinesBetween: 0,
-                newlinesInside: 0,
-                partitionByComment: false,
-                partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
+                useConfigurationIf: {}
+            }
         ],
         // use oxfmt intead
-        "perfectionist/sort-imports": "off",
-        "perfectionist/sort-interfaces": [
-            "error",
+        'perfectionist/sort-imports': 'off',
+        'perfectionist/sort-interfaces': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
                 groups: [
-                    "index-signature",
+                    'index-signature',
                     { newlinesBetween: 1 },
-                    "property",
+                    'property',
                     { newlinesBetween: 1 },
-                    { group: "method", newlinesInside: 1 },
+                    { group: 'method', newlinesInside: 1 },
                     { newlinesBetween: 1 },
-                    { group: "unknown", newlinesInside: 1 },
+                    { group: 'unknown', newlinesInside: 1 }
                 ],
                 newlinesBetween: 0,
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                sortBy: "name",
-                useConfigurationIf: {},
-            },
+                sortBy: 'name',
+                useConfigurationIf: {}
+            }
         ],
-        "perfectionist/sort-intersection-types": [
-            "error",
+        'perfectionist/sort-intersection-types': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -252,11 +252,11 @@ export const perfectionistRules = defineConfig({
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
+                useConfigurationIf: {}
+            }
         ],
-        "perfectionist/sort-jsx-props": [
-            "error",
+        'perfectionist/sort-jsx-props': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -264,11 +264,11 @@ export const perfectionistRules = defineConfig({
                 newlinesBetween: 0,
                 newlinesInside: 0,
                 partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
+                useConfigurationIf: {}
+            }
         ],
-        "perfectionist/sort-maps": [
-            "error",
+        'perfectionist/sort-maps': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -277,12 +277,12 @@ export const perfectionistRules = defineConfig({
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
+                useConfigurationIf: {}
+            }
         ],
-        "perfectionist/sort-modules": "off",
-        "perfectionist/sort-named-exports": [
-            "error",
+        'perfectionist/sort-modules': 'off',
+        'perfectionist/sort-named-exports': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -292,11 +292,11 @@ export const perfectionistRules = defineConfig({
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
+                useConfigurationIf: {}
+            }
         ],
-        "perfectionist/sort-named-imports": [
-            "error",
+        'perfectionist/sort-named-imports': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -306,49 +306,49 @@ export const perfectionistRules = defineConfig({
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
+                useConfigurationIf: {}
+            }
         ],
-        "perfectionist/sort-object-types": [
-            "error",
+        'perfectionist/sort-object-types': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
                 groups: [
-                    "index-signature",
+                    'index-signature',
                     { newlinesBetween: 1 },
-                    "property",
+                    'property',
                     { newlinesBetween: 1 },
-                    { group: "method", newlinesInside: 1 },
+                    { group: 'method', newlinesInside: 1 },
                     { newlinesBetween: 1 },
-                    { group: "unknown", newlinesInside: 1 },
+                    { group: 'unknown', newlinesInside: 1 }
                 ],
                 newlinesBetween: 0,
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                sortBy: "name",
-                useConfigurationIf: {},
-            },
+                sortBy: 'name',
+                useConfigurationIf: {}
+            }
         ],
         // use eslint/sort-keys instead
-        "perfectionist/sort-objects": "off",
-        "perfectionist/sort-sets": [
-            "error",
+        'perfectionist/sort-objects': 'off',
+        'perfectionist/sort-sets': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
-                groups: ["literal"],
+                groups: ['literal'],
                 newlinesBetween: 0,
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
+                useConfigurationIf: {}
+            }
         ],
-        "perfectionist/sort-switch-case": ["error", baseConfig],
-        "perfectionist/sort-union-types": [
-            "error",
+        'perfectionist/sort-switch-case': ['error', baseConfig],
+        'perfectionist/sort-union-types': [
+            'error',
             {
                 ...baseConfig,
                 customGroups: [],
@@ -357,10 +357,10 @@ export const perfectionistRules = defineConfig({
                 newlinesInside: 0,
                 partitionByComment: false,
                 partitionByNewLine: false,
-                useConfigurationIf: {},
-            },
+                useConfigurationIf: {}
+            }
         ],
         // use eslint/sort-vars instead
-        "perfectionist/sort-variable-declarations": "off",
-    },
+        'perfectionist/sort-variable-declarations': 'off'
+    }
 });

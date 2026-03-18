@@ -27,7 +27,7 @@ export const jsx = defineConfig({
     plugins: ['jsx-a11y', 'react', 'react-perf']
 } as const);
 
-export const hono = defineConfig({ extends: [jsx] } as const);
+export const hono = defineConfig({ extends: [core] } as const);
 
 export const react = defineConfig({
     extends: [core, jsx, reactRules]
