@@ -4,6 +4,7 @@ import { jsxA11yRules } from './jsx-a11y.js';
 import { nextjsRules as nextjsRulesCfg } from './nextjs.js';
 import { nodeRules } from './node.js';
 import { oxcRules } from './oxc.js';
+import { perfectionistRules } from './perfectionist.js';
 import { promiseRules } from './promise.js';
 import { reactPerfRules } from './react-perf/index.js';
 import { reactPerfJSXRules } from './react-perf/jsx.js';
@@ -20,6 +21,7 @@ export const coreRules = defineConfig({
         importRules,
         nodeRules,
         oxcRules,
+        perfectionistRules,
         promiseRules,
         typescriptRules,
         unicornRules,

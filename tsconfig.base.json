@@ -5,8 +5,8 @@
         "declaration": true,
         "emitBOM": false,
         "esModuleInterop": true,
-        "module": "ESNext",
-        "moduleResolution": "Bundler",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
         "newLine": "lf",
         "strict": true,
         "target": "ESNext"

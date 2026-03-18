@@ -9,6 +9,7 @@ import { defineConfig } from 'oxlint';
 
 export const core = defineConfig({
     extends: [coreRules],
+    jsPlugins: ['eslint-plugin-perfectionist'],
     plugins: [
         'eslint',
         'import',

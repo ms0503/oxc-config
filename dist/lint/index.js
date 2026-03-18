@@ -2,6 +2,7 @@ import { coreRules, jsxRules, nextjsRules, reactRules, vueRules } from './rules/
 import { defineConfig } from 'oxlint';
 export const core = defineConfig({
     extends: [coreRules],
+    jsPlugins: ['eslint-plugin-perfectionist'],
     plugins: [
         'eslint',
         'import',
