@@ -1,5 +1,16 @@
 import { defineConfig } from 'oxlint';
 
+// oxlint-disable eslint/no-magic-numbers
+// https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
+const WELL_KNOWN_HTTP_STATUS_CODES = [
+    100, 101, 102, 103, 200, 201, 202, 203, 204, 205, 206, 207, 208, 226, 300,
+    301, 302, 303, 304, 305, 307, 308, 400, 401, 402, 403, 404, 405, 406, 407,
+    408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 421, 422, 423, 424,
+    425, 426, 428, 429, 431, 451, 500, 501, 502, 503, 504, 505, 506, 507, 508,
+    510, 511
+] as const;
+// oxlint-enable eslint/no-magic-numbers
+
 export const eslintRules = defineConfig({
     rules: {
         'eslint/accessor-pairs': [
@@ -196,31 +207,12 @@ export const eslintRules = defineConfig({
                 detectObjects: true,
                 enforceConst: true,
                 ignore: [
-                    0,
-                    // 2 ** n and 2 ** n - 1
-                    ...((): Array<number> => {
-                        const amount = Math.trunc(
-                            Math.log2(Number.MAX_SAFE_INTEGER)
-                        );
-                        const arr = Array.from<number>({ length: amount * 2 });
-                        for (let i = 0; i < amount; i++) {
-                            arr[2 * i] = 2 ** (i + 1) - 1;
-                            arr[2 * i + 1] = 2 ** (i + 1);
-                        }
-                        return arr;
-                    })(),
-                    // 10 ** n and 10 ** n - 1
-                    ...((): Array<number> => {
-                        const amount = Math.trunc(
-                            Math.log10(Number.MAX_SAFE_INTEGER)
-                        );
-                        const arr = Array.from<number>({ length: amount * 2 });
-                        for (let i = 0; i < amount; i++) {
-                            arr[2 * i] = 10 ** (i + 1) - 1;
-                            arr[2 * i + 1] = 10 ** (i + 1);
-                        }
-                        return arr;
-                    })()
+                    ...WELL_KNOWN_HTTP_STATUS_CODES,
+                    ...tenPowers(),
+                    ...tenPowersMinusOne(),
+                    ...twoPowers(),
+                    ...twoPowersMinusOne(),
+                    0
                 ],
                 ignoreArrayIndexes: true,
                 ignoreClassFieldInitialValues: false,
@@ -415,3 +407,39 @@ export const eslintRules = defineConfig({
         ]
     }
 } as const);
+
+function tenPowers(): Readonly<Array<number>> {
+    const length = Math.trunc(Math.log2(Number.MAX_SAFE_INTEGER));
+    const arr = Array.from<number>({ length });
+    for (let i = 0; i < length; i++) {
+        arr[i] = 10 ** (i + 1);
+    }
+    return arr;
+}
+
+function tenPowersMinusOne(): Readonly<Array<number>> {
+    const length = Math.trunc(Math.log2(Number.MAX_SAFE_INTEGER));
+    const arr = Array.from<number>({ length });
+    for (let i = 0; i < length; i++) {
+        arr[i] = 10 ** (i + 1) - 1;
+    }
+    return arr;
+}
+
+function twoPowers(): Readonly<Array<number>> {
+    const length = Math.trunc(Math.log2(Number.MAX_SAFE_INTEGER));
+    const arr = Array.from<number>({ length });
+    for (let i = 0; i < length; i++) {
+        arr[i] = 2 ** (i + 1);
+    }
+    return arr;
+}
+
+function twoPowersMinusOne(): Readonly<Array<number>> {
+    const length = Math.trunc(Math.log2(Number.MAX_SAFE_INTEGER));
+    const arr = Array.from<number>({ length });
+    for (let i = 0; i < length; i++) {
+        arr[i] = 2 ** (i + 1) - 1;
+    }
+    return arr;
+}
