@@ -388,16 +388,7 @@ export const eslintRules = defineConfig({
         'eslint/radix': 'error',
         'eslint/require-await': 'off',
         'eslint/require-yield': 'error',
-        'eslint/sort-imports': [
-            'error',
-            {
-                allowSeparatedGroups: false,
-                ignoreCase: false,
-                ignoreDeclarationSort: false,
-                ignoreMemberSort: false,
-                memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple']
-            }
-        ],
+        'eslint/sort-imports': 'off',
         'eslint/sort-keys': [
             'error',
             'asc',
@@ -423,4 +414,4 @@ export const eslintRules = defineConfig({
             { exceptRange: true, onlyEquality: false }
         ]
     }
-});
+} as const);

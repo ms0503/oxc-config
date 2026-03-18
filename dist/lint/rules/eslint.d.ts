@@ -1,387 +1,381 @@
 export declare const eslintRules: {
-    rules: {
-        'eslint/accessor-pairs': (string | {
-            enforceForClassMembers: boolean;
-            enforceForTSTypes: boolean;
-            getWithoutSet: boolean;
-            setWithoutGet: boolean;
-        })[];
-        'eslint/array-callback-return': (string | {
-            allowImplicit: boolean;
-            allowVoid: boolean;
-            checkForEach: boolean;
-        })[];
-        'eslint/arrow-body-style': (string | {
-            requireReturnForObjectLiteral: boolean;
-        })[];
-        'eslint/block-scoped-var': "error";
-        'eslint/capitalized-comments': (string | {
-            block: {
-                ignoreConsecutiveComments: boolean;
-                ignoreInlineComments: boolean;
-                ignorePattern: string;
+    readonly rules: {
+        readonly 'eslint/accessor-pairs': ["error", {
+            readonly enforceForClassMembers: true;
+            readonly enforceForTSTypes: true;
+            readonly getWithoutSet: false;
+            readonly setWithoutGet: true;
+        }];
+        readonly 'eslint/array-callback-return': ["error", {
+            readonly allowImplicit: true;
+            readonly allowVoid: false;
+            readonly checkForEach: false;
+        }];
+        readonly 'eslint/arrow-body-style': ["error", "as-needed", {
+            readonly requireReturnForObjectLiteral: false;
+        }];
+        readonly 'eslint/block-scoped-var': "error";
+        readonly 'eslint/capitalized-comments': ["error", "always", {
+            readonly block: {
+                readonly ignoreConsecutiveComments: true;
+                readonly ignoreInlineComments: true;
+                readonly ignorePattern: "";
             };
-            line: {
-                ignoreConsecutiveComments: boolean;
-                ignoreInlineComments: boolean;
-                ignorePattern: string;
+            readonly line: {
+                readonly ignoreConsecutiveComments: true;
+                readonly ignoreInlineComments: true;
+                readonly ignorePattern: "";
             };
-        })[];
-        'eslint/class-methods-use-this': (string | {
-            enforceForClassFields: boolean;
-            exceptMethods: never[];
-            ignoreClassesWithImplements: null;
-            ignoreOverrideMethods: boolean;
-        })[];
-        'eslint/complexity': "off";
-        'eslint/constructor-super': "error";
-        'eslint/curly': string[];
-        'eslint/default-case': (string | {
-            commentPattern: string;
-        })[];
-        'eslint/default-case-last': "error";
-        'eslint/default-param-last': "error";
-        'eslint/eqeqeq': string[];
-        'eslint/for-direction': "error";
-        'eslint/func-names': (string | {
-            generators: null;
-        })[];
-        'eslint/func-style': (string | {
-            allowArrowFunctions: boolean;
-            allowTypeAnnotation: boolean;
-            overrides: {
-                namedExports: null;
+        }];
+        readonly 'eslint/class-methods-use-this': ["error", {
+            readonly enforceForClassFields: true;
+            readonly exceptMethods: readonly [];
+            readonly ignoreClassesWithImplements: null;
+            readonly ignoreOverrideMethods: false;
+        }];
+        readonly 'eslint/complexity': "off";
+        readonly 'eslint/constructor-super': "error";
+        readonly 'eslint/curly': ["error", "all"];
+        readonly 'eslint/default-case': ["error", {
+            readonly commentPattern: "^checked\\sall\\spatterns";
+        }];
+        readonly 'eslint/default-case-last': "error";
+        readonly 'eslint/default-param-last': "error";
+        readonly 'eslint/eqeqeq': ["error", "smart"];
+        readonly 'eslint/for-direction': "error";
+        readonly 'eslint/func-names': ["error", "as-needed", {
+            readonly generators: null;
+        }];
+        readonly 'eslint/func-style': ["error", "declaration", {
+            readonly allowArrowFunctions: true;
+            readonly allowTypeAnnotation: true;
+            readonly overrides: {
+                readonly namedExports: null;
             };
-        })[];
-        'eslint/getter-return': (string | {
-            allowImplicit: boolean;
-        })[];
-        'eslint/grouped-accessor-pairs': (string | {
-            enforceForTSTypes: boolean;
-        })[];
-        'eslint/guard-for-in': "error";
-        'eslint/id-length': (string | {
-            checkGeneric: boolean;
-            exceptionPatterns: never[];
-            exceptions: never[];
-            max: number;
-            min: number;
-            properties: string;
-        })[];
-        'eslint/init-declarations': string[];
-        'eslint/max-classes-per-file': (string | {
-            ignoreExpressions: boolean;
-            max: number;
-        })[];
-        'eslint/max-depth': "off";
-        'eslint/max-lines': "off";
-        'eslint/max-lines-per-function': "off";
-        'eslint/max-nested-callbacks': "off";
-        'eslint/max-params': "off";
-        'eslint/max-statements': "off";
-        'eslint/new-cap': (string | {
-            capIsNew: boolean;
-            capIsNewExceptionPattern: string;
-            capIsNewExceptions: never[];
-            newIsCap: boolean;
-            newIsCapExceptionPattern: string;
-            newIsCapExceptions: string[];
-            properties: boolean;
-        })[];
-        'eslint/no-alert': "error";
-        'eslint/no-array-constructor': "error";
-        'eslint/no-async-promise-executor': "error";
-        'eslint/no-await-in-loop': "error";
-        'eslint/no-bitwise': (string | {
-            allow: never[];
-            int32Hint: boolean;
-        })[];
-        'eslint/no-caller': "error";
-        'eslint/no-case-declarations': "error";
-        'eslint/no-class-assign': "error";
-        'eslint/no-compare-neg-zero': "error";
-        'eslint/no-cond-assign': string[];
-        'eslint/no-console': "off";
-        'eslint/no-const-assign': "error";
-        'eslint/no-constant-binary-expression': "error";
-        'eslint/no-constant-condition': (string | {
-            checkLoops: string;
-        })[];
-        'eslint/no-constructor-return': "error";
-        'eslint/no-continue': "error";
-        'eslint/no-control-regex': "error";
-        'eslint/no-debugger': "error";
-        'eslint/no-delete-var': "error";
-        'eslint/no-div-regex': "error";
-        'eslint/no-dupe-class-members': "error";
-        'eslint/no-dupe-else-if': "error";
-        'eslint/no-dupe-keys': "error";
-        'eslint/no-duplicate-case': "error";
-        'eslint/no-duplicate-imports': (string | {
-            allowSeparateTypeImports: boolean;
-            includeExports: boolean;
-        })[];
-        'eslint/no-else-return': (string | {
-            allowElseIf: boolean;
-        })[];
-        'eslint/no-empty': (string | {
-            allowEmptyCatch: boolean;
-        })[];
-        'eslint/no-empty-character-class': "error";
-        'eslint/no-empty-function': "error";
-        'eslint/no-empty-pattern': "error";
-        'eslint/no-empty-static-block': "error";
-        'eslint/no-eq-null': "error";
-        'eslint/no-eval': (string | {
-            allowIndirect: boolean;
-        })[];
-        'eslint/no-ex-assign': "error";
-        'eslint/no-extend-native': (string | {
-            exceptions: never[];
-        })[];
-        'eslint/no-extra-bind': "error";
-        'eslint/no-extra-boolean-cast': "error";
-        'eslint/no-extra-label': "error";
-        'eslint/no-fallthrough': (string | {
-            allowEmptyCase: boolean;
-            commentPattern: null;
-            reportUnusedFallthroughComment: boolean;
-        })[];
-        'eslint/no-func-assign': "error";
-        'eslint/no-global-assign': (string | {
-            exceptions: never[];
-        })[];
-        'eslint/no-implicit-coercion': (string | {
-            allow: string[];
-            boolean: boolean;
-            disallowTemplateShorthand: boolean;
-            number: boolean;
-            string: boolean;
-        })[];
-        'eslint/no-import-assign': "error";
-        'eslint/no-inline-comments': (string | {
-            ignorePattern: null;
-        })[];
-        'eslint/no-inner-declarations': "off";
-        'eslint/no-invalid-regexp': (string | {
-            allowConstructorFlags: never[];
-        })[];
-        'eslint/no-irregular-whitespace': "error";
-        'eslint/no-iterator': "error";
-        'eslint/no-label-var': "error";
-        'eslint/no-labels': (string | {
-            allowLoop: boolean;
-            allowSwitch: boolean;
-        })[];
-        'eslint/no-lone-blocks': "error";
-        'eslint/no-lonely-if': "error";
-        'eslint/no-loop-func': "error";
-        'eslint/no-loss-of-precision': "error";
-        'eslint/no-magic-numbers': (string | {
-            detectObjects: boolean;
-            enforceConst: boolean;
-            ignore: number[];
-            ignoreArrayIndexes: boolean;
-            ignoreClassFieldInitialValues: boolean;
-            ignoreDefaultValues: boolean;
-            ignoreEnums: boolean;
-            ignoreNumericLiteralTypes: boolean;
-            ignoreReadonlyClassProperties: boolean;
-            ignoreTypeIndexes: boolean;
-        })[];
-        'eslint/no-misleading-character-class': (string | {
-            allowEscape: boolean;
-        })[];
-        'eslint/no-multi-assign': (string | {
-            ignoreNonDeclaration: boolean;
-        })[];
-        'eslint/no-multi-str': "error";
-        'eslint/no-negated-condition': "error";
-        'eslint/no-nested-ternary': "error";
-        'eslint/no-new': "error";
-        'eslint/no-new-func': "error";
-        'eslint/no-new-native-nonconstructor': "error";
-        'eslint/no-new-wrappers': "error";
-        'eslint/no-nonoctal-decimal-escape': "error";
-        'eslint/no-obj-calls': "error";
-        'eslint/no-object-constructor': "error";
-        'eslint/no-param-reassign': (string | {
-            ignorePropertyModificationsFor: never[];
-            ignorePropertyModificationsForRegex: never[];
-            props: boolean;
-        })[];
-        'eslint/no-plusplus': "off";
-        'eslint/no-promise-executor-return': (string | {
-            allowVoid: boolean;
-        })[];
-        'eslint/no-proto': "error";
-        'eslint/no-prototype-builtins': "error";
-        'eslint/no-redeclare': (string | {
-            builtinGlobals: boolean;
-        })[];
-        'eslint/no-regex-spaces': "error";
-        'eslint/no-restricted-globals': (string | {
-            restrictedGlobals: {};
-        })[];
-        'eslint/no-restricted-imports': (string | {
-            paths: never[];
-            patterns: never[];
-        })[];
-        'eslint/no-return-assign': string[];
-        'eslint/no-script-url': "error";
-        'eslint/no-self-assign': (string | {
-            props: boolean;
-        })[];
-        'eslint/no-self-compare': "error";
-        'eslint/no-sequences': (string | {
-            allowInParentheses: boolean;
-        })[];
-        'eslint/no-setter-return': "error";
-        'eslint/no-shadow': "off";
-        'eslint/no-shadow-restricted-names': (string | {
-            reportGlobalThis: boolean;
-        })[];
-        'eslint/no-sparse-arrays': "error";
-        'eslint/no-template-curly-in-string': "error";
-        'eslint/no-ternary': "off";
-        'eslint/no-this-before-super': "error";
-        'eslint/no-unassigned-vars': "error";
-        'eslint/no-undef': (string | {
-            typeof: boolean;
-        })[];
-        'eslint/no-undefined': "error";
-        'eslint/no-unexpected-multiline': "error";
-        'eslint/no-unmodified-loop-condition': "error";
-        'eslint/no-unneeded-ternary': (string | {
-            defaultAssignment: boolean;
-        })[];
-        'eslint/no-unreachable': "error";
-        'eslint/no-unsafe-finally': "error";
-        'eslint/no-unsafe-negation': (string | {
-            enforceForOrderingRelations: boolean;
-        })[];
-        'eslint/no-unsafe-optional-chaining': (string | {
-            disallowArithmeticOperators: boolean;
-        })[];
-        'eslint/no-unused-expressions': (string | {
-            allowShortCircuit: boolean;
-            allowTaggedTemplates: boolean;
-            allowTernary: boolean;
-            enforceForJSX: boolean;
-        })[];
-        'eslint/no-unused-labels': "error";
-        'eslint/no-unused-private-class-members': "error";
-        'eslint/no-unused-vars': (string | {
-            args: string;
-            argsIgnorePattern: string;
-            caughtErrors: string;
-            caughtErrorsIgnorePattern: string;
-            destructuredArrayIgnorePattern: string;
-            fix: {
-                imports: string;
-                variables: string;
+        }];
+        readonly 'eslint/getter-return': ["error", {
+            readonly allowImplicit: true;
+        }];
+        readonly 'eslint/grouped-accessor-pairs': ["error", "getBeforeSet", {
+            readonly enforceForTSTypes: true;
+        }];
+        readonly 'eslint/guard-for-in': "error";
+        readonly 'eslint/id-length': ["error", {
+            readonly checkGeneric: true;
+            readonly exceptionPatterns: readonly [];
+            readonly exceptions: readonly [];
+            readonly max: number;
+            readonly min: 1;
+            readonly properties: "always";
+        }];
+        readonly 'eslint/init-declarations': ["error", "always"];
+        readonly 'eslint/max-classes-per-file': ["error", {
+            readonly ignoreExpressions: false;
+            readonly max: 1;
+        }];
+        readonly 'eslint/max-depth': "off";
+        readonly 'eslint/max-lines': "off";
+        readonly 'eslint/max-lines-per-function': "off";
+        readonly 'eslint/max-nested-callbacks': "off";
+        readonly 'eslint/max-params': "off";
+        readonly 'eslint/max-statements': "off";
+        readonly 'eslint/new-cap': ["error", {
+            readonly capIsNew: true;
+            readonly capIsNewExceptionPattern: "";
+            readonly capIsNewExceptions: readonly [];
+            readonly newIsCap: true;
+            readonly newIsCapExceptionPattern: "";
+            readonly newIsCapExceptions: readonly ["BigInt", "Boolean", "Number", "String", "Symbol"];
+            readonly properties: true;
+        }];
+        readonly 'eslint/no-alert': "error";
+        readonly 'eslint/no-array-constructor': "error";
+        readonly 'eslint/no-async-promise-executor': "error";
+        readonly 'eslint/no-await-in-loop': "error";
+        readonly 'eslint/no-bitwise': ["error", {
+            readonly allow: readonly [];
+            readonly int32Hint: false;
+        }];
+        readonly 'eslint/no-caller': "error";
+        readonly 'eslint/no-case-declarations': "error";
+        readonly 'eslint/no-class-assign': "error";
+        readonly 'eslint/no-compare-neg-zero': "error";
+        readonly 'eslint/no-cond-assign': ["error", "always"];
+        readonly 'eslint/no-console': "off";
+        readonly 'eslint/no-const-assign': "error";
+        readonly 'eslint/no-constant-binary-expression': "error";
+        readonly 'eslint/no-constant-condition': ["error", {
+            readonly checkLoops: "allExceptWhileTrue";
+        }];
+        readonly 'eslint/no-constructor-return': "error";
+        readonly 'eslint/no-continue': "error";
+        readonly 'eslint/no-control-regex': "error";
+        readonly 'eslint/no-debugger': "error";
+        readonly 'eslint/no-delete-var': "error";
+        readonly 'eslint/no-div-regex': "error";
+        readonly 'eslint/no-dupe-class-members': "error";
+        readonly 'eslint/no-dupe-else-if': "error";
+        readonly 'eslint/no-dupe-keys': "error";
+        readonly 'eslint/no-duplicate-case': "error";
+        readonly 'eslint/no-duplicate-imports': ["error", {
+            readonly allowSeparateTypeImports: true;
+            readonly includeExports: false;
+        }];
+        readonly 'eslint/no-else-return': ["error", {
+            readonly allowElseIf: false;
+        }];
+        readonly 'eslint/no-empty': ["error", {
+            readonly allowEmptyCatch: false;
+        }];
+        readonly 'eslint/no-empty-character-class': "error";
+        readonly 'eslint/no-empty-function': "error";
+        readonly 'eslint/no-empty-pattern': "error";
+        readonly 'eslint/no-empty-static-block': "error";
+        readonly 'eslint/no-eq-null': "error";
+        readonly 'eslint/no-eval': ["error", {
+            readonly allowIndirect: false;
+        }];
+        readonly 'eslint/no-ex-assign': "error";
+        readonly 'eslint/no-extend-native': ["error", {
+            readonly exceptions: readonly [];
+        }];
+        readonly 'eslint/no-extra-bind': "error";
+        readonly 'eslint/no-extra-boolean-cast': "error";
+        readonly 'eslint/no-extra-label': "error";
+        readonly 'eslint/no-fallthrough': ["error", {
+            readonly allowEmptyCase: false;
+            readonly commentPattern: null;
+            readonly reportUnusedFallthroughComment: false;
+        }];
+        readonly 'eslint/no-func-assign': "error";
+        readonly 'eslint/no-global-assign': ["error", {
+            readonly exceptions: readonly [];
+        }];
+        readonly 'eslint/no-implicit-coercion': ["error", {
+            readonly allow: readonly ["!!"];
+            readonly boolean: false;
+            readonly disallowTemplateShorthand: true;
+            readonly number: true;
+            readonly string: true;
+        }];
+        readonly 'eslint/no-import-assign': "error";
+        readonly 'eslint/no-inline-comments': ["error", {
+            readonly ignorePattern: null;
+        }];
+        readonly 'eslint/no-inner-declarations': "off";
+        readonly 'eslint/no-invalid-regexp': ["error", {
+            readonly allowConstructorFlags: readonly [];
+        }];
+        readonly 'eslint/no-irregular-whitespace': "error";
+        readonly 'eslint/no-iterator': "error";
+        readonly 'eslint/no-label-var': "error";
+        readonly 'eslint/no-labels': ["error", {
+            readonly allowLoop: false;
+            readonly allowSwitch: false;
+        }];
+        readonly 'eslint/no-lone-blocks': "error";
+        readonly 'eslint/no-lonely-if': "error";
+        readonly 'eslint/no-loop-func': "error";
+        readonly 'eslint/no-loss-of-precision': "error";
+        readonly 'eslint/no-magic-numbers': ["error", {
+            readonly detectObjects: true;
+            readonly enforceConst: true;
+            readonly ignore: readonly [0, ...number[]];
+            readonly ignoreArrayIndexes: true;
+            readonly ignoreClassFieldInitialValues: false;
+            readonly ignoreDefaultValues: true;
+            readonly ignoreEnums: false;
+            readonly ignoreNumericLiteralTypes: false;
+            readonly ignoreReadonlyClassProperties: false;
+            readonly ignoreTypeIndexes: true;
+        }];
+        readonly 'eslint/no-misleading-character-class': ["error", {
+            readonly allowEscape: false;
+        }];
+        readonly 'eslint/no-multi-assign': ["error", {
+            readonly ignoreNonDeclaration: false;
+        }];
+        readonly 'eslint/no-multi-str': "error";
+        readonly 'eslint/no-negated-condition': "error";
+        readonly 'eslint/no-nested-ternary': "error";
+        readonly 'eslint/no-new': "error";
+        readonly 'eslint/no-new-func': "error";
+        readonly 'eslint/no-new-native-nonconstructor': "error";
+        readonly 'eslint/no-new-wrappers': "error";
+        readonly 'eslint/no-nonoctal-decimal-escape': "error";
+        readonly 'eslint/no-obj-calls': "error";
+        readonly 'eslint/no-object-constructor': "error";
+        readonly 'eslint/no-param-reassign': ["error", {
+            readonly ignorePropertyModificationsFor: readonly [];
+            readonly ignorePropertyModificationsForRegex: readonly [];
+            readonly props: true;
+        }];
+        readonly 'eslint/no-plusplus': "off";
+        readonly 'eslint/no-promise-executor-return': ["error", {
+            readonly allowVoid: false;
+        }];
+        readonly 'eslint/no-proto': "error";
+        readonly 'eslint/no-prototype-builtins': "error";
+        readonly 'eslint/no-redeclare': ["error", {
+            readonly builtinGlobals: true;
+        }];
+        readonly 'eslint/no-regex-spaces': "error";
+        readonly 'eslint/no-restricted-globals': ["error", {
+            readonly restrictedGlobals: {};
+        }];
+        readonly 'eslint/no-restricted-imports': ["error", {
+            readonly paths: readonly [];
+            readonly patterns: readonly [];
+        }];
+        readonly 'eslint/no-return-assign': ["error", "always"];
+        readonly 'eslint/no-script-url': "error";
+        readonly 'eslint/no-self-assign': ["error", {
+            readonly props: true;
+        }];
+        readonly 'eslint/no-self-compare': "error";
+        readonly 'eslint/no-sequences': ["error", {
+            readonly allowInParentheses: false;
+        }];
+        readonly 'eslint/no-setter-return': "error";
+        readonly 'eslint/no-shadow': "off";
+        readonly 'eslint/no-shadow-restricted-names': ["error", {
+            readonly reportGlobalThis: true;
+        }];
+        readonly 'eslint/no-sparse-arrays': "error";
+        readonly 'eslint/no-template-curly-in-string': "error";
+        readonly 'eslint/no-ternary': "off";
+        readonly 'eslint/no-this-before-super': "error";
+        readonly 'eslint/no-unassigned-vars': "error";
+        readonly 'eslint/no-undef': ["error", {
+            readonly typeof: true;
+        }];
+        readonly 'eslint/no-undefined': "error";
+        readonly 'eslint/no-unexpected-multiline': "error";
+        readonly 'eslint/no-unmodified-loop-condition': "error";
+        readonly 'eslint/no-unneeded-ternary': ["error", {
+            readonly defaultAssignment: false;
+        }];
+        readonly 'eslint/no-unreachable': "error";
+        readonly 'eslint/no-unsafe-finally': "error";
+        readonly 'eslint/no-unsafe-negation': ["error", {
+            readonly enforceForOrderingRelations: false;
+        }];
+        readonly 'eslint/no-unsafe-optional-chaining': ["error", {
+            readonly disallowArithmeticOperators: true;
+        }];
+        readonly 'eslint/no-unused-expressions': ["error", {
+            readonly allowShortCircuit: false;
+            readonly allowTaggedTemplates: false;
+            readonly allowTernary: false;
+            readonly enforceForJSX: true;
+        }];
+        readonly 'eslint/no-unused-labels': "error";
+        readonly 'eslint/no-unused-private-class-members': "error";
+        readonly 'eslint/no-unused-vars': ["error", {
+            readonly args: "all";
+            readonly argsIgnorePattern: "^_";
+            readonly caughtErrors: "all";
+            readonly caughtErrorsIgnorePattern: "^(_|ignore)";
+            readonly destructuredArrayIgnorePattern: "^_";
+            readonly fix: {
+                readonly imports: "fix";
+                readonly variables: "fix";
             };
-            ignoreClassWithStaticInitBlock: boolean;
-            ignoreRestSiblings: boolean;
-            ignoreUsingDeclarations: boolean;
-            reportUsedIgnorePattern: boolean;
-            reportVarsOnlyUsedAsTypes: boolean;
-            vars: string;
-            varsIgnorePattern: string;
-        })[];
-        'eslint/no-use-before-define': (string | {
-            allowNamedExports: boolean;
-            classes: boolean;
-            enums: boolean;
-            functions: boolean;
-            ignoreTypeReferences: boolean;
-            typedefs: boolean;
-            variables: boolean;
-        })[];
-        'eslint/no-useless-backreference': "error";
-        'eslint/no-useless-call': "error";
-        'eslint/no-useless-catch': "error";
-        'eslint/no-useless-computed-key': (string | {
-            enforceForClassMembers: boolean;
-        })[];
-        'eslint/no-useless-concat': "error";
-        'eslint/no-useless-constructor': "error";
-        'eslint/no-useless-escape': (string | {
-            allowRegexCharacters: never[];
-        })[];
-        'eslint/no-useless-rename': (string | {
-            ignoreDestructuring: boolean;
-            ignoreExport: boolean;
-            ignoreImport: boolean;
-        })[];
-        'eslint/no-useless-return': "error";
-        'eslint/no-var': "error";
-        'eslint/no-void': (string | {
-            allowAsStatement: boolean;
-        })[];
-        'eslint/no-warning-comments': "off";
-        'eslint/no-with': "error";
-        'eslint/operator-assignment': string[];
-        'eslint/prefer-const': (string | {
-            destructuring: string;
-            ignoreReadBeforeAssign: boolean;
-        })[];
-        'eslint/prefer-destructuring': (string | {
-            AssignmentExpression: {
-                array: boolean;
-                object: boolean;
+            readonly ignoreClassWithStaticInitBlock: false;
+            readonly ignoreRestSiblings: false;
+            readonly ignoreUsingDeclarations: false;
+            readonly reportUsedIgnorePattern: true;
+            readonly reportVarsOnlyUsedAsTypes: true;
+            readonly vars: "all";
+            readonly varsIgnorePattern: "^_";
+        }];
+        readonly 'eslint/no-use-before-define': ["error", {
+            readonly allowNamedExports: false;
+            readonly classes: true;
+            readonly enums: true;
+            readonly functions: true;
+            readonly ignoreTypeReferences: true;
+            readonly typedefs: true;
+            readonly variables: true;
+        }];
+        readonly 'eslint/no-useless-backreference': "error";
+        readonly 'eslint/no-useless-call': "error";
+        readonly 'eslint/no-useless-catch': "error";
+        readonly 'eslint/no-useless-computed-key': ["error", {
+            readonly enforceForClassMembers: true;
+        }];
+        readonly 'eslint/no-useless-concat': "error";
+        readonly 'eslint/no-useless-constructor': "error";
+        readonly 'eslint/no-useless-escape': ["error", {
+            readonly allowRegexCharacters: readonly [];
+        }];
+        readonly 'eslint/no-useless-rename': ["error", {
+            readonly ignoreDestructuring: false;
+            readonly ignoreExport: false;
+            readonly ignoreImport: false;
+        }];
+        readonly 'eslint/no-useless-return': "error";
+        readonly 'eslint/no-var': "error";
+        readonly 'eslint/no-void': ["error", {
+            readonly allowAsStatement: false;
+        }];
+        readonly 'eslint/no-warning-comments': "off";
+        readonly 'eslint/no-with': "error";
+        readonly 'eslint/operator-assignment': ["error", "always"];
+        readonly 'eslint/prefer-const': ["error", {
+            readonly destructuring: "all";
+            readonly ignoreReadBeforeAssign: false;
+        }];
+        readonly 'eslint/prefer-destructuring': ["error", {
+            readonly AssignmentExpression: {
+                readonly array: false;
+                readonly object: false;
             };
-            VariableDeclarator: {
-                array: boolean;
-                object: boolean;
+            readonly VariableDeclarator: {
+                readonly array: true;
+                readonly object: true;
             };
-            enforceForRenamedProperties: boolean;
-        })[];
-        'eslint/prefer-exponentiation-operator': "error";
-        'eslint/prefer-numeric-literals': "error";
-        'eslint/prefer-object-has-own': "error";
-        'eslint/prefer-object-spread': "error";
-        'eslint/prefer-promise-reject-errors': (string | {
-            allowEmptyReject: boolean;
-        })[];
-        'eslint/prefer-rest-params': "error";
-        'eslint/prefer-spread': "error";
-        'eslint/prefer-template': "error";
-        'eslint/preserve-caught-error': (string | {
-            requireCatchParameter: boolean;
-        })[];
-        'eslint/radix': "error";
-        'eslint/require-await': "off";
-        'eslint/require-yield': "error";
-        'eslint/sort-imports': (string | {
-            allowSeparatedGroups: boolean;
-            ignoreCase: boolean;
-            ignoreDeclarationSort: boolean;
-            ignoreMemberSort: boolean;
-            memberSyntaxSortOrder: string[];
-        })[];
-        'eslint/sort-keys': (string | {
-            allowLineSeparatedGroups: boolean;
-            caseSensitive: boolean;
-            minKeys: number;
-            natural: boolean;
-        })[];
-        'eslint/sort-vars': (string | {
-            ignoreCase: boolean;
-        })[];
-        'eslint/symbol-description': "error";
-        'eslint/unicode-bom': string[];
-        'eslint/use-isnan': (string | {
-            enforceForIndexOf: boolean;
-            enforceForSwitchCase: boolean;
-        })[];
-        'eslint/valid-typeof': (string | {
-            requireStringLiterals: boolean;
-        })[];
-        'eslint/vars-on-top': "error";
-        'eslint/yoda': (string | {
-            exceptRange: boolean;
-            onlyEquality: boolean;
-        })[];
+            readonly enforceForRenamedProperties: true;
+        }];
+        readonly 'eslint/prefer-exponentiation-operator': "error";
+        readonly 'eslint/prefer-numeric-literals': "error";
+        readonly 'eslint/prefer-object-has-own': "error";
+        readonly 'eslint/prefer-object-spread': "error";
+        readonly 'eslint/prefer-promise-reject-errors': ["error", {
+            readonly allowEmptyReject: false;
+        }];
+        readonly 'eslint/prefer-rest-params': "error";
+        readonly 'eslint/prefer-spread': "error";
+        readonly 'eslint/prefer-template': "error";
+        readonly 'eslint/preserve-caught-error': ["error", {
+            readonly requireCatchParameter: false;
+        }];
+        readonly 'eslint/radix': "error";
+        readonly 'eslint/require-await': "off";
+        readonly 'eslint/require-yield': "error";
+        readonly 'eslint/sort-imports': "off";
+        readonly 'eslint/sort-keys': ["error", "asc", {
+            readonly allowLineSeparatedGroups: false;
+            readonly caseSensitive: true;
+            readonly minKeys: 1;
+            readonly natural: false;
+        }];
+        readonly 'eslint/sort-vars': ["error", {
+            readonly ignoreCase: false;
+        }];
+        readonly 'eslint/symbol-description': "error";
+        readonly 'eslint/unicode-bom': ["error", "never"];
+        readonly 'eslint/use-isnan': ["error", {
+            readonly enforceForIndexOf: true;
+            readonly enforceForSwitchCase: true;
+        }];
+        readonly 'eslint/valid-typeof': ["error", {
+            readonly requireStringLiterals: true;
+        }];
+        readonly 'eslint/vars-on-top': "error";
+        readonly 'eslint/yoda': ["error", "never", {
+            readonly exceptRange: true;
+            readonly onlyEquality: false;
+        }];
     };
 };

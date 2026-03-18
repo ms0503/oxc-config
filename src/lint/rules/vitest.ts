@@ -26,4 +26,4 @@ export const vitestRules = defineConfig({
         'vitest/require-local-test-context-for-concurrent-snapshots': 'error',
         'vitest/warn-todo': 'error'
     }
-});
+} as const);

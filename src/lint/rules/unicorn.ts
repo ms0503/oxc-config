@@ -196,4 +196,4 @@ export const unicornRules = defineConfig({
         'unicorn/text-encoding-identifier-case': ['error', { withDash: false }],
         'unicorn/throw-new-error': 'error'
     }
-});
+} as const);

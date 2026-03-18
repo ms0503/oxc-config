@@ -32,4 +32,4 @@ export const oxcRules = defineConfig({
         'oxc/only-used-in-recursion': 'error',
         'oxc/uninvoked-array-callback': 'error'
     }
-});
+} as const);

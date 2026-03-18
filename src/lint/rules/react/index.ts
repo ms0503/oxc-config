@@ -88,4 +88,4 @@ export const reactRules = defineConfig({
         'react/style-prop-object': ['error', { allow: [] }],
         'react/void-dom-elements-no-children': 'error'
     }
-});
+} as const);

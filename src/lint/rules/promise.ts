@@ -42,4 +42,4 @@ export const promiseRules = defineConfig({
         'promise/spec-only': ['error', { allowedMethods: [] }],
         'promise/valid-params': 'error'
     }
-});
+} as const);

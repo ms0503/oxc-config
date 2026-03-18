@@ -1,3 +1,3 @@
 import { defineConfig } from 'oxlint';
 
-export const reactPerfRules = defineConfig({});
+export const reactPerfRules = defineConfig({ rules: {} } as const);

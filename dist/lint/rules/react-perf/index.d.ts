@@ -1,1 +1,3 @@
-export declare const reactPerfRules: {};
+export declare const reactPerfRules: {
+    readonly rules: {};
+};

@@ -7,4 +7,4 @@ export const reactPerfJSXRules = defineConfig({
         'react-perf/jsx-no-new-function-as-prop': 'error',
         'react-perf/jsx-no-new-object-as-prop': 'error'
     }
-});
+} as const);

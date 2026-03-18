@@ -24,4 +24,4 @@ export const nextjsRules = defineConfig({
         'nextjs/no-typos': 'error',
         'nextjs/no-unwanted-polyfillio': 'error'
     }
-});
+} as const);

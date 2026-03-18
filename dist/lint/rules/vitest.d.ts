@@ -1,33 +1,33 @@
 export declare const vitestRules: {
-    rules: {
-        'vitest/consistent-each-for': (string | {
-            describe: string;
-            it: string;
-            suite: string;
-            test: string;
-        })[];
-        'vitest/consistent-test-filename': (string | {
-            allTestPattern: string;
-            pattern: string;
-        })[];
-        'vitest/consistent-vitest-vi': (string | {
-            fn: string;
-        })[];
-        'vitest/hoisted-apis-on-top': "error";
-        'vitest/no-conditional-tests': "error";
-        'vitest/no-import-node-test': "error";
-        'vitest/no-importing-vitest-globals': "error";
-        'vitest/prefer-called-once': "error";
-        'vitest/prefer-called-times': "off";
-        'vitest/prefer-describe-function-title': "error";
-        'vitest/prefer-expect-type-of': "error";
-        'vitest/prefer-import-in-mock': (string | {
-            fixable: boolean;
-        })[];
-        'vitest/prefer-to-be-falsy': "error";
-        'vitest/prefer-to-be-object': "error";
-        'vitest/prefer-to-be-truthy': "error";
-        'vitest/require-local-test-context-for-concurrent-snapshots': "error";
-        'vitest/warn-todo': "error";
+    readonly rules: {
+        readonly 'vitest/consistent-each-for': ["error", {
+            readonly describe: "each";
+            readonly it: "each";
+            readonly suite: "each";
+            readonly test: "each";
+        }];
+        readonly 'vitest/consistent-test-filename': ["error", {
+            readonly allTestPattern: "tests";
+            readonly pattern: ".*\\.test\\.ts";
+        }];
+        readonly 'vitest/consistent-vitest-vi': ["error", {
+            readonly fn: "vi";
+        }];
+        readonly 'vitest/hoisted-apis-on-top': "error";
+        readonly 'vitest/no-conditional-tests': "error";
+        readonly 'vitest/no-import-node-test': "error";
+        readonly 'vitest/no-importing-vitest-globals': "error";
+        readonly 'vitest/prefer-called-once': "error";
+        readonly 'vitest/prefer-called-times': "off";
+        readonly 'vitest/prefer-describe-function-title': "error";
+        readonly 'vitest/prefer-expect-type-of': "error";
+        readonly 'vitest/prefer-import-in-mock': ["error", {
+            readonly fixable: true;
+        }];
+        readonly 'vitest/prefer-to-be-falsy': "error";
+        readonly 'vitest/prefer-to-be-object': "error";
+        readonly 'vitest/prefer-to-be-truthy': "error";
+        readonly 'vitest/require-local-test-context-for-concurrent-snapshots': "error";
+        readonly 'vitest/warn-todo': "error";
     };
 };

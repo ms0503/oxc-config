@@ -8,4 +8,4 @@ export const nodeRules = defineConfig({
         'node/no-path-concat': 'error',
         'node/no-process-env': 'off'
     }
-});
+} as const);

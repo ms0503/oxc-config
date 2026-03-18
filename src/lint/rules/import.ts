@@ -80,4 +80,4 @@ export const importRules = defineConfig({
         'import/prefer-default-export': 'off',
         'import/unambiguous': 'error'
     }
-});
+} as const);

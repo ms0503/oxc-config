@@ -20,4 +20,4 @@ export const vueRules = defineConfig({
         'vue/valid-define-emits': 'error',
         'vue/valid-define-props': 'error'
     }
-});
+} as const);

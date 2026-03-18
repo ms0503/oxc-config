@@ -1,15 +1,15 @@
 export declare const coreSettings: {
-    settings: {};
+    readonly settings: {};
 };
 export declare const reactSettings: {
-    settings: {
-        'jsx-a11y': {
-            components: {
-                Link: string;
+    readonly settings: {
+        readonly 'jsx-a11y': {
+            readonly components: {
+                readonly Link: "a";
             };
         };
     };
 };
 export declare const vueSettings: {
-    settings: {};
+    readonly settings: {};
 };

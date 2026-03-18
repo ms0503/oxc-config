@@ -377,4 +377,4 @@ export const typescriptRules = defineConfig({
         ],
         'typescript/use-unknown-in-catch-callback-variable': 'error'
     }
-});
+} as const);

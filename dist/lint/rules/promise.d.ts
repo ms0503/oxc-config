@@ -1,40 +1,40 @@
 export declare const promiseRules: {
-    rules: {
-        'promise/always-return': (string | {
-            ignoreAssignmentVariable: string[];
-            ignoreLastCallback: boolean;
-        })[];
-        'promise/avoid-new': "error";
-        'promise/catch-or-return': (string | {
-            allowFinally: boolean;
-            allowThen: boolean;
-            terminationMethod: string[];
-        })[];
-        'promise/no-callback-in-promise': (string | {
-            callbacks: string[];
-            exceptions: never[];
-            timeoutsErr: boolean;
-        })[];
-        'promise/no-multiple-resolved': "error";
-        'promise/no-nesting': "error";
-        'promise/no-new-statics': "error";
-        'promise/no-promise-in-callback': "error";
-        'promise/no-return-in-finally': "error";
-        'promise/no-return-wrap': (string | {
-            allowReject: boolean;
-        })[];
-        'promise/param-names': (string | {
-            rejectPattern: string;
-            resolvePattern: string;
-        })[];
-        'promise/prefer-await-to-callbacks': "error";
-        'promise/prefer-await-to-then': (string | {
-            strict: boolean;
-        })[];
-        'promise/prefer-catch': "error";
-        'promise/spec-only': (string | {
-            allowedMethods: never[];
-        })[];
-        'promise/valid-params': "error";
+    readonly rules: {
+        readonly 'promise/always-return': ["error", {
+            readonly ignoreAssignmentVariable: readonly ["global", "globalThis", "window"];
+            readonly ignoreLastCallback: true;
+        }];
+        readonly 'promise/avoid-new': "error";
+        readonly 'promise/catch-or-return': ["error", {
+            readonly allowFinally: true;
+            readonly allowThen: false;
+            readonly terminationMethod: readonly ["catch", "finally"];
+        }];
+        readonly 'promise/no-callback-in-promise': ["error", {
+            readonly callbacks: readonly ["callback", "cb", "done", "next"];
+            readonly exceptions: readonly [];
+            readonly timeoutsErr: false;
+        }];
+        readonly 'promise/no-multiple-resolved': "error";
+        readonly 'promise/no-nesting': "error";
+        readonly 'promise/no-new-statics': "error";
+        readonly 'promise/no-promise-in-callback': "error";
+        readonly 'promise/no-return-in-finally': "error";
+        readonly 'promise/no-return-wrap': ["error", {
+            readonly allowReject: false;
+        }];
+        readonly 'promise/param-names': ["error", {
+            readonly rejectPattern: "^_?reject$";
+            readonly resolvePattern: "^_?resolve$";
+        }];
+        readonly 'promise/prefer-await-to-callbacks': "error";
+        readonly 'promise/prefer-await-to-then': ["error", {
+            readonly strict: true;
+        }];
+        readonly 'promise/prefer-catch': "error";
+        readonly 'promise/spec-only': ["error", {
+            readonly allowedMethods: readonly [];
+        }];
+        readonly 'promise/valid-params': "error";
     };
 };
