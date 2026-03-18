@@ -34,5 +34,5 @@
         "lint:fix": "oxlint --fix --type-aware"
     },
     "type": "module",
-    "version": "0.3.4"
+    "version": "0.3.5"
 }
