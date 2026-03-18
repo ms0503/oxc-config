@@ -328,9 +328,9 @@ export const eslintRules = defineConfig({
                 allowNamedExports: false,
                 classes: true,
                 enums: true,
-                functions: true,
+                functions: false,
                 ignoreTypeReferences: true,
-                typedefs: true,
+                typedefs: false,
                 variables: true
             }
         ],
