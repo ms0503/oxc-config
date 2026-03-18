@@ -20,34 +20,8 @@ export const config: ReturnType<typeof defineConfig> = defineConfig({
     semi: true,
     singleAttributePerLine: true,
     singleQuote: true,
-    sortImports: {
-        customGroups: [],
-        groups: [
-            [
-                'value-builtin',
-                'value-external',
-                'value-index',
-                'value-internal',
-                'value-parent',
-                'value-sibling'
-            ],
-            [
-                'type-import',
-                'type-index',
-                'type-internal',
-                'type-parent',
-                'type-sibling'
-            ],
-            'unknown'
-        ],
-        ignoreCase: false,
-        internalPattern: [],
-        newlinesBetween: true,
-        order: 'asc',
-        partitionByComment: false,
-        partitionByNewline: false,
-        sortSideEffects: false
-    },
+    // use perfectionist/sort-named-imports intead
+    // sortImports: {},
     sortPackageJson: false,
     sortTailwindcss: {
         attributes: [],

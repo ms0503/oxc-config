@@ -497,7 +497,7 @@ export declare const coreRules: {
         };
     }, {
         readonly rules: {
-            readonly 'perfectionist/sort-array-includes': ["error", {
+            readonly "perfectionist/sort-array-includes": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -514,7 +514,7 @@ export declare const coreRules: {
                 readonly partitionByNewLine: false;
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-classes': ["error", {
+            readonly "perfectionist/sort-classes": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -593,7 +593,7 @@ export declare const coreRules: {
                 readonly useConfigurationIf: {};
                 readonly useExperimentalDependencyDetection: true;
             }];
-            readonly 'perfectionist/sort-decorators': ["error", {
+            readonly "perfectionist/sort-decorators": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -614,7 +614,7 @@ export declare const coreRules: {
                 readonly sortOnParameters: true;
                 readonly sortOnProperties: true;
             }];
-            readonly 'perfectionist/sort-enums': ["error", {
+            readonly "perfectionist/sort-enums": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -633,7 +633,7 @@ export declare const coreRules: {
                 readonly useConfigurationIf: {};
                 readonly useExperimentalDependencyDetection: true;
             }];
-            readonly 'perfectionist/sort-export-attributes': ["error", {
+            readonly "perfectionist/sort-export-attributes": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -650,7 +650,7 @@ export declare const coreRules: {
                 readonly partitionByNewLine: false;
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-exports': ["error", {
+            readonly "perfectionist/sort-exports": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -666,24 +666,7 @@ export declare const coreRules: {
                 readonly partitionByComment: false;
                 readonly partitionByNewLine: false;
             }];
-            readonly 'perfectionist/sort-heritage-clauses': ["error", {
-                readonly fallbackSort: {
-                    readonly type: "unsorted";
-                };
-                readonly ignoreCase: false;
-                readonly locales: "en-US";
-                readonly order: "asc";
-                readonly specialCharacters: "keep";
-                readonly type: "alphabetical";
-                readonly customGroups: readonly [];
-                readonly groups: readonly [];
-                readonly newlinesBetween: 0;
-                readonly newlinesInside: 0;
-                readonly partitionByComment: false;
-                readonly partitionByNewLine: false;
-                readonly useConfigurationIf: {};
-            }];
-            readonly 'perfectionist/sort-import-attributes': ["error", {
+            readonly "perfectionist/sort-heritage-clauses": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -700,8 +683,25 @@ export declare const coreRules: {
                 readonly partitionByNewLine: false;
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-imports': "off";
-            readonly 'perfectionist/sort-interfaces': ["error", {
+            readonly "perfectionist/sort-import-attributes": ["error", {
+                readonly fallbackSort: {
+                    readonly type: "unsorted";
+                };
+                readonly ignoreCase: false;
+                readonly locales: "en-US";
+                readonly order: "asc";
+                readonly specialCharacters: "keep";
+                readonly type: "alphabetical";
+                readonly customGroups: readonly [];
+                readonly groups: readonly [];
+                readonly newlinesBetween: 0;
+                readonly newlinesInside: 0;
+                readonly partitionByComment: false;
+                readonly partitionByNewLine: false;
+                readonly useConfigurationIf: {};
+            }];
+            readonly "perfectionist/sort-imports": "off";
+            readonly "perfectionist/sort-interfaces": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -731,7 +731,7 @@ export declare const coreRules: {
                 readonly sortBy: "name";
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-intersection-types': ["error", {
+            readonly "perfectionist/sort-intersection-types": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -748,7 +748,7 @@ export declare const coreRules: {
                 readonly partitionByNewLine: false;
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-jsx-props': ["error", {
+            readonly "perfectionist/sort-jsx-props": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -764,7 +764,7 @@ export declare const coreRules: {
                 readonly partitionByNewLine: false;
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-maps': ["error", {
+            readonly "perfectionist/sort-maps": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -781,8 +781,8 @@ export declare const coreRules: {
                 readonly partitionByNewLine: false;
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-modules': "off";
-            readonly 'perfectionist/sort-named-exports': ["error", {
+            readonly "perfectionist/sort-modules": "off";
+            readonly "perfectionist/sort-named-exports": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -800,7 +800,7 @@ export declare const coreRules: {
                 readonly partitionByNewLine: false;
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-named-imports': ["error", {
+            readonly "perfectionist/sort-named-imports": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -810,7 +810,9 @@ export declare const coreRules: {
                 readonly specialCharacters: "keep";
                 readonly type: "alphabetical";
                 readonly customGroups: readonly [];
-                readonly groups: readonly [];
+                readonly groups: readonly ["value-import", "type-import", {
+                    readonly newlinesBetween: 1;
+                }, "unknown"];
                 readonly ignoreAlias: false;
                 readonly newlinesBetween: 0;
                 readonly newlinesInside: 0;
@@ -818,7 +820,7 @@ export declare const coreRules: {
                 readonly partitionByNewLine: false;
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-object-types': ["error", {
+            readonly "perfectionist/sort-object-types": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -848,8 +850,8 @@ export declare const coreRules: {
                 readonly sortBy: "name";
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-objects': "off";
-            readonly 'perfectionist/sort-sets': ["error", {
+            readonly "perfectionist/sort-objects": "off";
+            readonly "perfectionist/sort-sets": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -866,7 +868,7 @@ export declare const coreRules: {
                 readonly partitionByNewLine: false;
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-switch-case': ["error", {
+            readonly "perfectionist/sort-switch-case": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -876,7 +878,7 @@ export declare const coreRules: {
                 readonly specialCharacters: "keep";
                 readonly type: "alphabetical";
             }];
-            readonly 'perfectionist/sort-union-types': ["error", {
+            readonly "perfectionist/sort-union-types": ["error", {
                 readonly fallbackSort: {
                     readonly type: "unsorted";
                 };
@@ -893,7 +895,7 @@ export declare const coreRules: {
                 readonly partitionByNewLine: false;
                 readonly useConfigurationIf: {};
             }];
-            readonly 'perfectionist/sort-variable-declarations': "off";
+            readonly "perfectionist/sort-variable-declarations": "off";
         };
     }, {
         readonly rules: {

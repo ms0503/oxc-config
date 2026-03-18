@@ -220,7 +220,7 @@ export const perfectionistRules = defineConfig({
                 useConfigurationIf: {}
             }
         ],
-        // use oxfmt intead
+        // use perfectionist/sort-named-imports intead
         'perfectionist/sort-imports': 'off',
         'perfectionist/sort-interfaces': [
             'error',
@@ -302,7 +302,12 @@ export const perfectionistRules = defineConfig({
             {
                 ...baseConfig,
                 customGroups: [],
-                groups: [],
+                groups: [
+                    'value-import',
+                    'type-import',
+                    { newlinesBetween: 1 },
+                    'unknown'
+                ],
                 ignoreAlias: false,
                 newlinesBetween: 0,
                 newlinesInside: 0,
