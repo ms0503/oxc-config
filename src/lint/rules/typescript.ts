@@ -299,7 +299,7 @@ export const typescriptRules = defineConfig({
             {
                 allow: [],
                 checkParameterProperties: true,
-                ignoreInferredTypes: false,
+                ignoreInferredTypes: true,
                 treatMethodsAsReadonly: true
             }
         ],
