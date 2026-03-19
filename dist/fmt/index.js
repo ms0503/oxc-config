@@ -19,8 +19,23 @@ export const config = defineConfig({
     semi: true,
     singleAttributePerLine: true,
     singleQuote: true,
-    // use perfectionist/sort-named-imports intead
-    // sortImports: {},
+    sortImports: {
+        customGroups: [],
+        groups: [
+            'side_effect-import',
+            'value-import',
+            'type-import',
+            { newlinesBetween: true },
+            'unknown'
+        ],
+        ignoreCase: false,
+        internalPattern: [],
+        newlinesBetween: false,
+        order: 'asc',
+        partitionByComment: false,
+        partitionByNewline: false,
+        sortSideEffects: false
+    },
     sortPackageJson: false,
     sortTailwindcss: {
         attributes: [],

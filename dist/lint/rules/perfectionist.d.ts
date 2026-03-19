@@ -303,26 +303,7 @@ export declare const perfectionistRules: {
             readonly partitionByNewLine: false;
             readonly useConfigurationIf: {};
         }];
-        readonly 'perfectionist/sort-named-imports': ["error", {
-            readonly fallbackSort: {
-                readonly type: "unsorted";
-            };
-            readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
-            readonly customGroups: readonly [];
-            readonly groups: readonly ["value-import", "type-import", {
-                readonly newlinesBetween: 1;
-            }, "unknown"];
-            readonly ignoreAlias: false;
-            readonly newlinesBetween: 0;
-            readonly newlinesInside: 0;
-            readonly partitionByComment: false;
-            readonly partitionByNewLine: false;
-            readonly useConfigurationIf: {};
-        }];
+        readonly 'perfectionist/sort-named-imports': "off";
         readonly 'perfectionist/sort-object-types': ["error", {
             readonly fallbackSort: {
                 readonly type: "unsorted";
