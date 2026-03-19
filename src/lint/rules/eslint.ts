@@ -230,7 +230,7 @@ export const eslintRules = defineConfig({
         'eslint/no-multi-assign': ['error', { ignoreNonDeclaration: false }],
         'eslint/no-multi-str': 'error',
         'eslint/no-negated-condition': 'error',
-        'eslint/no-nested-ternary': 'error',
+        'eslint/no-nested-ternary': 'off',
         'eslint/no-new': 'error',
         'eslint/no-new-func': 'error',
         'eslint/no-new-native-nonconstructor': 'error',

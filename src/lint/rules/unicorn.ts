@@ -56,7 +56,7 @@ export const unicornRules = defineConfig({
         'unicorn/no-lonely-if': 'error',
         'unicorn/no-magic-array-flat-depth': 'error',
         'unicorn/no-negation-in-equality-check': 'error',
-        'unicorn/no-nested-ternary': 'error',
+        'unicorn/no-nested-ternary': 'off',
         'unicorn/no-new-array': 'error',
         'unicorn/no-new-buffer': 'error',
         'unicorn/no-null': 'off',

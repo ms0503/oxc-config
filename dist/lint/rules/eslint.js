@@ -1,4 +1,4 @@
-import { defineConfig } from 'oxlint';
+import { defineConfig } from "oxlint";
 // oxlint-disable eslint/no-magic-numbers
 // https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
 const WELL_KNOWN_HTTP_STATUS_CODES = [
@@ -6,201 +6,201 @@ const WELL_KNOWN_HTTP_STATUS_CODES = [
     301, 302, 303, 304, 305, 307, 308, 400, 401, 402, 403, 404, 405, 406, 407,
     408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 421, 422, 423, 424,
     425, 426, 428, 429, 431, 451, 500, 501, 502, 503, 504, 505, 506, 507, 508,
-    510, 511
+    510, 511,
 ];
 // oxlint-enable eslint/no-magic-numbers
 export const eslintRules = defineConfig({
     rules: {
-        'eslint/accessor-pairs': [
-            'error',
+        "eslint/accessor-pairs": [
+            "error",
             {
                 enforceForClassMembers: true,
                 enforceForTSTypes: true,
                 getWithoutSet: false,
-                setWithoutGet: true
-            }
+                setWithoutGet: true,
+            },
         ],
-        'eslint/array-callback-return': [
-            'error',
-            { allowImplicit: true, allowVoid: false, checkForEach: false }
+        "eslint/array-callback-return": [
+            "error",
+            { allowImplicit: true, allowVoid: false, checkForEach: false },
         ],
-        'eslint/arrow-body-style': [
-            'error',
-            'as-needed',
-            { requireReturnForObjectLiteral: false }
+        "eslint/arrow-body-style": [
+            "error",
+            "as-needed",
+            { requireReturnForObjectLiteral: false },
         ],
-        'eslint/block-scoped-var': 'error',
-        'eslint/capitalized-comments': [
-            'error',
-            'always',
+        "eslint/block-scoped-var": "error",
+        "eslint/capitalized-comments": [
+            "error",
+            "always",
             {
                 block: {
                     ignoreConsecutiveComments: true,
                     ignoreInlineComments: true,
-                    ignorePattern: ''
+                    ignorePattern: "",
                 },
                 line: {
                     ignoreConsecutiveComments: true,
                     ignoreInlineComments: true,
-                    ignorePattern: ''
-                }
-            }
+                    ignorePattern: "",
+                },
+            },
         ],
-        'eslint/class-methods-use-this': [
-            'error',
+        "eslint/class-methods-use-this": [
+            "error",
             {
                 enforceForClassFields: true,
                 exceptMethods: [],
                 ignoreClassesWithImplements: null,
-                ignoreOverrideMethods: false
-            }
+                ignoreOverrideMethods: false,
+            },
         ],
-        'eslint/complexity': 'off',
-        'eslint/constructor-super': 'error',
-        'eslint/curly': ['error', 'all'],
-        'eslint/default-case': [
-            'error',
-            { commentPattern: '^checked\\sall\\spatterns' }
+        "eslint/complexity": "off",
+        "eslint/constructor-super": "error",
+        "eslint/curly": ["error", "all"],
+        "eslint/default-case": [
+            "error",
+            { commentPattern: "^checked\\sall\\spatterns" },
         ],
-        'eslint/default-case-last': 'error',
-        'eslint/default-param-last': 'error',
-        'eslint/eqeqeq': ['error', 'smart'],
-        'eslint/for-direction': 'error',
-        'eslint/func-names': ['error', 'as-needed', { generators: null }],
-        'eslint/func-style': [
-            'error',
-            'declaration',
+        "eslint/default-case-last": "error",
+        "eslint/default-param-last": "error",
+        "eslint/eqeqeq": ["error", "smart"],
+        "eslint/for-direction": "error",
+        "eslint/func-names": ["error", "as-needed", { generators: null }],
+        "eslint/func-style": [
+            "error",
+            "declaration",
             {
                 allowArrowFunctions: true,
                 allowTypeAnnotation: true,
-                overrides: { namedExports: null }
-            }
+                overrides: { namedExports: null },
+            },
         ],
-        'eslint/getter-return': ['error', { allowImplicit: true }],
-        'eslint/grouped-accessor-pairs': [
-            'error',
-            'getBeforeSet',
-            { enforceForTSTypes: true }
+        "eslint/getter-return": ["error", { allowImplicit: true }],
+        "eslint/grouped-accessor-pairs": [
+            "error",
+            "getBeforeSet",
+            { enforceForTSTypes: true },
         ],
-        'eslint/guard-for-in': 'error',
-        'eslint/id-length': [
-            'error',
+        "eslint/guard-for-in": "error",
+        "eslint/id-length": [
+            "error",
             {
                 checkGeneric: true,
                 exceptionPatterns: [],
                 exceptions: [],
                 max: Number.MAX_SAFE_INTEGER,
                 min: 1,
-                properties: 'always'
-            }
+                properties: "always",
+            },
         ],
-        'eslint/init-declarations': ['error', 'always'],
-        'eslint/max-classes-per-file': [
-            'error',
-            { ignoreExpressions: false, max: 1 }
+        "eslint/init-declarations": ["error", "always"],
+        "eslint/max-classes-per-file": [
+            "error",
+            { ignoreExpressions: false, max: 1 },
         ],
-        'eslint/max-depth': 'off',
-        'eslint/max-lines': 'off',
-        'eslint/max-lines-per-function': 'off',
-        'eslint/max-nested-callbacks': 'off',
-        'eslint/max-params': 'off',
-        'eslint/max-statements': 'off',
-        'eslint/new-cap': [
-            'error',
+        "eslint/max-depth": "off",
+        "eslint/max-lines": "off",
+        "eslint/max-lines-per-function": "off",
+        "eslint/max-nested-callbacks": "off",
+        "eslint/max-params": "off",
+        "eslint/max-statements": "off",
+        "eslint/new-cap": [
+            "error",
             {
                 capIsNew: true,
-                capIsNewExceptionPattern: '',
+                capIsNewExceptionPattern: "",
                 capIsNewExceptions: [],
                 newIsCap: true,
-                newIsCapExceptionPattern: '',
+                newIsCapExceptionPattern: "",
                 newIsCapExceptions: [
-                    'BigInt',
-                    'Boolean',
-                    'Number',
-                    'String',
-                    'Symbol'
+                    "BigInt",
+                    "Boolean",
+                    "Number",
+                    "String",
+                    "Symbol",
                 ],
-                properties: true
-            }
+                properties: true,
+            },
         ],
-        'eslint/no-alert': 'error',
-        'eslint/no-array-constructor': 'error',
-        'eslint/no-async-promise-executor': 'error',
-        'eslint/no-await-in-loop': 'error',
-        'eslint/no-bitwise': ['error', { allow: [], int32Hint: false }],
-        'eslint/no-caller': 'error',
-        'eslint/no-case-declarations': 'error',
-        'eslint/no-class-assign': 'error',
-        'eslint/no-compare-neg-zero': 'error',
-        'eslint/no-cond-assign': ['error', 'always'],
-        'eslint/no-console': 'off',
-        'eslint/no-const-assign': 'error',
-        'eslint/no-constant-binary-expression': 'error',
-        'eslint/no-constant-condition': [
-            'error',
-            { checkLoops: 'allExceptWhileTrue' }
+        "eslint/no-alert": "error",
+        "eslint/no-array-constructor": "error",
+        "eslint/no-async-promise-executor": "error",
+        "eslint/no-await-in-loop": "error",
+        "eslint/no-bitwise": ["error", { allow: [], int32Hint: false }],
+        "eslint/no-caller": "error",
+        "eslint/no-case-declarations": "error",
+        "eslint/no-class-assign": "error",
+        "eslint/no-compare-neg-zero": "error",
+        "eslint/no-cond-assign": ["error", "always"],
+        "eslint/no-console": "off",
+        "eslint/no-const-assign": "error",
+        "eslint/no-constant-binary-expression": "error",
+        "eslint/no-constant-condition": [
+            "error",
+            { checkLoops: "allExceptWhileTrue" },
         ],
-        'eslint/no-constructor-return': 'error',
-        'eslint/no-continue': 'error',
-        'eslint/no-control-regex': 'error',
-        'eslint/no-debugger': 'error',
-        'eslint/no-delete-var': 'error',
-        'eslint/no-div-regex': 'error',
-        'eslint/no-dupe-class-members': 'error',
-        'eslint/no-dupe-else-if': 'error',
-        'eslint/no-dupe-keys': 'error',
-        'eslint/no-duplicate-case': 'error',
-        'eslint/no-duplicate-imports': [
-            'error',
-            { allowSeparateTypeImports: true, includeExports: false }
+        "eslint/no-constructor-return": "error",
+        "eslint/no-continue": "error",
+        "eslint/no-control-regex": "error",
+        "eslint/no-debugger": "error",
+        "eslint/no-delete-var": "error",
+        "eslint/no-div-regex": "error",
+        "eslint/no-dupe-class-members": "error",
+        "eslint/no-dupe-else-if": "error",
+        "eslint/no-dupe-keys": "error",
+        "eslint/no-duplicate-case": "error",
+        "eslint/no-duplicate-imports": [
+            "error",
+            { allowSeparateTypeImports: true, includeExports: false },
         ],
-        'eslint/no-else-return': ['error', { allowElseIf: false }],
-        'eslint/no-empty': ['error', { allowEmptyCatch: false }],
-        'eslint/no-empty-character-class': 'error',
-        'eslint/no-empty-function': 'error',
-        'eslint/no-empty-pattern': 'error',
-        'eslint/no-empty-static-block': 'error',
-        'eslint/no-eq-null': 'error',
-        'eslint/no-eval': ['error', { allowIndirect: false }],
-        'eslint/no-ex-assign': 'error',
-        'eslint/no-extend-native': ['error', { exceptions: [] }],
-        'eslint/no-extra-bind': 'error',
-        'eslint/no-extra-boolean-cast': 'error',
-        'eslint/no-extra-label': 'error',
-        'eslint/no-fallthrough': [
-            'error',
+        "eslint/no-else-return": ["error", { allowElseIf: false }],
+        "eslint/no-empty": ["error", { allowEmptyCatch: false }],
+        "eslint/no-empty-character-class": "error",
+        "eslint/no-empty-function": "error",
+        "eslint/no-empty-pattern": "error",
+        "eslint/no-empty-static-block": "error",
+        "eslint/no-eq-null": "error",
+        "eslint/no-eval": ["error", { allowIndirect: false }],
+        "eslint/no-ex-assign": "error",
+        "eslint/no-extend-native": ["error", { exceptions: [] }],
+        "eslint/no-extra-bind": "error",
+        "eslint/no-extra-boolean-cast": "error",
+        "eslint/no-extra-label": "error",
+        "eslint/no-fallthrough": [
+            "error",
             {
                 allowEmptyCase: false,
                 commentPattern: null,
-                reportUnusedFallthroughComment: false
-            }
+                reportUnusedFallthroughComment: false,
+            },
         ],
-        'eslint/no-func-assign': 'error',
-        'eslint/no-global-assign': ['error', { exceptions: [] }],
-        'eslint/no-implicit-coercion': [
-            'error',
+        "eslint/no-func-assign": "error",
+        "eslint/no-global-assign": ["error", { exceptions: [] }],
+        "eslint/no-implicit-coercion": [
+            "error",
             {
-                allow: ['!!'],
+                allow: ["!!"],
                 boolean: false,
                 disallowTemplateShorthand: true,
                 number: true,
-                string: true
-            }
+                string: true,
+            },
         ],
-        'eslint/no-import-assign': 'error',
-        'eslint/no-inline-comments': ['error', { ignorePattern: null }],
-        'eslint/no-inner-declarations': 'off',
-        'eslint/no-invalid-regexp': ['error', { allowConstructorFlags: [] }],
-        'eslint/no-irregular-whitespace': 'error',
-        'eslint/no-iterator': 'error',
-        'eslint/no-label-var': 'error',
-        'eslint/no-labels': ['error', { allowLoop: false, allowSwitch: false }],
-        'eslint/no-lone-blocks': 'error',
-        'eslint/no-lonely-if': 'error',
-        'eslint/no-loop-func': 'error',
-        'eslint/no-loss-of-precision': 'error',
-        'eslint/no-magic-numbers': [
-            'error',
+        "eslint/no-import-assign": "error",
+        "eslint/no-inline-comments": ["error", { ignorePattern: null }],
+        "eslint/no-inner-declarations": "off",
+        "eslint/no-invalid-regexp": ["error", { allowConstructorFlags: [] }],
+        "eslint/no-irregular-whitespace": "error",
+        "eslint/no-iterator": "error",
+        "eslint/no-label-var": "error",
+        "eslint/no-labels": ["error", { allowLoop: false, allowSwitch: false }],
+        "eslint/no-lone-blocks": "error",
+        "eslint/no-lonely-if": "error",
+        "eslint/no-loop-func": "error",
+        "eslint/no-loss-of-precision": "error",
+        "eslint/no-magic-numbers": [
+            "error",
             {
                 detectObjects: true,
                 enforceConst: true,
@@ -210,7 +210,7 @@ export const eslintRules = defineConfig({
                     ...tenPowersMinusOne(),
                     ...twoPowers(),
                     ...twoPowersMinusOne(),
-                    0
+                    0,
                 ],
                 ignoreArrayIndexes: true,
                 ignoreClassFieldInitialValues: false,
@@ -218,102 +218,102 @@ export const eslintRules = defineConfig({
                 ignoreEnums: false,
                 ignoreNumericLiteralTypes: false,
                 ignoreReadonlyClassProperties: false,
-                ignoreTypeIndexes: true
-            }
+                ignoreTypeIndexes: true,
+            },
         ],
-        'eslint/no-misleading-character-class': [
-            'error',
-            { allowEscape: false }
+        "eslint/no-misleading-character-class": [
+            "error",
+            { allowEscape: false },
         ],
-        'eslint/no-multi-assign': ['error', { ignoreNonDeclaration: false }],
-        'eslint/no-multi-str': 'error',
-        'eslint/no-negated-condition': 'error',
-        'eslint/no-nested-ternary': 'error',
-        'eslint/no-new': 'error',
-        'eslint/no-new-func': 'error',
-        'eslint/no-new-native-nonconstructor': 'error',
-        'eslint/no-new-wrappers': 'error',
-        'eslint/no-nonoctal-decimal-escape': 'error',
-        'eslint/no-obj-calls': 'error',
-        'eslint/no-object-constructor': 'error',
-        'eslint/no-param-reassign': [
-            'error',
+        "eslint/no-multi-assign": ["error", { ignoreNonDeclaration: false }],
+        "eslint/no-multi-str": "error",
+        "eslint/no-negated-condition": "error",
+        "eslint/no-nested-ternary": "off",
+        "eslint/no-new": "error",
+        "eslint/no-new-func": "error",
+        "eslint/no-new-native-nonconstructor": "error",
+        "eslint/no-new-wrappers": "error",
+        "eslint/no-nonoctal-decimal-escape": "error",
+        "eslint/no-obj-calls": "error",
+        "eslint/no-object-constructor": "error",
+        "eslint/no-param-reassign": [
+            "error",
             {
                 ignorePropertyModificationsFor: [],
                 ignorePropertyModificationsForRegex: [],
-                props: true
-            }
+                props: true,
+            },
         ],
-        'eslint/no-plusplus': 'off',
-        'eslint/no-promise-executor-return': ['error', { allowVoid: false }],
-        'eslint/no-proto': 'error',
-        'eslint/no-prototype-builtins': 'error',
-        'eslint/no-redeclare': ['error', { builtinGlobals: true }],
-        'eslint/no-regex-spaces': 'error',
-        'eslint/no-restricted-globals': ['error', { restrictedGlobals: {} }],
-        'eslint/no-restricted-imports': ['error', { paths: [], patterns: [] }],
-        'eslint/no-return-assign': ['error', 'always'],
-        'eslint/no-script-url': 'error',
-        'eslint/no-self-assign': ['error', { props: true }],
-        'eslint/no-self-compare': 'error',
-        'eslint/no-sequences': ['error', { allowInParentheses: false }],
-        'eslint/no-setter-return': 'error',
-        'eslint/no-shadow': 'off',
-        'eslint/no-shadow-restricted-names': [
-            'error',
-            { reportGlobalThis: true }
+        "eslint/no-plusplus": "off",
+        "eslint/no-promise-executor-return": ["error", { allowVoid: false }],
+        "eslint/no-proto": "error",
+        "eslint/no-prototype-builtins": "error",
+        "eslint/no-redeclare": ["error", { builtinGlobals: true }],
+        "eslint/no-regex-spaces": "error",
+        "eslint/no-restricted-globals": ["error", { restrictedGlobals: {} }],
+        "eslint/no-restricted-imports": ["error", { paths: [], patterns: [] }],
+        "eslint/no-return-assign": ["error", "always"],
+        "eslint/no-script-url": "error",
+        "eslint/no-self-assign": ["error", { props: true }],
+        "eslint/no-self-compare": "error",
+        "eslint/no-sequences": ["error", { allowInParentheses: false }],
+        "eslint/no-setter-return": "error",
+        "eslint/no-shadow": "off",
+        "eslint/no-shadow-restricted-names": [
+            "error",
+            { reportGlobalThis: true },
         ],
-        'eslint/no-sparse-arrays': 'error',
-        'eslint/no-template-curly-in-string': 'error',
-        'eslint/no-ternary': 'off',
-        'eslint/no-this-before-super': 'error',
-        'eslint/no-unassigned-vars': 'error',
-        'eslint/no-undef': ['error', { typeof: true }],
-        'eslint/no-undefined': 'error',
-        'eslint/no-unexpected-multiline': 'error',
-        'eslint/no-unmodified-loop-condition': 'error',
-        'eslint/no-unneeded-ternary': ['error', { defaultAssignment: false }],
-        'eslint/no-unreachable': 'error',
-        'eslint/no-unsafe-finally': 'error',
-        'eslint/no-unsafe-negation': [
-            'error',
-            { enforceForOrderingRelations: false }
+        "eslint/no-sparse-arrays": "error",
+        "eslint/no-template-curly-in-string": "error",
+        "eslint/no-ternary": "off",
+        "eslint/no-this-before-super": "error",
+        "eslint/no-unassigned-vars": "error",
+        "eslint/no-undef": ["error", { typeof: true }],
+        "eslint/no-undefined": "error",
+        "eslint/no-unexpected-multiline": "error",
+        "eslint/no-unmodified-loop-condition": "error",
+        "eslint/no-unneeded-ternary": ["error", { defaultAssignment: false }],
+        "eslint/no-unreachable": "error",
+        "eslint/no-unsafe-finally": "error",
+        "eslint/no-unsafe-negation": [
+            "error",
+            { enforceForOrderingRelations: false },
         ],
-        'eslint/no-unsafe-optional-chaining': [
-            'error',
-            { disallowArithmeticOperators: true }
+        "eslint/no-unsafe-optional-chaining": [
+            "error",
+            { disallowArithmeticOperators: true },
         ],
-        'eslint/no-unused-expressions': [
-            'error',
+        "eslint/no-unused-expressions": [
+            "error",
             {
                 allowShortCircuit: false,
                 allowTaggedTemplates: false,
                 allowTernary: false,
-                enforceForJSX: true
-            }
+                enforceForJSX: true,
+            },
         ],
-        'eslint/no-unused-labels': 'error',
-        'eslint/no-unused-private-class-members': 'error',
-        'eslint/no-unused-vars': [
-            'error',
+        "eslint/no-unused-labels": "error",
+        "eslint/no-unused-private-class-members": "error",
+        "eslint/no-unused-vars": [
+            "error",
             {
-                args: 'all',
-                argsIgnorePattern: '^_',
-                caughtErrors: 'all',
-                caughtErrorsIgnorePattern: '^(_|ignore)',
-                destructuredArrayIgnorePattern: '^_',
-                fix: { imports: 'fix', variables: 'fix' },
+                args: "all",
+                argsIgnorePattern: "^_",
+                caughtErrors: "all",
+                caughtErrorsIgnorePattern: "^(_|ignore)",
+                destructuredArrayIgnorePattern: "^_",
+                fix: { imports: "fix", variables: "fix" },
                 ignoreClassWithStaticInitBlock: false,
                 ignoreRestSiblings: false,
                 ignoreUsingDeclarations: false,
                 reportUsedIgnorePattern: true,
                 reportVarsOnlyUsedAsTypes: true,
-                vars: 'all',
-                varsIgnorePattern: '^_'
-            }
+                vars: "all",
+                varsIgnorePattern: "^_",
+            },
         ],
-        'eslint/no-use-before-define': [
-            'error',
+        "eslint/no-use-before-define": [
+            "error",
             {
                 allowNamedExports: false,
                 classes: true,
@@ -321,89 +321,89 @@ export const eslintRules = defineConfig({
                 functions: false,
                 ignoreTypeReferences: true,
                 typedefs: false,
-                variables: true
-            }
+                variables: true,
+            },
         ],
-        'eslint/no-useless-backreference': 'error',
-        'eslint/no-useless-call': 'error',
-        'eslint/no-useless-catch': 'error',
-        'eslint/no-useless-computed-key': [
-            'error',
-            { enforceForClassMembers: true }
+        "eslint/no-useless-backreference": "error",
+        "eslint/no-useless-call": "error",
+        "eslint/no-useless-catch": "error",
+        "eslint/no-useless-computed-key": [
+            "error",
+            { enforceForClassMembers: true },
         ],
-        'eslint/no-useless-concat': 'error',
-        'eslint/no-useless-constructor': 'error',
-        'eslint/no-useless-escape': ['error', { allowRegexCharacters: [] }],
-        'eslint/no-useless-rename': [
-            'error',
+        "eslint/no-useless-concat": "error",
+        "eslint/no-useless-constructor": "error",
+        "eslint/no-useless-escape": ["error", { allowRegexCharacters: [] }],
+        "eslint/no-useless-rename": [
+            "error",
             {
                 ignoreDestructuring: false,
                 ignoreExport: false,
-                ignoreImport: false
-            }
+                ignoreImport: false,
+            },
         ],
-        'eslint/no-useless-return': 'error',
-        'eslint/no-var': 'error',
-        'eslint/no-void': ['error', { allowAsStatement: false }],
-        'eslint/no-warning-comments': 'off',
-        'eslint/no-with': 'error',
-        'eslint/operator-assignment': ['error', 'always'],
-        'eslint/prefer-const': [
-            'error',
-            { destructuring: 'all', ignoreReadBeforeAssign: false }
+        "eslint/no-useless-return": "error",
+        "eslint/no-var": "error",
+        "eslint/no-void": ["error", { allowAsStatement: false }],
+        "eslint/no-warning-comments": "off",
+        "eslint/no-with": "error",
+        "eslint/operator-assignment": ["error", "always"],
+        "eslint/prefer-const": [
+            "error",
+            { destructuring: "all", ignoreReadBeforeAssign: false },
         ],
-        'eslint/prefer-destructuring': [
-            'error',
+        "eslint/prefer-destructuring": [
+            "error",
             {
                 AssignmentExpression: { array: false, object: false },
                 VariableDeclarator: { array: true, object: true },
-                enforceForRenamedProperties: true
-            }
+                enforceForRenamedProperties: true,
+            },
         ],
-        'eslint/prefer-exponentiation-operator': 'error',
-        'eslint/prefer-numeric-literals': 'error',
-        'eslint/prefer-object-has-own': 'error',
-        'eslint/prefer-object-spread': 'error',
-        'eslint/prefer-promise-reject-errors': [
-            'error',
-            { allowEmptyReject: false }
+        "eslint/prefer-exponentiation-operator": "error",
+        "eslint/prefer-numeric-literals": "error",
+        "eslint/prefer-object-has-own": "error",
+        "eslint/prefer-object-spread": "error",
+        "eslint/prefer-promise-reject-errors": [
+            "error",
+            { allowEmptyReject: false },
         ],
-        'eslint/prefer-rest-params': 'error',
-        'eslint/prefer-spread': 'error',
-        'eslint/prefer-template': 'error',
-        'eslint/preserve-caught-error': [
-            'error',
-            { requireCatchParameter: false }
+        "eslint/prefer-rest-params": "error",
+        "eslint/prefer-spread": "error",
+        "eslint/prefer-template": "error",
+        "eslint/preserve-caught-error": [
+            "error",
+            { requireCatchParameter: false },
         ],
-        'eslint/radix': 'error',
-        'eslint/require-await': 'off',
-        'eslint/require-yield': 'error',
-        'eslint/sort-imports': 'off',
-        'eslint/sort-keys': [
-            'error',
-            'asc',
+        "eslint/radix": "error",
+        "eslint/require-await": "off",
+        "eslint/require-yield": "error",
+        "eslint/sort-imports": "off",
+        "eslint/sort-keys": [
+            "error",
+            "asc",
             {
                 allowLineSeparatedGroups: false,
                 caseSensitive: true,
                 minKeys: 1,
-                natural: false
-            }
+                natural: false,
+            },
         ],
-        'eslint/sort-vars': ['error', { ignoreCase: false }],
-        'eslint/symbol-description': 'error',
-        'eslint/unicode-bom': ['error', 'never'],
-        'eslint/use-isnan': [
-            'error',
-            { enforceForIndexOf: true, enforceForSwitchCase: true }
+        "eslint/sort-vars": ["error", { ignoreCase: false }],
+        "eslint/symbol-description": "error",
+        "eslint/unicode-bom": ["error", "never"],
+        "eslint/use-isnan": [
+            "error",
+            { enforceForIndexOf: true, enforceForSwitchCase: true },
         ],
-        'eslint/valid-typeof': ['error', { requireStringLiterals: true }],
-        'eslint/vars-on-top': 'error',
-        'eslint/yoda': [
-            'error',
-            'never',
-            { exceptRange: true, onlyEquality: false }
-        ]
-    }
+        "eslint/valid-typeof": ["error", { requireStringLiterals: true }],
+        "eslint/vars-on-top": "error",
+        "eslint/yoda": [
+            "error",
+            "never",
+            { exceptRange: true, onlyEquality: false },
+        ],
+    },
 });
 function tenPowers() {
     const length = Math.trunc(Math.log2(Number.MAX_SAFE_INTEGER));

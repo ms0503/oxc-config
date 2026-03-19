@@ -52,7 +52,7 @@ export declare const unicornRules: {
         readonly 'unicorn/no-lonely-if': "error";
         readonly 'unicorn/no-magic-array-flat-depth': "error";
         readonly 'unicorn/no-negation-in-equality-check': "error";
-        readonly 'unicorn/no-nested-ternary': "error";
+        readonly 'unicorn/no-nested-ternary': "off";
         readonly 'unicorn/no-new-array': "error";
         readonly 'unicorn/no-new-buffer': "error";
         readonly 'unicorn/no-null': "off";
