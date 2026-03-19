@@ -36,7 +36,7 @@ export const promiseRules = defineConfig({
             { rejectPattern: '^_?reject$', resolvePattern: '^_?resolve$' }
         ],
         'promise/prefer-await-to-callbacks': 'error',
-        'promise/prefer-await-to-then': ['error', { strict: false }],
+        'promise/prefer-await-to-then': 'off',
         'promise/prefer-catch': 'error',
         'promise/spec-only': ['error', { allowedMethods: [] }],
         'promise/valid-params': 'error'

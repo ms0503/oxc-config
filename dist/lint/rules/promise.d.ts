@@ -28,9 +28,7 @@ export declare const promiseRules: {
             readonly resolvePattern: "^_?resolve$";
         }];
         readonly 'promise/prefer-await-to-callbacks': "error";
-        readonly 'promise/prefer-await-to-then': ["error", {
-            readonly strict: false;
-        }];
+        readonly 'promise/prefer-await-to-then': "off";
         readonly 'promise/prefer-catch': "error";
         readonly 'promise/spec-only': ["error", {
             readonly allowedMethods: readonly [];

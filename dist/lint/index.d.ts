@@ -928,9 +928,7 @@ export declare const core: {
                     readonly resolvePattern: "^_?resolve$";
                 }];
                 readonly 'promise/prefer-await-to-callbacks': "error";
-                readonly 'promise/prefer-await-to-then': ["error", {
-                    readonly strict: false;
-                }];
+                readonly 'promise/prefer-await-to-then': "off";
                 readonly 'promise/prefer-catch': "error";
                 readonly 'promise/spec-only': ["error", {
                     readonly allowedMethods: readonly [];
@@ -2540,9 +2538,7 @@ export declare const hono: {
                         readonly resolvePattern: "^_?resolve$";
                     }];
                     readonly 'promise/prefer-await-to-callbacks': "error";
-                    readonly 'promise/prefer-await-to-then': ["error", {
-                        readonly strict: false;
-                    }];
+                    readonly 'promise/prefer-await-to-then': "off";
                     readonly 'promise/prefer-catch': "error";
                     readonly 'promise/spec-only': ["error", {
                         readonly allowedMethods: readonly [];
@@ -4009,9 +4005,7 @@ export declare const react: {
                         readonly resolvePattern: "^_?resolve$";
                     }];
                     readonly 'promise/prefer-await-to-callbacks': "error";
-                    readonly 'promise/prefer-await-to-then': ["error", {
-                        readonly strict: false;
-                    }];
+                    readonly 'promise/prefer-await-to-then': "off";
                     readonly 'promise/prefer-catch': "error";
                     readonly 'promise/spec-only': ["error", {
                         readonly allowedMethods: readonly [];
@@ -5713,9 +5707,7 @@ export declare const vue: {
                         readonly resolvePattern: "^_?resolve$";
                     }];
                     readonly 'promise/prefer-await-to-callbacks': "error";
-                    readonly 'promise/prefer-await-to-then': ["error", {
-                        readonly strict: false;
-                    }];
+                    readonly 'promise/prefer-await-to-then': "off";
                     readonly 'promise/prefer-catch': "error";
                     readonly 'promise/spec-only': ["error", {
                         readonly allowedMethods: readonly [];
@@ -7208,9 +7200,7 @@ export declare const nextjs: {
                             readonly resolvePattern: "^_?resolve$";
                         }];
                         readonly 'promise/prefer-await-to-callbacks': "error";
-                        readonly 'promise/prefer-await-to-then': ["error", {
-                            readonly strict: false;
-                        }];
+                        readonly 'promise/prefer-await-to-then': "off";
                         readonly 'promise/prefer-catch': "error";
                         readonly 'promise/spec-only': ["error", {
                             readonly allowedMethods: readonly [];
