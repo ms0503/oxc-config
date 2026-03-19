@@ -205,6 +205,7 @@ export const eslintRules = defineConfig({
                 detectObjects: true,
                 enforceConst: true,
                 ignore: [
+                    -1,
                     ...WELL_KNOWN_HTTP_STATUS_CODES,
                     ...tenPowers(),
                     ...tenPowersMinusOne(),
