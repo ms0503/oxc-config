@@ -379,7 +379,16 @@ export const eslintRules = defineConfig({
         'eslint/radix': 'error',
         'eslint/require-await': 'off',
         'eslint/require-yield': 'error',
-        'eslint/sort-imports': 'off',
+        'eslint/sort-imports': [
+            'error',
+            {
+                allowSeparatedGroups: false,
+                ignoreCase: false,
+                ignoreDeclarationSort: true,
+                ignoreMemberSort: false,
+                memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
+            }
+        ],
         'eslint/sort-keys': [
             'error',
             'asc',

@@ -355,7 +355,13 @@ export declare const core: {
                 readonly 'eslint/radix': "error";
                 readonly 'eslint/require-await': "off";
                 readonly 'eslint/require-yield': "error";
-                readonly 'eslint/sort-imports': "off";
+                readonly 'eslint/sort-imports': ["error", {
+                    readonly allowSeparatedGroups: false;
+                    readonly ignoreCase: false;
+                    readonly ignoreDeclarationSort: true;
+                    readonly ignoreMemberSort: false;
+                    readonly memberSyntaxSortOrder: readonly ["none", "all", "multiple", "single"];
+                }];
                 readonly 'eslint/sort-keys': ["error", "asc", {
                     readonly allowLineSeparatedGroups: false;
                     readonly caseSensitive: true;
@@ -1965,7 +1971,13 @@ export declare const hono: {
                     readonly 'eslint/radix': "error";
                     readonly 'eslint/require-await': "off";
                     readonly 'eslint/require-yield': "error";
-                    readonly 'eslint/sort-imports': "off";
+                    readonly 'eslint/sort-imports': ["error", {
+                        readonly allowSeparatedGroups: false;
+                        readonly ignoreCase: false;
+                        readonly ignoreDeclarationSort: true;
+                        readonly ignoreMemberSort: false;
+                        readonly memberSyntaxSortOrder: readonly ["none", "all", "multiple", "single"];
+                    }];
                     readonly 'eslint/sort-keys': ["error", "asc", {
                         readonly allowLineSeparatedGroups: false;
                         readonly caseSensitive: true;
@@ -3432,7 +3444,13 @@ export declare const react: {
                     readonly 'eslint/radix': "error";
                     readonly 'eslint/require-await': "off";
                     readonly 'eslint/require-yield': "error";
-                    readonly 'eslint/sort-imports': "off";
+                    readonly 'eslint/sort-imports': ["error", {
+                        readonly allowSeparatedGroups: false;
+                        readonly ignoreCase: false;
+                        readonly ignoreDeclarationSort: true;
+                        readonly ignoreMemberSort: false;
+                        readonly memberSyntaxSortOrder: readonly ["none", "all", "multiple", "single"];
+                    }];
                     readonly 'eslint/sort-keys': ["error", "asc", {
                         readonly allowLineSeparatedGroups: false;
                         readonly caseSensitive: true;
@@ -5134,7 +5152,13 @@ export declare const vue: {
                     readonly 'eslint/radix': "error";
                     readonly 'eslint/require-await': "off";
                     readonly 'eslint/require-yield': "error";
-                    readonly 'eslint/sort-imports': "off";
+                    readonly 'eslint/sort-imports': ["error", {
+                        readonly allowSeparatedGroups: false;
+                        readonly ignoreCase: false;
+                        readonly ignoreDeclarationSort: true;
+                        readonly ignoreMemberSort: false;
+                        readonly memberSyntaxSortOrder: readonly ["none", "all", "multiple", "single"];
+                    }];
                     readonly 'eslint/sort-keys': ["error", "asc", {
                         readonly allowLineSeparatedGroups: false;
                         readonly caseSensitive: true;
@@ -6627,7 +6651,13 @@ export declare const nextjs: {
                         readonly 'eslint/radix': "error";
                         readonly 'eslint/require-await': "off";
                         readonly 'eslint/require-yield': "error";
-                        readonly 'eslint/sort-imports': "off";
+                        readonly 'eslint/sort-imports': ["error", {
+                            readonly allowSeparatedGroups: false;
+                            readonly ignoreCase: false;
+                            readonly ignoreDeclarationSort: true;
+                            readonly ignoreMemberSort: false;
+                            readonly memberSyntaxSortOrder: readonly ["none", "all", "multiple", "single"];
+                        }];
                         readonly 'eslint/sort-keys': ["error", "asc", {
                             readonly allowLineSeparatedGroups: false;
                             readonly caseSensitive: true;
