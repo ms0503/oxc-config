@@ -26,7 +26,7 @@ export const promiseRules = defineConfig({
             }
         ],
         'promise/no-multiple-resolved': 'error',
-        'promise/no-nesting': 'error',
+        'promise/no-nesting': 'off',
         'promise/no-new-statics': 'error',
         'promise/no-promise-in-callback': 'error',
         'promise/no-return-in-finally': 'error',

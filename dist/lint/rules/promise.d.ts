@@ -16,7 +16,7 @@ export declare const promiseRules: {
             readonly timeoutsErr: false;
         }];
         readonly 'promise/no-multiple-resolved': "error";
-        readonly 'promise/no-nesting': "error";
+        readonly 'promise/no-nesting': "off";
         readonly 'promise/no-new-statics': "error";
         readonly 'promise/no-promise-in-callback': "error";
         readonly 'promise/no-return-in-finally': "error";
