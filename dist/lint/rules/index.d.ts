@@ -251,7 +251,7 @@ export declare const coreRules: {
                 readonly typeof: true;
             }];
             readonly 'eslint/no-undefined': "error";
-            readonly 'eslint/no-unexpected-multiline': "error";
+            readonly 'eslint/no-unexpected-multiline': "off";
             readonly 'eslint/no-unmodified-loop-condition': "error";
             readonly 'eslint/no-unneeded-ternary': ["error", {
                 readonly defaultAssignment: false;
@@ -1095,7 +1095,6 @@ export declare const coreRules: {
                 readonly typesToIgnore: readonly [];
             }];
             readonly 'typescript/no-unnecessary-type-constraint': "error";
-            readonly 'typescript/no-unnecessary-type-convertion': "error";
             readonly 'typescript/no-unnecessary-type-parameters': "error";
             readonly 'typescript/no-unsafe-argument': "error";
             readonly 'typescript/no-unsafe-assignment': "error";

@@ -172,7 +172,6 @@ export declare const typescriptRules: {
             readonly typesToIgnore: readonly [];
         }];
         readonly 'typescript/no-unnecessary-type-constraint': "error";
-        readonly 'typescript/no-unnecessary-type-convertion': "error";
         readonly 'typescript/no-unnecessary-type-parameters': "error";
         readonly 'typescript/no-unsafe-argument': "error";
         readonly 'typescript/no-unsafe-assignment': "error";

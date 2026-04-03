@@ -252,7 +252,7 @@ export declare const core: {
                     readonly typeof: true;
                 }];
                 readonly 'eslint/no-undefined': "error";
-                readonly 'eslint/no-unexpected-multiline': "error";
+                readonly 'eslint/no-unexpected-multiline': "off";
                 readonly 'eslint/no-unmodified-loop-condition': "error";
                 readonly 'eslint/no-unneeded-ternary': ["error", {
                     readonly defaultAssignment: false;
@@ -1096,7 +1096,6 @@ export declare const core: {
                     readonly typesToIgnore: readonly [];
                 }];
                 readonly 'typescript/no-unnecessary-type-constraint': "error";
-                readonly 'typescript/no-unnecessary-type-convertion': "error";
                 readonly 'typescript/no-unnecessary-type-parameters': "error";
                 readonly 'typescript/no-unsafe-argument': "error";
                 readonly 'typescript/no-unsafe-assignment': "error";
@@ -1849,7 +1848,7 @@ export declare const hono: {
                         readonly typeof: true;
                     }];
                     readonly 'eslint/no-undefined': "error";
-                    readonly 'eslint/no-unexpected-multiline': "error";
+                    readonly 'eslint/no-unexpected-multiline': "off";
                     readonly 'eslint/no-unmodified-loop-condition': "error";
                     readonly 'eslint/no-unneeded-ternary': ["error", {
                         readonly defaultAssignment: false;
@@ -2693,7 +2692,6 @@ export declare const hono: {
                         readonly typesToIgnore: readonly [];
                     }];
                     readonly 'typescript/no-unnecessary-type-constraint': "error";
-                    readonly 'typescript/no-unnecessary-type-convertion': "error";
                     readonly 'typescript/no-unnecessary-type-parameters': "error";
                     readonly 'typescript/no-unsafe-argument': "error";
                     readonly 'typescript/no-unsafe-assignment': "error";
@@ -3303,7 +3301,7 @@ export declare const react: {
                         readonly typeof: true;
                     }];
                     readonly 'eslint/no-undefined': "error";
-                    readonly 'eslint/no-unexpected-multiline': "error";
+                    readonly 'eslint/no-unexpected-multiline': "off";
                     readonly 'eslint/no-unmodified-loop-condition': "error";
                     readonly 'eslint/no-unneeded-ternary': ["error", {
                         readonly defaultAssignment: false;
@@ -4147,7 +4145,6 @@ export declare const react: {
                         readonly typesToIgnore: readonly [];
                     }];
                     readonly 'typescript/no-unnecessary-type-constraint': "error";
-                    readonly 'typescript/no-unnecessary-type-convertion': "error";
                     readonly 'typescript/no-unnecessary-type-parameters': "error";
                     readonly 'typescript/no-unsafe-argument': "error";
                     readonly 'typescript/no-unsafe-assignment': "error";
@@ -4992,7 +4989,7 @@ export declare const vue: {
                         readonly typeof: true;
                     }];
                     readonly 'eslint/no-undefined': "error";
-                    readonly 'eslint/no-unexpected-multiline': "error";
+                    readonly 'eslint/no-unexpected-multiline': "off";
                     readonly 'eslint/no-unmodified-loop-condition': "error";
                     readonly 'eslint/no-unneeded-ternary': ["error", {
                         readonly defaultAssignment: false;
@@ -5836,7 +5833,6 @@ export declare const vue: {
                         readonly typesToIgnore: readonly [];
                     }];
                     readonly 'typescript/no-unnecessary-type-constraint': "error";
-                    readonly 'typescript/no-unnecessary-type-convertion': "error";
                     readonly 'typescript/no-unnecessary-type-parameters': "error";
                     readonly 'typescript/no-unsafe-argument': "error";
                     readonly 'typescript/no-unsafe-assignment': "error";
@@ -6472,7 +6468,7 @@ export declare const nextjs: {
                             readonly typeof: true;
                         }];
                         readonly 'eslint/no-undefined': "error";
-                        readonly 'eslint/no-unexpected-multiline': "error";
+                        readonly 'eslint/no-unexpected-multiline': "off";
                         readonly 'eslint/no-unmodified-loop-condition': "error";
                         readonly 'eslint/no-unneeded-ternary': ["error", {
                             readonly defaultAssignment: false;
@@ -7316,7 +7312,6 @@ export declare const nextjs: {
                             readonly typesToIgnore: readonly [];
                         }];
                         readonly 'typescript/no-unnecessary-type-constraint': "error";
-                        readonly 'typescript/no-unnecessary-type-convertion': "error";
                         readonly 'typescript/no-unnecessary-type-parameters': "error";
                         readonly 'typescript/no-unsafe-argument': "error";
                         readonly 'typescript/no-unsafe-assignment': "error";

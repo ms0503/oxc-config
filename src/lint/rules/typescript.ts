@@ -213,7 +213,6 @@ export const typescriptRules = defineConfig({
             { checkLiteralConstAssertions: true, typesToIgnore: [] }
         ],
         'typescript/no-unnecessary-type-constraint': 'error',
-        'typescript/no-unnecessary-type-convertion': 'error',
         'typescript/no-unnecessary-type-parameters': 'error',
         'typescript/no-unsafe-argument': 'error',
         'typescript/no-unsafe-assignment': 'error',

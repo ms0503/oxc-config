@@ -250,7 +250,7 @@ export declare const eslintRules: {
             readonly typeof: true;
         }];
         readonly 'eslint/no-undefined': "error";
-        readonly 'eslint/no-unexpected-multiline': "error";
+        readonly 'eslint/no-unexpected-multiline': "off";
         readonly 'eslint/no-unmodified-loop-condition': "error";
         readonly 'eslint/no-unneeded-ternary': ["error", {
             readonly defaultAssignment: false;
