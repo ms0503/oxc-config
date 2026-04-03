@@ -273,7 +273,8 @@ export const eslintRules = defineConfig({
         'eslint/no-unassigned-vars': 'error',
         'eslint/no-undef': ['error', { typeof: true }],
         'eslint/no-undefined': 'error',
-        'eslint/no-unexpected-multiline': 'error',
+        // conflicts with oxfmt
+        'eslint/no-unexpected-multiline': 'off',
         'eslint/no-unmodified-loop-condition': 'error',
         'eslint/no-unneeded-ternary': ['error', { defaultAssignment: false }],
         'eslint/no-unreachable': 'error',
