@@ -1,11 +1,11 @@
 { inputs, ... }:
 {
   imports = [
-    inputs.git-hooks.flakeModule
+    (inputs.git-hooks.flakeModule or { })
   ];
   perSystem =
-    { config, ... }:
-    {
+    { config, lib, ... }:
+    lib.optionalAttrs (inputs.git-hooks ? flakeModule) {
       pre-commit = {
         check.enable = true;
         settings = {

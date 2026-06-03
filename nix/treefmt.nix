@@ -1,14 +1,11 @@
 { inputs, ... }:
 {
   imports = [
-    inputs.treefmt-nix.flakeModule
+    (inputs.treefmt-nix.flakeModule or { })
   ];
   perSystem =
     { lib, pkgs, ... }:
-    let
-      jsonfmt = pkgs.callPackage ./jsonfmt.nix { };
-    in
-    {
+    lib.optionalAttrs (inputs.treefmt-nix ? flakeModule) {
       treefmt = {
         programs = {
           jsonfmt.enable = true;
@@ -27,11 +24,15 @@
           };
           nixfmt.enable = true;
         };
-        settings.formatter.jsonfmt = {
-          command = "${jsonfmt}/bin/jf";
-          options = lib.mkForce [ ];
-          package = jsonfmt;
-        };
+        settings.formatter.jsonfmt =
+          let
+            jsonfmt = pkgs.callPackage ./jsonfmt.nix { };
+          in
+          {
+            command = "${jsonfmt}/bin/jf";
+            options = lib.mkForce [ ];
+            package = jsonfmt;
+          };
       };
     };
 }
