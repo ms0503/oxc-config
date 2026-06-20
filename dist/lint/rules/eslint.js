@@ -1,14 +1,4 @@
 import { defineConfig } from 'oxlint';
-// oxlint-disable eslint/no-magic-numbers
-// https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
-const WELL_KNOWN_HTTP_STATUS_CODES = [
-    100, 101, 102, 103, 200, 201, 202, 203, 204, 205, 206, 207, 208, 226, 300,
-    301, 302, 303, 304, 305, 307, 308, 400, 401, 402, 403, 404, 405, 406, 407,
-    408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 421, 422, 423, 424,
-    425, 426, 428, 429, 431, 451, 500, 501, 502, 503, 504, 505, 506, 507, 508,
-    510, 511
-];
-// oxlint-enable eslint/no-magic-numbers
 export const eslintRules = defineConfig({
     rules: {
         'eslint/accessor-pairs': [
@@ -199,29 +189,7 @@ export const eslintRules = defineConfig({
         'eslint/no-lonely-if': 'error',
         'eslint/no-loop-func': 'error',
         'eslint/no-loss-of-precision': 'error',
-        'eslint/no-magic-numbers': [
-            'error',
-            {
-                detectObjects: true,
-                enforceConst: true,
-                ignore: [
-                    -1,
-                    ...WELL_KNOWN_HTTP_STATUS_CODES,
-                    ...tenPowers(),
-                    ...tenPowersMinusOne(),
-                    ...twoPowers(),
-                    ...twoPowersMinusOne(),
-                    0
-                ],
-                ignoreArrayIndexes: true,
-                ignoreClassFieldInitialValues: false,
-                ignoreDefaultValues: true,
-                ignoreEnums: false,
-                ignoreNumericLiteralTypes: false,
-                ignoreReadonlyClassProperties: false,
-                ignoreTypeIndexes: true
-            }
-        ],
+        'eslint/no-magic-numbers': 'off',
         'eslint/no-misleading-character-class': [
             'error',
             { allowEscape: false }
@@ -416,35 +384,3 @@ export const eslintRules = defineConfig({
         ]
     }
 });
-function tenPowers() {
-    const length = Math.trunc(Math.log2(Number.MAX_SAFE_INTEGER));
-    const arr = Array.from({ length });
-    for (let i = 0; i < length; i++) {
-        arr[i] = 10 ** (i + 1);
-    }
-    return arr;
-}
-function tenPowersMinusOne() {
-    const length = Math.trunc(Math.log2(Number.MAX_SAFE_INTEGER));
-    const arr = Array.from({ length });
-    for (let i = 0; i < length; i++) {
-        arr[i] = 10 ** (i + 1) - 1;
-    }
-    return arr;
-}
-function twoPowers() {
-    const length = Math.trunc(Math.log2(Number.MAX_SAFE_INTEGER));
-    const arr = Array.from({ length });
-    for (let i = 0; i < length; i++) {
-        arr[i] = 2 ** (i + 1);
-    }
-    return arr;
-}
-function twoPowersMinusOne() {
-    const length = Math.trunc(Math.log2(Number.MAX_SAFE_INTEGER));
-    const arr = Array.from({ length });
-    for (let i = 0; i < length; i++) {
-        arr[i] = 2 ** (i + 1) - 1;
-    }
-    return arr;
-}
