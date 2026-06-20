@@ -2,13 +2,13 @@ export declare const perfectionistRules: {
     readonly rules: {
         readonly 'perfectionist/sort-array-includes': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly ["literal"];
             readonly newlinesBetween: 0;
@@ -19,13 +19,13 @@ export declare const perfectionistRules: {
         }];
         readonly 'perfectionist/sort-classes': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly ["index-signature", {
                 readonly newlinesBetween: 1;
@@ -60,7 +60,7 @@ export declare const perfectionistRules: {
             }, {
                 readonly newlinesBetween: 1;
             }, {
-                readonly group: "constructor";
+                readonly group: 'constructor';
                 readonly newlinesInside: 1;
             }, {
                 readonly newlinesBetween: 1;
@@ -85,7 +85,7 @@ export declare const perfectionistRules: {
             }, {
                 readonly newlinesBetween: 1;
             }, {
-                readonly group: "unknown";
+                readonly group: 'unknown';
                 readonly newlinesInside: 1;
             }];
             readonly ignoreCallbackDependenciesPatterns: readonly [];
@@ -98,13 +98,13 @@ export declare const perfectionistRules: {
         }];
         readonly 'perfectionist/sort-decorators': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly newlinesBetween: 0;
@@ -119,32 +119,32 @@ export declare const perfectionistRules: {
         }];
         readonly 'perfectionist/sort-enums': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly newlinesBetween: 0;
             readonly newlinesInside: 0;
             readonly partitionByComment: false;
             readonly partitionByNewLine: false;
-            readonly sortByValue: "never";
+            readonly sortByValue: 'never';
             readonly useConfigurationIf: {};
             readonly useExperimentalDependencyDetection: true;
         }];
         readonly 'perfectionist/sort-export-attributes': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly newlinesBetween: 0;
@@ -155,13 +155,13 @@ export declare const perfectionistRules: {
         }];
         readonly 'perfectionist/sort-exports': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly newlinesBetween: 0;
@@ -171,13 +171,13 @@ export declare const perfectionistRules: {
         }];
         readonly 'perfectionist/sort-heritage-clauses': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly newlinesBetween: 0;
@@ -188,13 +188,13 @@ export declare const perfectionistRules: {
         }];
         readonly 'perfectionist/sort-import-attributes': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly newlinesBetween: 0;
@@ -203,46 +203,46 @@ export declare const perfectionistRules: {
             readonly partitionByNewLine: false;
             readonly useConfigurationIf: {};
         }];
-        readonly 'perfectionist/sort-imports': "off";
+        readonly 'perfectionist/sort-imports': 'off';
         readonly 'perfectionist/sort-interfaces': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly ["index-signature", {
                 readonly newlinesBetween: 1;
             }, "property", {
                 readonly newlinesBetween: 1;
             }, {
-                readonly group: "method";
+                readonly group: 'method';
                 readonly newlinesInside: 1;
             }, {
                 readonly newlinesBetween: 1;
             }, {
-                readonly group: "unknown";
+                readonly group: 'unknown';
                 readonly newlinesInside: 1;
             }];
             readonly newlinesBetween: 0;
             readonly newlinesInside: 0;
             readonly partitionByComment: false;
             readonly partitionByNewLine: false;
-            readonly sortBy: "name";
+            readonly sortBy: 'name';
             readonly useConfigurationIf: {};
         }];
         readonly 'perfectionist/sort-intersection-types': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly newlinesBetween: 0;
@@ -253,13 +253,13 @@ export declare const perfectionistRules: {
         }];
         readonly 'perfectionist/sort-jsx-props': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly newlinesBetween: 0;
@@ -269,13 +269,13 @@ export declare const perfectionistRules: {
         }];
         readonly 'perfectionist/sort-maps': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly newlinesBetween: 0;
@@ -284,16 +284,16 @@ export declare const perfectionistRules: {
             readonly partitionByNewLine: false;
             readonly useConfigurationIf: {};
         }];
-        readonly 'perfectionist/sort-modules': "off";
+        readonly 'perfectionist/sort-modules': 'off';
         readonly 'perfectionist/sort-named-exports': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly ignoreAlias: false;
@@ -303,47 +303,47 @@ export declare const perfectionistRules: {
             readonly partitionByNewLine: false;
             readonly useConfigurationIf: {};
         }];
-        readonly 'perfectionist/sort-named-imports': "off";
+        readonly 'perfectionist/sort-named-imports': 'off';
         readonly 'perfectionist/sort-object-types': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly ["index-signature", {
                 readonly newlinesBetween: 1;
             }, "property", {
                 readonly newlinesBetween: 1;
             }, {
-                readonly group: "method";
+                readonly group: 'method';
                 readonly newlinesInside: 1;
             }, {
                 readonly newlinesBetween: 1;
             }, {
-                readonly group: "unknown";
+                readonly group: 'unknown';
                 readonly newlinesInside: 1;
             }];
             readonly newlinesBetween: 0;
             readonly newlinesInside: 0;
             readonly partitionByComment: false;
             readonly partitionByNewLine: false;
-            readonly sortBy: "name";
+            readonly sortBy: 'name';
             readonly useConfigurationIf: {};
         }];
-        readonly 'perfectionist/sort-objects': "off";
+        readonly 'perfectionist/sort-objects': 'off';
         readonly 'perfectionist/sort-sets': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly ["literal"];
             readonly newlinesBetween: 0;
@@ -354,23 +354,23 @@ export declare const perfectionistRules: {
         }];
         readonly 'perfectionist/sort-switch-case': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
         }];
         readonly 'perfectionist/sort-union-types': ["error", {
             readonly fallbackSort: {
-                readonly type: "unsorted";
+                readonly type: 'unsorted';
             };
             readonly ignoreCase: false;
-            readonly locales: "en-US";
-            readonly order: "asc";
-            readonly specialCharacters: "keep";
-            readonly type: "alphabetical";
+            readonly locales: 'en-US';
+            readonly order: 'asc';
+            readonly specialCharacters: 'keep';
+            readonly type: 'alphabetical';
             readonly customGroups: readonly [];
             readonly groups: readonly [];
             readonly newlinesBetween: 0;
@@ -379,6 +379,6 @@ export declare const perfectionistRules: {
             readonly partitionByNewLine: false;
             readonly useConfigurationIf: {};
         }];
-        readonly 'perfectionist/sort-variable-declarations': "off";
+        readonly 'perfectionist/sort-variable-declarations': 'off';
     };
 };

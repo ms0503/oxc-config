@@ -33,7 +33,7 @@ export const reactJSXRules = defineConfig({
                 warnOnDuplicates: true
             }
         ],
-        'react/jsx-max-depth': ['error', { max: Number.MAX_SAFE_INTEGER }],
+        'react/jsx-max-depth': ['error', { max: 2 ** 32 - 1 }],
         'react/jsx-no-comment-textnodes': 'error',
         'react/jsx-no-constructed-context-values': 'error',
         'react/jsx-no-duplicate-props': 'error',

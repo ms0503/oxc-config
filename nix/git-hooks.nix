@@ -32,16 +32,11 @@
               enable = true;
               package = config.treefmt.build.wrapper;
             };
-            yamlfmt = {
-              enable = true;
-              excludes = [
-                "pnpm-lock.yaml"
-              ];
-            };
             yamllint = {
               enable = true;
               excludes = [
                 "pnpm-lock.yaml"
+                "pnpm-workspace.yaml"
               ];
             };
           };

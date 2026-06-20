@@ -5,7 +5,7 @@ export declare const reactSettings: {
     readonly settings: {
         readonly 'jsx-a11y': {
             readonly components: {
-                readonly Link: "a";
+                readonly Link: 'a';
             };
         };
     };

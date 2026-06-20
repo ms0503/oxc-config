@@ -17,7 +17,7 @@ export const reactRules = defineConfig({
             'error',
             { checkContextObjects: true, ignoreTranspilerName: false }
         ],
-        'react/exhaustive-deps': ['error', { additionalHooks: null }],
+        'react/exhaustive-deps': 'error',
         'react/forbid-dom-props': [
             'error',
             {

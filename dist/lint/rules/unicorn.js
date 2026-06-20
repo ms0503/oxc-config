@@ -16,11 +16,7 @@ export const unicornRules = defineConfig({
         'unicorn/explicit-length-check': ['error', { 'non-zero': 'not-equal' }],
         'unicorn/filename-case': [
             'error',
-            {
-                case: 'kebabCase',
-                ignore: '^.*\\.[jt]sx$',
-                multipleFileExtensions: true
-            }
+            { case: 'kebabCase', ignore: [], multipleFileExtensions: true }
         ],
         'unicorn/new-for-builtins': 'error',
         'unicorn/no-abusive-eslint-disable': 'error',
