@@ -38,7 +38,8 @@ export const reactJSXRules = defineConfig({
         'react/jsx-no-duplicate-props': 'error',
         'react/jsx-no-script-url': [
             'error',
-            { components: {}, includeFromSettings: false }
+            [{ name: 'Script', props: ['src'] }],
+            { includeFromSettings: true }
         ],
         'react/jsx-no-target-blank': [
             'error',

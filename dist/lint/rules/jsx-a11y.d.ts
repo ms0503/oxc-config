@@ -11,7 +11,9 @@ export declare const jsxA11yRules: {
         }];
         readonly 'jsx-a11y/anchor-has-content': 'error';
         readonly 'jsx-a11y/anchor-is-valid': ["error", {
-            readonly validHrefs: readonly [];
+            readonly aspects: [];
+            readonly components: [];
+            readonly specialLink: [];
         }];
         readonly 'jsx-a11y/aria-activedescendant-has-tabindex': 'error';
         readonly 'jsx-a11y/aria-props': 'error';

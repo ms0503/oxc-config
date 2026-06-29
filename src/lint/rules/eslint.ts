@@ -325,11 +325,8 @@ export const eslintRules = defineConfig({
         ],
         'eslint/prefer-destructuring': [
             'error',
-            {
-                AssignmentExpression: { array: false, object: false },
-                VariableDeclarator: { array: true, object: true },
-                enforceForRenamedProperties: true
-            }
+            { array: true, object: true },
+            { enforceForRenamedProperties: true }
         ],
         'eslint/prefer-exponentiation-operator': 'error',
         'eslint/prefer-numeric-literals': 'error',

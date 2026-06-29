@@ -31,9 +31,11 @@ export declare const reactJSXRules: {
         readonly 'react/jsx-no-comment-textnodes': 'error';
         readonly 'react/jsx-no-constructed-context-values': 'error';
         readonly 'react/jsx-no-duplicate-props': 'error';
-        readonly 'react/jsx-no-script-url': ["error", {
-            readonly components: {};
-            readonly includeFromSettings: false;
+        readonly 'react/jsx-no-script-url': ["error", [{
+            readonly name: 'Script';
+            readonly props: ["src"];
+        }], {
+            readonly includeFromSettings: true;
         }];
         readonly 'react/jsx-no-target-blank': ["error", {
             readonly allowReferrer: false;

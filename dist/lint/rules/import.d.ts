@@ -13,7 +13,7 @@ export declare const importRules: {
         readonly 'import/extensions': ["error", "never", {
             readonly checkTypeImports: true;
             readonly ignorePackages: false;
-            readonly pathGroupOverrides: readonly [];
+            readonly pathGroupOverrides: [];
         }];
         readonly 'import/first': ["error", "disable-absolute-first"];
         readonly 'import/group-exports': 'off';

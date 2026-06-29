@@ -317,14 +317,9 @@ export declare const coreRules: {
                 readonly ignoreReadBeforeAssign: false;
             }];
             readonly 'eslint/prefer-destructuring': ["error", {
-                readonly AssignmentExpression: {
-                    readonly array: false;
-                    readonly object: false;
-                };
-                readonly VariableDeclarator: {
-                    readonly array: true;
-                    readonly object: true;
-                };
+                readonly array: true;
+                readonly object: true;
+            }, {
                 readonly enforceForRenamedProperties: true;
             }];
             readonly 'eslint/prefer-exponentiation-operator': 'error';
@@ -389,7 +384,7 @@ export declare const coreRules: {
             readonly 'import/extensions': ["error", "never", {
                 readonly checkTypeImports: true;
                 readonly ignorePackages: false;
-                readonly pathGroupOverrides: readonly [];
+                readonly pathGroupOverrides: [];
             }];
             readonly 'import/first': ["error", "disable-absolute-first"];
             readonly 'import/group-exports': 'off';
@@ -1446,7 +1441,9 @@ export declare const jsxRules: {
             }];
             readonly 'jsx-a11y/anchor-has-content': 'error';
             readonly 'jsx-a11y/anchor-is-valid': ["error", {
-                readonly validHrefs: readonly [];
+                readonly aspects: [];
+                readonly components: [];
+                readonly specialLink: [];
             }];
             readonly 'jsx-a11y/aria-activedescendant-has-tabindex': 'error';
             readonly 'jsx-a11y/aria-props': 'error';
@@ -1540,9 +1537,11 @@ export declare const jsxRules: {
             readonly 'react/jsx-no-comment-textnodes': 'error';
             readonly 'react/jsx-no-constructed-context-values': 'error';
             readonly 'react/jsx-no-duplicate-props': 'error';
-            readonly 'react/jsx-no-script-url': ["error", {
-                readonly components: {};
-                readonly includeFromSettings: false;
+            readonly 'react/jsx-no-script-url': ["error", [{
+                readonly name: 'Script';
+                readonly props: ["src"];
+            }], {
+                readonly includeFromSettings: true;
             }];
             readonly 'react/jsx-no-target-blank': ["error", {
                 readonly allowReferrer: false;

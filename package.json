@@ -1,12 +1,12 @@
 {
     "dependencies": {
         "eslint-plugin-perfectionist": "^5.8.0",
-        "oxfmt": "^0.55.0",
-        "oxlint": "^1.70.0",
+        "oxfmt": "^0.56.0",
+        "oxlint": "^1.71.0",
         "oxlint-tsgolint": "^0.23.0"
     },
     "devDependencies": {
-        "@typescript/native-preview": "^7.0.0-dev.20260620.1"
+        "typescript": "catalog:"
     },
     "engines": {
         "node": ">=22.18.0"
@@ -28,18 +28,18 @@
     "name": "@ms0503/oxc-config",
     "packageManager": "pnpm@11.5.3",
     "peerDependencies": {
-        "@typescript/native-preview": "^7.0.0-dev.20260620.1",
-        "oxfmt": "^0.55.0",
-        "oxlint": "^1.70.0",
-        "oxlint-tsgolint": "^0.23.0"
+        "oxfmt": "^0.56.0",
+        "oxlint": "^1.71.0",
+        "oxlint-tsgolint": "^0.23.0",
+        "typescript": "catalog:"
     },
     "scripts": {
-        "build": "tsgo --build",
+        "build": "tsc --project ./tsconfig.src.json",
         "check": "oxfmt --check",
         "fmt": "oxfmt",
         "lint": "oxlint",
         "lint:fix": "oxlint --fix"
     },
     "type": "module",
-    "version": "0.5.1"
+    "version": "0.6.0"
 }

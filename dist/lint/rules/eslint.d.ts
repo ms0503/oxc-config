@@ -316,14 +316,9 @@ export declare const eslintRules: {
             readonly ignoreReadBeforeAssign: false;
         }];
         readonly 'eslint/prefer-destructuring': ["error", {
-            readonly AssignmentExpression: {
-                readonly array: false;
-                readonly object: false;
-            };
-            readonly VariableDeclarator: {
-                readonly array: true;
-                readonly object: true;
-            };
+            readonly array: true;
+            readonly object: true;
+        }, {
             readonly enforceForRenamedProperties: true;
         }];
         readonly 'eslint/prefer-exponentiation-operator': 'error';

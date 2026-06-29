@@ -27,7 +27,7 @@ export const jsx = defineConfig({
     plugins: ['jsx-a11y', 'react', 'react-perf']
 } as const);
 
-export const hono = defineConfig({ extends: [core] } as const);
+export const hono = defineConfig({ extends: [core, jsx] } as const);
 
 export const react = defineConfig({
     extends: [core, jsx, reactRules]
@@ -38,7 +38,33 @@ export const vue = defineConfig({
     plugins: ['vue']
 } as const);
 
+export const honox = defineConfig({
+    extends: [hono],
+    rules: {
+        'react/jsx-no-script-url': [
+            'error',
+            [{ name: 'Script', props: ['src'] }],
+            { includeFromSettings: true }
+        ]
+    }
+} as const);
+
 export const nextjs = defineConfig({
     extends: [react, nextjsRules],
     plugins: ['nextjs']
+} as const);
+
+export const reactRouter = defineConfig({
+    extends: [react],
+    rules: {
+        'jsx-a11y/anchor-is-valid': [
+            'error',
+            { components: ['Link'], specialLink: ['to'] }
+        ],
+        'react/jsx-no-script-url': [
+            'error',
+            [{ name: 'Script', props: ['src'] }],
+            { includeFromSettings: true }
+        ]
+    }
 } as const);
