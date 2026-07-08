@@ -375,10 +375,6 @@ export const eslintRules = defineConfig({
         ],
         'eslint/valid-typeof': ['error', { requireStringLiterals: true }],
         'eslint/vars-on-top': 'error',
-        'eslint/yoda': [
-            'error',
-            'never',
-            { exceptRange: true, onlyEquality: false }
-        ]
+        'eslint/yoda': 'off'
     }
 } as const);

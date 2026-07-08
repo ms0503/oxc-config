@@ -365,10 +365,7 @@ export declare const core: {
                     readonly requireStringLiterals: true;
                 }];
                 readonly 'eslint/vars-on-top': 'error';
-                readonly 'eslint/yoda': ["error", "never", {
-                    readonly exceptRange: true;
-                    readonly onlyEquality: false;
-                }];
+                readonly 'eslint/yoda': 'off';
             };
         }, {
             readonly overrides: [{
@@ -1947,10 +1944,7 @@ export declare const hono: {
                         readonly requireStringLiterals: true;
                     }];
                     readonly 'eslint/vars-on-top': 'error';
-                    readonly 'eslint/yoda': ["error", "never", {
-                        readonly exceptRange: true;
-                        readonly onlyEquality: false;
-                    }];
+                    readonly 'eslint/yoda': 'off';
                 };
             }, {
                 readonly overrides: [{
@@ -3529,10 +3523,7 @@ export declare const react: {
                         readonly requireStringLiterals: true;
                     }];
                     readonly 'eslint/vars-on-top': 'error';
-                    readonly 'eslint/yoda': ["error", "never", {
-                        readonly exceptRange: true;
-                        readonly onlyEquality: false;
-                    }];
+                    readonly 'eslint/yoda': 'off';
                 };
             }, {
                 readonly overrides: [{
@@ -5201,10 +5192,7 @@ export declare const vue: {
                         readonly requireStringLiterals: true;
                     }];
                     readonly 'eslint/vars-on-top': 'error';
-                    readonly 'eslint/yoda': ["error", "never", {
-                        readonly exceptRange: true;
-                        readonly onlyEquality: false;
-                    }];
+                    readonly 'eslint/yoda': 'off';
                 };
             }, {
                 readonly overrides: [{
@@ -6662,10 +6650,7 @@ export declare const honox: {
                             readonly requireStringLiterals: true;
                         }];
                         readonly 'eslint/vars-on-top': 'error';
-                        readonly 'eslint/yoda': ["error", "never", {
-                            readonly exceptRange: true;
-                            readonly onlyEquality: false;
-                        }];
+                        readonly 'eslint/yoda': 'off';
                     };
                 }, {
                     readonly overrides: [{
@@ -8254,10 +8239,7 @@ export declare const nextjs: {
                             readonly requireStringLiterals: true;
                         }];
                         readonly 'eslint/vars-on-top': 'error';
-                        readonly 'eslint/yoda': ["error", "never", {
-                            readonly exceptRange: true;
-                            readonly onlyEquality: false;
-                        }];
+                        readonly 'eslint/yoda': 'off';
                     };
                 }, {
                     readonly overrides: [{
@@ -9955,10 +9937,7 @@ export declare const reactRouter: {
                             readonly requireStringLiterals: true;
                         }];
                         readonly 'eslint/vars-on-top': 'error';
-                        readonly 'eslint/yoda': ["error", "never", {
-                            readonly exceptRange: true;
-                            readonly onlyEquality: false;
-                        }];
+                        readonly 'eslint/yoda': 'off';
                     };
                 }, {
                     readonly overrides: [{

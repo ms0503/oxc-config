@@ -364,10 +364,7 @@ export declare const coreRules: {
                 readonly requireStringLiterals: true;
             }];
             readonly 'eslint/vars-on-top': 'error';
-            readonly 'eslint/yoda': ["error", "never", {
-                readonly exceptRange: true;
-                readonly onlyEquality: false;
-            }];
+            readonly 'eslint/yoda': 'off';
         };
     }, {
         readonly overrides: [{
