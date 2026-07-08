@@ -317,12 +317,7 @@ export declare const core: {
                     readonly destructuring: 'all';
                     readonly ignoreReadBeforeAssign: false;
                 }];
-                readonly 'eslint/prefer-destructuring': ["error", {
-                    readonly array: true;
-                    readonly object: true;
-                }, {
-                    readonly enforceForRenamedProperties: true;
-                }];
+                readonly 'eslint/prefer-destructuring': 'off';
                 readonly 'eslint/prefer-exponentiation-operator': 'error';
                 readonly 'eslint/prefer-numeric-literals': 'error';
                 readonly 'eslint/prefer-object-has-own': 'error';
@@ -1896,12 +1891,7 @@ export declare const hono: {
                         readonly destructuring: 'all';
                         readonly ignoreReadBeforeAssign: false;
                     }];
-                    readonly 'eslint/prefer-destructuring': ["error", {
-                        readonly array: true;
-                        readonly object: true;
-                    }, {
-                        readonly enforceForRenamedProperties: true;
-                    }];
+                    readonly 'eslint/prefer-destructuring': 'off';
                     readonly 'eslint/prefer-exponentiation-operator': 'error';
                     readonly 'eslint/prefer-numeric-literals': 'error';
                     readonly 'eslint/prefer-object-has-own': 'error';
@@ -3475,12 +3465,7 @@ export declare const react: {
                         readonly destructuring: 'all';
                         readonly ignoreReadBeforeAssign: false;
                     }];
-                    readonly 'eslint/prefer-destructuring': ["error", {
-                        readonly array: true;
-                        readonly object: true;
-                    }, {
-                        readonly enforceForRenamedProperties: true;
-                    }];
+                    readonly 'eslint/prefer-destructuring': 'off';
                     readonly 'eslint/prefer-exponentiation-operator': 'error';
                     readonly 'eslint/prefer-numeric-literals': 'error';
                     readonly 'eslint/prefer-object-has-own': 'error';
@@ -5144,12 +5129,7 @@ export declare const vue: {
                         readonly destructuring: 'all';
                         readonly ignoreReadBeforeAssign: false;
                     }];
-                    readonly 'eslint/prefer-destructuring': ["error", {
-                        readonly array: true;
-                        readonly object: true;
-                    }, {
-                        readonly enforceForRenamedProperties: true;
-                    }];
+                    readonly 'eslint/prefer-destructuring': 'off';
                     readonly 'eslint/prefer-exponentiation-operator': 'error';
                     readonly 'eslint/prefer-numeric-literals': 'error';
                     readonly 'eslint/prefer-object-has-own': 'error';
@@ -6602,12 +6582,7 @@ export declare const honox: {
                             readonly destructuring: 'all';
                             readonly ignoreReadBeforeAssign: false;
                         }];
-                        readonly 'eslint/prefer-destructuring': ["error", {
-                            readonly array: true;
-                            readonly object: true;
-                        }, {
-                            readonly enforceForRenamedProperties: true;
-                        }];
+                        readonly 'eslint/prefer-destructuring': 'off';
                         readonly 'eslint/prefer-exponentiation-operator': 'error';
                         readonly 'eslint/prefer-numeric-literals': 'error';
                         readonly 'eslint/prefer-object-has-own': 'error';
@@ -8191,12 +8166,7 @@ export declare const nextjs: {
                             readonly destructuring: 'all';
                             readonly ignoreReadBeforeAssign: false;
                         }];
-                        readonly 'eslint/prefer-destructuring': ["error", {
-                            readonly array: true;
-                            readonly object: true;
-                        }, {
-                            readonly enforceForRenamedProperties: true;
-                        }];
+                        readonly 'eslint/prefer-destructuring': 'off';
                         readonly 'eslint/prefer-exponentiation-operator': 'error';
                         readonly 'eslint/prefer-numeric-literals': 'error';
                         readonly 'eslint/prefer-object-has-own': 'error';
@@ -9889,12 +9859,7 @@ export declare const reactRouter: {
                             readonly destructuring: 'all';
                             readonly ignoreReadBeforeAssign: false;
                         }];
-                        readonly 'eslint/prefer-destructuring': ["error", {
-                            readonly array: true;
-                            readonly object: true;
-                        }, {
-                            readonly enforceForRenamedProperties: true;
-                        }];
+                        readonly 'eslint/prefer-destructuring': 'off';
                         readonly 'eslint/prefer-exponentiation-operator': 'error';
                         readonly 'eslint/prefer-numeric-literals': 'error';
                         readonly 'eslint/prefer-object-has-own': 'error';
