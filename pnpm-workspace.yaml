@@ -1,5 +1,5 @@
 catalog:
-    typescript: '^7.0.1-rc'
+    typescript: '^7.0.2'
 minimumReleaseAgeExclude:
     - '@typescript/native-preview-darwin-arm64@7.0.0-dev.20260620.1'
     - '@typescript/native-preview-darwin-x64@7.0.0-dev.20260620.1'
