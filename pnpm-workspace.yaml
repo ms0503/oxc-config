@@ -1,2 +1,9 @@
 overrides:
+  '@typescript-eslint/project-service>typescript': 'npm:@typescript/typescript6@^6.0.2'
+  '@typescript-eslint/tsconfig-utils>typescript': 'npm:@typescript/typescript6@^6.0.2'
+  '@typescript-eslint/typescript-estree>typescript': 'npm:@typescript/typescript6@^6.0.2'
+  '@typescript-eslint/utils>typescript': 'npm:@typescript/typescript6@^6.0.2'
   minimatch>brace-expansion: '^5.0.6'
+peerDependencyRules:
+  allowedVersions:
+    typescript: '7'
