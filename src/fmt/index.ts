@@ -1,3 +1,4 @@
+import { yaml } from './yaml.js';
 import { defineConfig } from 'oxfmt';
 
 export const config: ReturnType<typeof defineConfig> = defineConfig({
@@ -11,7 +12,7 @@ export const config: ReturnType<typeof defineConfig> = defineConfig({
     insertFinalNewline: true,
     jsxSingleQuote: false,
     objectWrap: 'collapse',
-    overrides: [],
+    overrides: [yaml].flat(),
     // 80 column rule
     // oxlint-disable-next-line no-magic-numbers
     printWidth: 80,

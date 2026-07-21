@@ -23,6 +23,14 @@
             };
           };
           nixfmt.enable = true;
+          yamlfmt.enable = false;
+          yamllint = {
+            enable = true;
+            excludes = [
+              "pnpm-lock.yaml"
+              "pnpm-workspace.yaml"
+            ];
+          };
         };
         settings.formatter.jsonfmt =
           let
