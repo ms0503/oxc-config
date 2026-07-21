@@ -12,8 +12,6 @@ export const config = defineConfig({
     jsxSingleQuote: false,
     objectWrap: 'collapse',
     overrides: [yaml].flat(),
-    // 80 column rule
-    // oxlint-disable-next-line no-magic-numbers
     printWidth: 80,
     proseWrap: 'never',
     quoteProps: 'as-needed',
