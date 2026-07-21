@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const vitestRules = defineConfig({
+export const vitestRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'vitest/consistent-each-for': [
             'error',

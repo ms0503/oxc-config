@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const reactPerfJSXRules = defineConfig({
+export const reactPerfJSXRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'react-perf/jsx-no-jsx-as-prop': 'error',
         'react-perf/jsx-no-new-array-as-prop': 'error',

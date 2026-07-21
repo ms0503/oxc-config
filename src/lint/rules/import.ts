@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const importRules = defineConfig({
+export const importRules: ReturnType<typeof defineConfig> = defineConfig({
     overrides: [
         {
             files: [

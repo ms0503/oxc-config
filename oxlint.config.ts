@@ -1,9 +1,9 @@
-import { core } from './dist/lint/index.js';
+import { core } from './src/lint/index.ts';
 import { defineConfig } from 'oxlint';
 
 export default defineConfig({
     extends: [core],
-    ignorePatterns: ['dist/**/*'],
+    ignorePatterns: [],
     rules: { 'import/extensions': 'off' },
     settings: { typeAware: true, typeCheck: true }
 });

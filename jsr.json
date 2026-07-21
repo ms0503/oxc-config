@@ -1,0 +1,17 @@
+{
+    "exports": {
+        "./fmt": "./src/fmt/index.ts",
+        "./lint": "./src/lint/index.ts",
+        "./utils": "./src/utils/index.ts"
+    },
+    "license": "MIT",
+    "name": "@ms0503/oxc-config",
+    "publish": {
+        "include": [
+            "LICENSE.md",
+            "README.md",
+            "src/**/*.ts"
+        ]
+    },
+    "version": "0.6.3"
+}

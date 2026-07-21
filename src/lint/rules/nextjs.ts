@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const nextjsRules = defineConfig({
+export const nextjsRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'nextjs/google-font-display': 'error',
         'nextjs/google-font-preconnect': 'error',

@@ -4,10 +4,15 @@ import {
     nextjsRules,
     reactRules,
     vueRules
-} from './rules/index.js';
+} from './rules/index.ts';
 import { defineConfig } from 'oxlint';
 
-export const core = defineConfig({
+/**
+ * Core configuration
+ *
+ * Framework-independent minimal settings.
+ */
+export const core: ReturnType<typeof defineConfig> = defineConfig({
     extends: [coreRules],
     jsPlugins: ['eslint-plugin-perfectionist'],
     plugins: [
@@ -22,23 +27,50 @@ export const core = defineConfig({
     ]
 } as const);
 
-export const jsx = defineConfig({
+/**
+ * JSX configuration
+ *
+ * JSX-specific settings.
+ */
+export const jsx: ReturnType<typeof defineConfig> = defineConfig({
     extends: [jsxRules],
     plugins: ['jsx-a11y', 'react', 'react-perf']
 } as const);
 
-export const hono = defineConfig({ extends: [core, jsx] } as const);
+/**
+ * Framework configuration for Hono
+ *
+ * Config for Hono, which loads core and jsx configs.
+ */
+export const hono: ReturnType<typeof defineConfig> = defineConfig({
+    extends: [core, jsx]
+} as const);
 
-export const react = defineConfig({
+/**
+ * Framework configuration for React
+ *
+ * Config for React, which loads core and jsx configs and adds React-specific settings.
+ */
+export const react: ReturnType<typeof defineConfig> = defineConfig({
     extends: [core, jsx, reactRules]
 } as const);
 
-export const vue = defineConfig({
+/**
+ * Framework configuration for Vue
+ *
+ * Config for Vue, which loads core configs and adds Vue-specific settings.
+ */
+export const vue: ReturnType<typeof defineConfig> = defineConfig({
     extends: [core, vueRules],
     plugins: ['vue']
 } as const);
 
-export const honox = defineConfig({
+/**
+ * Full-stack framework configuration for HonoX
+ *
+ * Config for HonoX, which loads hono configs and adds HonoX-specific settings.
+ */
+export const honox: ReturnType<typeof defineConfig> = defineConfig({
     extends: [hono],
     rules: {
         'react/jsx-no-script-url': [
@@ -49,12 +81,22 @@ export const honox = defineConfig({
     }
 } as const);
 
-export const nextjs = defineConfig({
+/**
+ * Full-stack framework configuration for Next.js
+ *
+ * Config for Next.js, which loads react configs and adds Next.js-specific settings.
+ */
+export const nextjs: ReturnType<typeof defineConfig> = defineConfig({
     extends: [react, nextjsRules],
     plugins: ['nextjs']
 } as const);
 
-export const reactRouter = defineConfig({
+/**
+ * Full-stack framework configuration for React Router (v7+)
+ *
+ * Config for React Router (v7+), which loads react configs and adds React Router-specific settings.
+ */
+export const reactRouter: ReturnType<typeof defineConfig> = defineConfig({
     extends: [react],
     rules: {
         'jsx-a11y/anchor-is-valid': [

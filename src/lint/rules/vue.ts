@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const vueRules = defineConfig({
+export const vueRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'vue/define-emits-declaration': ['error', 'type-literal'],
         'vue/define-props-declaration': ['error', 'type-based'],

@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const reactRules = defineConfig({
+export const reactRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'react/button-has-type': [
             'error',

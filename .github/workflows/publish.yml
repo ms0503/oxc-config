@@ -1,0 +1,14 @@
+jobs:
+  publish:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    runs-on: 'ubuntu-24.04'
+    steps:
+      - name: 'Checkout repository'
+        uses: 'actions/checkout@v6'
+      - name: 'Publish'
+        run: 'npx jsr publish'
+name: 'Publish'
+on:
+  workflow_dispatch:

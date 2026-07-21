@@ -1,22 +1,22 @@
-import { eslintRules } from './eslint.js';
-import { importRules } from './import.js';
-import { jsxA11yRules } from './jsx-a11y.js';
-import { nextjsRules as nextjsRulesCfg } from './nextjs.js';
-import { nodeRules } from './node.js';
-import { oxcRules } from './oxc.js';
-import { perfectionistRules } from './perfectionist.js';
-import { promiseRules } from './promise.js';
-import { reactPerfRules } from './react-perf/index.js';
-import { reactPerfJSXRules } from './react-perf/jsx.js';
-import { reactRules as reactRulesCfg } from './react/index.js';
-import { reactJSXRules } from './react/jsx.js';
-import { typescriptRules } from './typescript.js';
-import { unicornRules } from './unicorn.js';
-import { vitestRules } from './vitest.js';
-import { vueRules as vueRulesCfg } from './vue.js';
+import { eslintRules } from './eslint.ts';
+import { importRules } from './import.ts';
+import { jsxA11yRules } from './jsx-a11y.ts';
+import { nextjsRules as nextjsRulesCfg } from './nextjs.ts';
+import { nodeRules } from './node.ts';
+import { oxcRules } from './oxc.ts';
+import { perfectionistRules } from './perfectionist.ts';
+import { promiseRules } from './promise.ts';
+import { reactPerfRules } from './react-perf/index.ts';
+import { reactPerfJSXRules } from './react-perf/jsx.ts';
+import { reactRules as reactRulesCfg } from './react/index.ts';
+import { reactJSXRules } from './react/jsx.ts';
+import { typescriptRules } from './typescript.ts';
+import { unicornRules } from './unicorn.ts';
+import { vitestRules } from './vitest.ts';
+import { vueRules as vueRulesCfg } from './vue.ts';
 import { defineConfig } from 'oxlint';
 
-export const coreRules = defineConfig({
+export const coreRules: ReturnType<typeof defineConfig> = defineConfig({
     extends: [
         eslintRules,
         importRules,
@@ -30,13 +30,15 @@ export const coreRules = defineConfig({
     ]
 } as const);
 
-export const jsxRules = defineConfig({
+export const jsxRules: ReturnType<typeof defineConfig> = defineConfig({
     extends: [jsxA11yRules, reactJSXRules, reactPerfJSXRules]
 } as const);
 
-export const nextjsRules = defineConfig({ extends: [nextjsRulesCfg] } as const);
+export const nextjsRules: ReturnType<typeof defineConfig> = defineConfig({
+    extends: [nextjsRulesCfg]
+} as const);
 
-export const reactRules = defineConfig({
+export const reactRules: ReturnType<typeof defineConfig> = defineConfig({
     extends: [reactPerfRules, reactRulesCfg],
     overrides: [
         {
@@ -56,4 +58,6 @@ export const reactRules = defineConfig({
     }
 } as const);
 
-export const vueRules = defineConfig({ extends: [vueRulesCfg] } as const);
+export const vueRules: ReturnType<typeof defineConfig> = defineConfig({
+    extends: [vueRulesCfg]
+} as const);

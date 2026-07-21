@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "allowImportingTsExtensions": true,
         "outDir": "./dist",
         "rootDir": "./src",
         "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.src.tsbuildinfo"

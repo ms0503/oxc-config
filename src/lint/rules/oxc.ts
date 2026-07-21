@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const oxcRules = defineConfig({
+export const oxcRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'oxc/approx-constant': 'error',
         'oxc/bad-array-method-on-arguments': 'error',

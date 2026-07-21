@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const reactJSXRules = defineConfig({
+export const reactJSXRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'react/jsx-boolean-value': [
             'error',

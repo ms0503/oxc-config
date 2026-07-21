@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const nodeRules = defineConfig({
+export const nodeRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'node/global-require': 'error',
         'node/no-exports-assign': 'error',

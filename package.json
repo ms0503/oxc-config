@@ -11,20 +11,6 @@
     "engines": {
         "node": ">=22.18.0"
     },
-    "exports": {
-        "./fmt": {
-            "import": "./dist/fmt/index.js",
-            "types": "./dist/fmt/index.d.ts"
-        },
-        "./lint": {
-            "import": "./dist/lint/index.js",
-            "types": "./dist/lint/index.d.ts"
-        },
-        "./utils": {
-            "import": "./dist/utils/index.js",
-            "types": "./dist/utils/index.d.ts"
-        }
-    },
     "name": "@ms0503/oxc-config",
     "packageManager": "pnpm@11.9.0",
     "peerDependencies": {
@@ -34,7 +20,6 @@
         "typescript": "^7.0.2"
     },
     "scripts": {
-        "build": "tsc --project ./tsconfig.src.json",
         "check": "oxfmt --check",
         "fmt": "oxfmt",
         "lint": "oxlint",

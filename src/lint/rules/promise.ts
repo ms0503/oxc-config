@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const promiseRules = defineConfig({
+export const promiseRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'promise/always-return': [
             'error',

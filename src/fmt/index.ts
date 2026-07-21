@@ -1,6 +1,17 @@
-import { yaml } from './yaml.js';
+import { yaml } from './yaml.ts';
 import { defineConfig } from 'oxfmt';
 
+/**
+ * Basic configuration
+ *
+ * Key settings (excerpt):
+ *     EOL           : LF
+ *     Line length   : 80
+ *     Quotes        : Single quotes (except for JSX, which uses double quotes)
+ *     Semi-colon    : Always
+ *     Tab           : 4 spaces (except for YAML, which uses 2 spaces)
+ *     Trailing comma: Never
+ */
 export const config: ReturnType<typeof defineConfig> = defineConfig({
     arrowParens: 'avoid',
     bracketSameLine: false,

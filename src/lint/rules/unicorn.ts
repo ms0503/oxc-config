@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const unicornRules = defineConfig({
+export const unicornRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'unicorn/catch-error-name': ['error', { ignore: [], name: 'err' }],
         'unicorn/consistent-assert': 'error',

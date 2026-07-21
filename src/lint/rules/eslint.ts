@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const eslintRules = defineConfig({
+export const eslintRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'eslint/accessor-pairs': [
             'error',

@@ -1,3 +1,3 @@
-import { config } from './dist/fmt/index.js';
+import { config } from './src/fmt/index.ts';
 
 export default config;

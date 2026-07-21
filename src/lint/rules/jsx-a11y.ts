@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const jsxA11yRules = defineConfig({
+export const jsxA11yRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'jsx-a11y/alt-text': [
             'error',

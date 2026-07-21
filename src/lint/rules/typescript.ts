@@ -1,6 +1,6 @@
 import { defineConfig } from 'oxlint';
 
-export const typescriptRules = defineConfig({
+export const typescriptRules: ReturnType<typeof defineConfig> = defineConfig({
     rules: {
         'typescript/adjacent-overload-signatures': 'error',
         'typescript/array-type': [
