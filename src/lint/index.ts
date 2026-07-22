@@ -1,3 +1,9 @@
+/**
+ * This module contains oxlint configurations.
+ *
+ * @module
+ */
+
 import {
     coreRules,
     jsxRules,

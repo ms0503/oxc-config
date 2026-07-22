@@ -1,4 +1,10 @@
-import type { OxlintGlobals } from "oxlint";
+/**
+ * This module contains helper utilities.
+ *
+ * @module
+ */
+
+import type { OxlintGlobals } from 'oxlint';
 
 /**
  * Converts global variable definitions in 'globals' to oxlint-compatible definitions.
@@ -8,9 +14,6 @@ import type { OxlintGlobals } from "oxlint";
  */
 export function convertGlobals(inputs: Record<string, boolean>): OxlintGlobals {
     return Object.fromEntries(
-        Object.entries(inputs).map(([k, v]) => [
-            k,
-            v ? "writable" : "readonly",
-        ]),
+        Object.entries(inputs).map(([k, v]) => [k, v ? 'writable' : 'readonly'])
     );
 }

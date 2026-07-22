@@ -1,3 +1,9 @@
+/**
+ * This module contains oxfmt configurations.
+ *
+ * @module
+ */
+
 import { yaml } from './yaml.ts';
 import { defineConfig } from 'oxfmt';
 
