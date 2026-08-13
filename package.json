@@ -1,6 +1,6 @@
 {
     "dependencies": {
-        "eslint-plugin-perfectionist": "^5.10.0",
+        "eslint-plugin-perfectionist": "^5.10.1",
         "oxfmt": "^0.59.0",
         "oxlint": "^1.74.0",
         "oxlint-tsgolint": "^0.25.0"
