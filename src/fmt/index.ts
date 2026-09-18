@@ -4,6 +4,7 @@
  * @module
  */
 
+import { markdown } from './markdown.ts';
 import { yaml } from './yaml.ts';
 import { defineConfig } from 'oxfmt';
 
@@ -29,7 +30,7 @@ export const config: ReturnType<typeof defineConfig> = defineConfig({
     insertFinalNewline: true,
     jsxSingleQuote: false,
     objectWrap: 'collapse',
-    overrides: [yaml].flat(),
+    overrides: [markdown, yaml].flat(),
     printWidth: 80,
     proseWrap: 'never',
     quoteProps: 'as-needed',
