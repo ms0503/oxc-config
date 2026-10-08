@@ -1,7 +1,7 @@
 {
     "dependencies": {
         "eslint-plugin-perfectionist": "^5.12.1",
-        "oxfmt": "^0.71.0",
+        "oxfmt": "^0.72.0",
         "oxlint": "^1.75.0",
         "oxlint-tsgolint": "^7.0.2003"
     },
@@ -14,7 +14,7 @@
     "name": "@ms0503/oxc-config",
     "packageManager": "pnpm@11.9.0",
     "peerDependencies": {
-        "oxfmt": "^0.71.0",
+        "oxfmt": "^0.72.0",
         "oxlint": "^1.75.0",
         "oxlint-tsgolint": "^7.0.2003",
         "typescript": "^7.0.2"
