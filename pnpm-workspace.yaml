@@ -1,3 +1,4 @@
+minimumReleaseAge: 10080
 overrides:
   '@typescript-eslint/project-service>typescript': 'npm:@typescript/typescript6@^6.0.2'
   '@typescript-eslint/tsconfig-utils>typescript': 'npm:@typescript/typescript6@^6.0.2'
