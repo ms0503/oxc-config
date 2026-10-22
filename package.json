@@ -2,7 +2,7 @@
     "dependencies": {
         "eslint-plugin-perfectionist": "^5.12.1",
         "oxfmt": "^0.72.0",
-        "oxlint": "^1.87.0",
+        "oxlint": "^1.88.0",
         "oxlint-tsgolint": "^7.0.2003"
     },
     "devDependencies": {
@@ -16,7 +16,7 @@
     "peerDependencies": {
         "eslint-plugin-perfectionist": "^5.12.1",
         "oxfmt": "^0.72.0",
-        "oxlint": "^1.87.0",
+        "oxlint": "^1.88.0",
         "oxlint-tsgolint": "^7.0.2003",
         "typescript": "^7.0.2"
     },
