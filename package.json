@@ -1,7 +1,7 @@
 {
     "dependencies": {
         "eslint-plugin-perfectionist": "^5.12.1",
-        "oxfmt": "^0.72.0",
+        "oxfmt": "^0.74.0",
         "oxlint": "^1.87.0",
         "oxlint-tsgolint": "^7.0.2003"
     },
@@ -15,7 +15,7 @@
     "packageManager": "pnpm@11.9.0",
     "peerDependencies": {
         "eslint-plugin-perfectionist": "^5.12.1",
-        "oxfmt": "^0.72.0",
+        "oxfmt": "^0.74.0",
         "oxlint": "^1.87.0",
         "oxlint-tsgolint": "^7.0.2003",
         "typescript": "^7.0.2"
